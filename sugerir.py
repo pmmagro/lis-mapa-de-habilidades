@@ -6,6 +6,13 @@ com um dicionario de sinonimos em portugues. Nao e inteligencia: e um empurrao p
 import json, os, re, sys, unicodedata
 aqui = os.path.dirname(os.path.abspath(__file__))
 SIN = {
+ "robo": "humanizer texto", "cara de": "humanizer", "melhora o texto": "humanizer", "melhora": "humanizer", "reescreve": "humanizer",
+ "novo": "brainstorming writing-plans", "nova": "brainstorming writing-plans", "sistema": "brainstorming writing-plans", "do zero": "brainstorming",
+ "revis": "code-review review requesting-code-review", "codigo": "code-review test-driven-development",
+ "sempre que": "update-config hook hookify", "toda vez": "update-config hook hookify", "automatic": "update-config hook",
+ "custou": "cost-report cost-tracking", "gastou": "cost-report cost-tracking", "sessao": "cost-report diagnosing-superpowers",
+ "parcela": "sgl-financas-pessoais", "paguei": "sgl-financas-pessoais", "salario": "sgl-financas-pessoais", "boleto": "sgl-financas-pessoais",
+ "altair": "conciliacao-comissoes-cbv", "cbv": "conciliacao-comissoes-cbv calcario",
  "bug": "systematic-debugging silent-failure erro defeito corrigir consertar", "erro": "systematic-debugging bug corrigir", "nao funciona": "systematic-debugging bug",
  "testar": "test-driven-development verification teste", "teste": "test-driven-development verification",
  "plano": "writing-plans planejar etapas", "planejar": "writing-plans brainstorming", "ideia": "brainstorming criar novo", "criar": "brainstorming novo",

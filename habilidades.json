@@ -319,6 +319,27 @@
   "en": "Write articles, guides, blog posts, tutorials, newsletter issues, and other long-form content in a distinctive voice derived from supplied examples or brand guidance. Use when the user wants polished written content longer than a paragraph, especially when voice consistency, structure, and credibility matter."
  },
  {
+  "nome": "ecc:aside",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Answer a quick side question without interrupting or losing context from the current task. Resume work automatically after answering.",
+  "en": "Answer a quick side question without interrupting or losing context from the current task. Resume work automatically after answering."
+ },
+ {
+  "nome": "ecc:astra-review",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Send Claude-written code to GPT-6-Astra (ChatGPT, via Codex CLI) for an independent cross-provider review, then fix what it finds.",
+  "en": "Send Claude-written code to GPT-6-Astra (ChatGPT, via Codex CLI) for an independent cross-provider review, then fix what it finds."
+ },
+ {
+  "nome": "ecc:auto-update",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Pull the latest ECC repo changes and reinstall the current managed targets.",
+  "en": "Pull the latest ECC repo changes and reinstall the current managed targets."
+ },
+ {
   "nome": "ecc:automation-audit-ops",
   "pacote": "ecc",
   "categoria": "Infra e DevOps",
@@ -417,6 +438,13 @@
   "en": "Run automated post-deploy UI verification with a browser automation MCP (claude-in-chrome, Playwright, or Puppeteer): console-error and Core Web Vitals smoke checks, form and auth-flow interaction tests, screenshot visual regression across three breakpoints, and axe-core accessibility audits ending in a SHIP / DO-NOT-SHIP verdict. Use when testing a deployed feature on staging or preview, before shipping frontend changes, reviewing a frontend PR, or checking responsive layout and accessibility."
  },
  {
+  "nome": "ecc:build-fix",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Detect the project build system and incrementally fix build/type errors with minimal safe changes.",
+  "en": "Detect the project build system and incrementally fix build/type errors with minimal safe changes."
+ },
+ {
   "nome": "ecc:bun-runtime",
   "pacote": "ecc",
   "categoria": "Código",
@@ -443,6 +471,13 @@
   "categoria": "Revisão e testes",
   "pt": "antes de mudar código, banco ou interface, levanta com provas o que a mudança atinge (chamadas, dados, testes, docs, implantação) e depois compara o plano com o que foi feito.",
   "en": "Perform evidence-backed impact analysis before changing code, data, interfaces, or governance documents, then compare the planned impact with the actual diff after implementation. Covers call paths, data and schema, API contracts, tests, documentation, ADRs, deployment, migration, and rollback. Use for cross-module or high-risk changes, database migrations, authentication, public interfaces, blast-radius questions, pre-change checks, and post-implementation alignment."
+ },
+ {
+  "nome": "ecc:checkpoint",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Create, verify, or list workflow checkpoints after running verification checks.",
+  "en": "Create, verify, or list workflow checkpoints after running verification checks."
  },
  {
   "nome": "ecc:cisco-ios-patterns",
@@ -478,6 +513,13 @@
   "categoria": "Dados e IA",
   "pt": "Boas práticas para o ClickHouse, banco de dados feito para análises pesadas. Entra ao escrever consultas ou quando uma consulta está lenta.",
   "en": "ClickHouse database patterns, query optimization, analytics, and data engineering best practices for high-performance analytical workloads. Use when writing ClickHouse schemas or queries, or when an analytical query is too slow."
+ },
+ {
+  "nome": "ecc:code-review",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Code review — local uncommitted changes or GitHub PR (pass PR number/URL for PR mode). Use for a step-by-step PRP-style checklist review; for a multi-agent pass use /review-pr, and for the adversarially-verified Workflow pass use /orch-review.",
+  "en": "Code review — local uncommitted changes or GitHub PR (pass PR number/URL for PR mode). Use for a step-by-step PRP-style checklist review; for a multi-agent pass use /review-pr, and for the adversarially-verified Workflow pass use /orch-review."
  },
  {
   "nome": "ecc:code-tour",
@@ -620,6 +662,13 @@
   "en": "Cost optimization patterns for LLM API usage — model routing by task complexity, budget tracking, retry logic, and prompt caching. Use when LLM spend needs to come down, or when routing tasks across model tiers and budgets."
  },
  {
+  "nome": "ecc:cost-report",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Generate a local Claude Code cost report from the ECC cost-tracker metrics log. Use for a terminal summary or CSV export of tracked spend; the cost-tracking skill covers the same metrics log for on-demand cost/budget questions asked in conversation.",
+  "en": "Generate a local Claude Code cost report from the ECC cost-tracker metrics log. Use for a terminal summary or CSV export of tracked spend; the cost-tracking skill covers the same metrics log for on-demand cost/budget questions asked in conversation."
+ },
+ {
   "nome": "ecc:cost-tracking",
   "pacote": "ecc",
   "categoria": "Dados e IA",
@@ -648,11 +697,32 @@
   "en": "Per-channel strict prompts, mention gating, silent observation, and a communication autonomy policy for agents that sit in shared channels with external counterparties. Use when an agent joins group chats, shared channels, or DMs where outsiders can read every message and you need it to speak only when addressed, never leak internal context, and route risky content to draft-only approval."
  },
  {
+  "nome": "ecc:cpp-build",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Fix C++ build errors, CMake issues, and linker problems incrementally. Invokes the cpp-build-resolver agent for minimal, surgical fixes.",
+  "en": "Fix C++ build errors, CMake issues, and linker problems incrementally. Invokes the cpp-build-resolver agent for minimal, surgical fixes."
+ },
+ {
   "nome": "ecc:cpp-coding-standards",
   "pacote": "ecc",
   "categoria": "Código",
   "pt": "aplica boas práticas modernas e seguras da linguagem C++ ao escrever, revisar ou reformular código nessa linguagem.",
   "en": "C++ coding standards based on the C++ Core Guidelines (isocpp.github.io). Use when writing, reviewing, or refactoring C++ code to enforce modern, safe, and idiomatic practices."
+ },
+ {
+  "nome": "ecc:cpp-review",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Comprehensive C++ code review for memory safety, modern C++ idioms, concurrency, and security. Invokes the cpp-reviewer agent.",
+  "en": "Comprehensive C++ code review for memory safety, modern C++ idioms, concurrency, and security. Invokes the cpp-reviewer agent."
+ },
+ {
+  "nome": "ecc:cpp-test",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Enforce TDD workflow for C++. Write GoogleTest tests first, then implement. Verify coverage with gcov/lcov.",
+  "en": "Enforce TDD workflow for C++. Write GoogleTest tests first, then implement. Verify coverage with gcov/lcov."
  },
  {
   "nome": "ecc:cpp-testing",
@@ -900,6 +970,55 @@
   "en": "Operational controls for long-lived or cloud-hosted agent systems — runtime lifecycle (start, pause, stop, restart), observability (logs, metrics, traces), least-privilege safety scopes and kill switches, and rollout/rollback change management with audit logs and success/cost metrics. Use when running production agent fleets on PM2, systemd, or containers that need monitoring, incident response, or deployment gates."
  },
  {
+  "nome": "ecc:epic-claim",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Claim an epic issue, stamp coordination state, and sync local ownership.",
+  "en": "Claim an epic issue, stamp coordination state, and sync local ownership."
+ },
+ {
+  "nome": "ecc:epic-decompose",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Break an epic into task children without creating task branches.",
+  "en": "Break an epic into task children without creating task branches."
+ },
+ {
+  "nome": "ecc:epic-publish",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Publish a validated epic update back to the issue and local cache.",
+  "en": "Publish a validated epic update back to the issue and local cache."
+ },
+ {
+  "nome": "ecc:epic-review",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Mark epic review requested, approved, or changes requested.",
+  "en": "Mark epic review requested, approved, or changes requested."
+ },
+ {
+  "nome": "ecc:epic-sync",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Sync epic issue bodies, labels, and local coordination snapshots from GitHub.",
+  "en": "Sync epic issue bodies, labels, and local coordination snapshots from GitHub."
+ },
+ {
+  "nome": "ecc:epic-unblock",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Sweep blocked epic issues and reopen anything whose dependencies are closed.",
+  "en": "Sweep blocked epic issues and reopen anything whose dependencies are closed."
+ },
+ {
+  "nome": "ecc:epic-validate",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Validate epic readiness, dependencies, and coordination policy.",
+  "en": "Validate epic readiness, dependencies, and coordination policy."
+ },
+ {
   "nome": "ecc:error-handling",
   "pacote": "ecc",
   "categoria": "Código",
@@ -928,6 +1047,13 @@
   "en": "Prevent silent decimal mismatch bugs across EVM chains. Covers runtime decimal lookup, chain-aware caching, bridged-token precision drift, and safe normalization for bots, dashboards, and DeFi tools. Use when handling token amounts across EVM chains, or when a balance, price, or transfer amount is off by orders of magnitude."
  },
  {
+  "nome": "ecc:evolve",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Analyze instincts and suggest or generate evolved structures",
+  "en": "Analyze instincts and suggest or generate evolved structures"
+ },
+ {
   "nome": "ecc:exa-search",
   "pacote": "ecc",
   "categoria": "Dados e IA",
@@ -949,6 +1075,20 @@
   "en": "FastAPI best practices covering project structure, Pydantic v2 schemas, dependency injection, async handlers, authentication, authorization, transactional service layers, and testing with httpx and pytest. Use when building or reviewing FastAPI apps — Pydantic schemas, dependencies, async handlers, auth, or tests."
  },
  {
+  "nome": "ecc:fastapi-review",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Review a FastAPI application for architecture, async correctness, dependency injection, Pydantic schemas, security, performance, and testability.",
+  "en": "Review a FastAPI application for architecture, async correctness, dependency injection, Pydantic schemas, security, performance, and testability."
+ },
+ {
+  "nome": "ecc:feature-dev",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Guided feature development with codebase understanding and architecture focus",
+  "en": "Guided feature development with codebase understanding and architecture focus"
+ },
+ {
   "nome": "ecc:finance-billing-ops",
   "pacote": "ecc",
   "categoria": "Negócio e marketing",
@@ -963,11 +1103,32 @@
   "en": "Create reproducible, cross-platform (macOS/Linux) development environments with Flox, a declarative Nix-based environment manager. Use when setting up project toolchains, installing system-level dependencies (compilers, databases, native libs), pinning exact package versions for a team, onboarding developers, running local services (PostgreSQL, Redis, Kafka), or solving 'works on my machine' problems — including agent/vibe-coding setups that need project-scoped tools without sudo. Also use when the user mentions .flox/, manifest.toml, flox activate, or FloxHub."
  },
  {
+  "nome": "ecc:flutter-build",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Fix Dart analyzer errors and Flutter build failures incrementally. Invokes the dart-build-resolver agent for minimal, surgical fixes.",
+  "en": "Fix Dart analyzer errors and Flutter build failures incrementally. Invokes the dart-build-resolver agent for minimal, surgical fixes."
+ },
+ {
   "nome": "ecc:flutter-dart-code-review",
   "pacote": "ecc",
   "categoria": "Revisão e testes",
   "pt": "lista de revisão para código Flutter e Dart (apps de celular), cobrindo organização, desempenho, acessibilidade, segurança e gerenciamento de estado.",
   "en": "Library-agnostic Flutter/Dart code review checklist covering widget best practices, state management patterns (BLoC, Riverpod, Provider, GetX, MobX, Signals), Dart idioms, performance, accessibility, security, and clean architecture. Use when reviewing Flutter or Dart code, whatever state management library the project uses."
+ },
+ {
+  "nome": "ecc:flutter-review",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Review Flutter/Dart code for idiomatic patterns, widget best practices, state management, performance, accessibility, and security. Invokes the flutter-reviewer agent.",
+  "en": "Review Flutter/Dart code for idiomatic patterns, widget best practices, state management, performance, accessibility, and security. Invokes the flutter-reviewer agent."
+ },
+ {
+  "nome": "ecc:flutter-test",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Run Flutter/Dart tests, report failures, and incrementally fix test issues. Covers unit, widget, golden, and integration tests.",
+  "en": "Run Flutter/Dart tests, report failures, and incrementally fix test issues. Covers unit, widget, golden, and integration tests."
  },
  {
   "nome": "ecc:foundation-models-on-device",
@@ -1012,6 +1173,20 @@
   "en": "F# testing patterns with xUnit, FsUnit, Unquote, FsCheck property-based testing, integration tests, and test organization best practices. Use when writing F# tests with xUnit, FsUnit, Unquote, or FsCheck."
  },
  {
+  "nome": "ecc:gan-build",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Run a generator/evaluator build loop for implementation tasks with bounded iterations and scoring.",
+  "en": "Run a generator/evaluator build loop for implementation tasks with bounded iterations and scoring."
+ },
+ {
+  "nome": "ecc:gan-design",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Run a generator/evaluator design loop for frontend or visual work with bounded iterations and scoring.",
+  "en": "Run a generator/evaluator design loop for frontend or visual work with bounded iterations and scoring."
+ },
+ {
   "nome": "ecc:gan-style-harness",
   "pacote": "ecc",
   "categoria": "Agentes e fluxo",
@@ -1047,6 +1222,27 @@
   "en": "GitHub repository operations, automation, and management. Issue triage, PR management, CI/CD operations, release management, and security monitoring using the gh CLI. Use when the user wants to manage GitHub issues, PRs, CI status, releases, contributors, stale items, or any GitHub operational task beyond simple git commands."
  },
  {
+  "nome": "ecc:go-build",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Fix Go build errors, go vet warnings, and linter issues incrementally. Invokes the go-build-resolver agent for minimal, surgical fixes.",
+  "en": "Fix Go build errors, go vet warnings, and linter issues incrementally. Invokes the go-build-resolver agent for minimal, surgical fixes."
+ },
+ {
+  "nome": "ecc:go-review",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Comprehensive Go code review for idiomatic patterns, concurrency safety, error handling, and security. Invokes the go-reviewer agent.",
+  "en": "Comprehensive Go code review for idiomatic patterns, concurrency safety, error handling, and security. Invokes the go-reviewer agent."
+ },
+ {
+  "nome": "ecc:go-test",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Enforce TDD workflow for Go. Write table-driven tests first, then implement. Verify 80%+ coverage with go test -cover.",
+  "en": "Enforce TDD workflow for Go. Write table-driven tests first, then implement. Verify 80%+ coverage with go test -cover."
+ },
+ {
   "nome": "ecc:golang-patterns",
   "pacote": "ecc",
   "categoria": "Código",
@@ -1068,11 +1264,25 @@
   "en": "Operate across Google Drive, Docs, Sheets, and Slides as one workflow surface for plans, trackers, decks, and shared documents. Use when the user needs to find, summarize, edit, migrate, or clean up Google Workspace assets without dropping to raw tool calls."
  },
  {
+  "nome": "ecc:gradle-build",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Fix Gradle build errors for Android and KMP projects",
+  "en": "Fix Gradle build errors for Android and KMP projects"
+ },
+ {
   "nome": "ecc:growth-log",
   "pacote": "ecc",
   "categoria": "Escrita e docs",
   "pt": "registra o que se aprendeu em um trabalho concluído como causa, regra reaproveitável e sinal de alerta, em vez de diário de eventos.",
   "en": "Write growth log entries that extract reusable patterns from completed work — root cause, transferable rule, and a recognizable signal — instead of diary-style event narration, with a 4-8 sentence template and merge-duplicates discipline. Use when capturing what was learned after a complex task, debugging session, failure, or rollback, when reviewing progress over a period, or when a delivery gate asks what was learned."
+ },
+ {
+  "nome": "ecc:harness-audit",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Run a deterministic repository harness audit and return a prioritized scorecard. Use for a deterministic overall repo-readiness scorecard; for a security-specific audit use the security-scan command.",
+  "en": "Run a deterministic repository harness audit and return a prioritized scorecard. Use for a deterministic overall repo-readiness scorecard; for a security-specific audit use the security-scan command."
  },
  {
   "nome": "ecc:healthcare-cdss-patterns",
@@ -1159,6 +1369,34 @@
   "en": "WireGuard VPN server setup, peer configuration, key generation, split tunneling vs full tunnel routing, and remote access to a home network from mobile and laptop clients. Use when setting up WireGuard for remote access to a home network, or deciding between split and full tunnel routing."
  },
  {
+  "nome": "ecc:hookify",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Create hooks to prevent unwanted behaviors from conversation analysis or explicit instructions. Use to generate a new hook rule file from conversation analysis or a described behavior; the hookify-rules skill covers hookify rule syntax and patterns for authoring or editing rules directly.",
+  "en": "Create hooks to prevent unwanted behaviors from conversation analysis or explicit instructions. Use to generate a new hook rule file from conversation analysis or a described behavior; the hookify-rules skill covers hookify rule syntax and patterns for authoring or editing rules directly."
+ },
+ {
+  "nome": "ecc:hookify-configure",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Enable or disable hookify rules interactively",
+  "en": "Enable or disable hookify rules interactively"
+ },
+ {
+  "nome": "ecc:hookify-help",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Get help with the hookify system",
+  "en": "Get help with the hookify system"
+ },
+ {
+  "nome": "ecc:hookify-list",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "List all configured hookify rules",
+  "en": "List all configured hookify rules"
+ },
+ {
   "nome": "ecc:hookify-rules",
   "pacote": "ecc",
   "categoria": "Agentes e fluxo",
@@ -1178,6 +1416,27 @@
   "categoria": "Código",
   "pt": "lê um projeto antigo, descobre as convenções não escritas e grava um arquivo de regras para a IA não fugir do estilo; entra ao colocar a IA em código legado.",
   "en": "Prevent AI style drift on legacy projects by scanning the codebase for implicit conventions, resolving conflicts with the operator one at a time, and writing an enforceable .ai-style-rules.md (Golden Files, naming rules, DONTs) plus an optional CLAUDE.md hook. Use when onboarding an AI agent onto a hand-written legacy codebase or extracting a project's unwritten coding rules."
+ },
+ {
+  "nome": "ecc:instinct-export",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Export instincts from project/global scope to a file",
+  "en": "Export instincts from project/global scope to a file"
+ },
+ {
+  "nome": "ecc:instinct-import",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Import instincts from file or URL into project/global scope",
+  "en": "Import instincts from file or URL into project/global scope"
+ },
+ {
+  "nome": "ecc:instinct-status",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Show learned instincts (project + global) with confidence",
+  "en": "Show learned instincts (project + global) with confidence"
  },
  {
   "nome": "ecc:intent-driven-development",
@@ -1257,6 +1516,13 @@
   "en": "Java coding standards for Spring Boot and Quarkus services: naming, immutability, Optional usage, streams, exceptions, generics, CDI, reactive patterns, and project layout. Automatically applies framework-specific conventions. Use when writing or reviewing Java in a Spring Boot or Quarkus service."
  },
  {
+  "nome": "ecc:jira",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Retrieve a Jira ticket, analyze requirements, update status, or add comments. Uses the jira-integration skill and MCP or REST API.",
+  "en": "Retrieve a Jira ticket, analyze requirements, update status, or add comments. Uses the jira-integration skill and MCP or REST API."
+ },
+ {
   "nome": "ecc:jira-integration",
   "pacote": "ecc",
   "categoria": "Agentes e fluxo",
@@ -1276,6 +1542,13 @@
   "categoria": "Agentes e fluxo",
   "pt": "organiza, sincroniza, remove duplicatas e busca conhecimento espalhado entre arquivos locais, memória e repositórios Git; entra ao guardar ou procurar informação nesses lugares.",
   "en": "Knowledge base management, ingestion, sync, and retrieval across multiple storage layers (local files, MCP memory, vector stores, Git repos). Use when the user wants to save, organize, sync, deduplicate, or search across their knowledge systems."
+ },
+ {
+  "nome": "ecc:kotlin-build",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Fix Kotlin/Gradle build errors, compiler warnings, and dependency issues incrementally. Invokes the kotlin-build-resolver agent for minimal, surgical fixes.",
+  "en": "Fix Kotlin/Gradle build errors, compiler warnings, and dependency issues incrementally. Invokes the kotlin-build-resolver agent for minimal, surgical fixes."
  },
  {
   "nome": "ecc:kotlin-coroutines-flows",
@@ -1304,6 +1577,20 @@
   "categoria": "Código",
   "pt": "boas práticas e estilo idiomático da linguagem Kotlin, incluindo segurança contra valores nulos; entra ao escrever ou revisar código Kotlin.",
   "en": "Idiomatic Kotlin patterns, best practices, and conventions for building robust, efficient, and maintainable Kotlin applications with coroutines, null safety, and DSL builders. Use when writing or reviewing Kotlin code and idiomatic structure or null safety is in question."
+ },
+ {
+  "nome": "ecc:kotlin-review",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Comprehensive Kotlin code review for idiomatic patterns, null safety, coroutine safety, and security. Invokes the kotlin-reviewer agent.",
+  "en": "Comprehensive Kotlin code review for idiomatic patterns, null safety, coroutine safety, and security. Invokes the kotlin-reviewer agent."
+ },
+ {
+  "nome": "ecc:kotlin-test",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Enforce TDD workflow for Kotlin. Write Kotest tests first, then implement. Verify 80%+ coverage with Kover.",
+  "en": "Enforce TDD workflow for Kotlin. Write Kotest tests first, then implement. Verify 80%+ coverage with Kover."
  },
  {
   "nome": "ecc:kotlin-testing",
@@ -1369,6 +1656,20 @@
   "en": "AI-native lead intelligence and outreach pipeline. Replaces Apollo, Clay, and ZoomInfo with agent-powered signal scoring, mutual ranking, warm path discovery, source-derived voice modeling, and channel-specific outreach across email, LinkedIn, and X. Use when the user wants to find, qualify, and reach high-value contacts."
  },
  {
+  "nome": "ecc:learn",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Extract reusable patterns from the current session and save them as candidate skills or guidance. Use to review a session on demand and persist an approved skill file; continuous-learning-v2 is a separate, configurable Stop/PreToolUse/PostToolUse hook-observation and instinct-evolution system (background observer disabled by default) and is not an automatic equivalent of this command.",
+  "en": "Extract reusable patterns from the current session and save them as candidate skills or guidance. Use to review a session on demand and persist an approved skill file; continuous-learning-v2 is a separate, configurable Stop/PreToolUse/PostToolUse hook-observation and instinct-evolution system (background observer disabled by default) and is not an automatic equivalent of this command."
+ },
+ {
+  "nome": "ecc:learn-eval",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Extract reusable patterns from the session, self-evaluate quality before saving, and determine the right save location (Global vs Project).",
+  "en": "Extract reusable patterns from the session, self-evaluate quality before saving, and determine the right save location (Global vs Project)."
+ },
+ {
   "nome": "ecc:liquid-glass-design",
   "pacote": "ecc",
   "categoria": "Código",
@@ -1402,6 +1703,20 @@
   "categoria": "Agentes e fluxo",
   "pt": "ajuda a projetar ou revisar ciclos automáticos de agente, evitando girar sem fim, burlar a verificação ou entregar resposta errada; entra ao criar um ciclo.",
   "en": "Design a goal-oriented agent loop or review one for failure modes: spinning, Goodhart-gaming the verifier, or running a wrong answer to completion. Covers machine-decidable goals, loop types, plan/build/judge skeletons, and runaway prevention; mechanism wiring lives in autonomous-loops. Use when designing, writing, or checking an agent loop. 中文触发：写 loop、设计 loop、做一个 loop、检查 loop 对不对、loop 体检、loop 会不会跑飞、可判定目标、五个崩法、plan build judge。"
+ },
+ {
+  "nome": "ecc:loop-start",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Prepare a managed autonomous loop pattern with safety defaults and explicit stop conditions, then print the commands to launch and monitor it. Use to set up sequential, continuous-pr, rfc-dag, or infinite loop patterns with safety gates before starting one; the continuous-agent-loop skill covers the same pattern selection and quality-gate guidance for in-conversation use (supersedes the deprecated autonomous-loops skill).",
+  "en": "Prepare a managed autonomous loop pattern with safety defaults and explicit stop conditions, then print the commands to launch and monitor it. Use to set up sequential, continuous-pr, rfc-dag, or infinite loop patterns with safety gates before starting one; the continuous-agent-loop skill covers the same pattern selection and quality-gate guidance for in-conversation use (supersedes the deprecated autonomous-loops skill)."
+ },
+ {
+  "nome": "ecc:loop-status",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Inspect active loop state, progress, failure signals, and recommended intervention.",
+  "en": "Inspect active loop state, progress, failure signals, and recommended intervention."
  },
  {
   "nome": "ecc:mailtrap-email-integration",
@@ -1481,6 +1796,13 @@
   "en": "Production machine-learning engineering workflow for data contracts, reproducible training, model evaluation, deployment, monitoring, and rollback. Use when building, reviewing, or hardening ML systems beyond one-off notebooks."
  },
  {
+  "nome": "ecc:model-route",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Recommend the best model tier for the current task based on complexity, risk, and budget.",
+  "en": "Recommend the best model tier for the current task based on complexity, risk, and budget."
+ },
+ {
   "nome": "ecc:module-regression",
   "pacote": "ecc",
   "categoria": "Revisão e testes",
@@ -1507,6 +1829,41 @@
   "categoria": "Código",
   "pt": "animações prontas para React e Next.js em botões, janelas, avisos, listas, trocas de página e rolagem; entra ao animar um elemento específico.",
   "en": "Production-ready animation patterns for React / Next.js — button, modal, toast, stagger, page transitions, exit animations, scroll, and layout — built on motion-foundations tokens and springs. Use when animating a specific UI element in React or Next.js — button, modal, toast, stagger, page transition, or scroll."
+ },
+ {
+  "nome": "ecc:multi-backend",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Run a backend-focused multi-model workflow for APIs, algorithms, data, and business logic.",
+  "en": "Run a backend-focused multi-model workflow for APIs, algorithms, data, and business logic."
+ },
+ {
+  "nome": "ecc:multi-execute",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Execute a multi-model implementation plan while preserving Claude as the only filesystem writer.",
+  "en": "Execute a multi-model implementation plan while preserving Claude as the only filesystem writer."
+ },
+ {
+  "nome": "ecc:multi-frontend",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Run a frontend-focused multi-model workflow for components, layouts, animation, and UI polish.",
+  "en": "Run a frontend-focused multi-model workflow for components, layouts, animation, and UI polish."
+ },
+ {
+  "nome": "ecc:multi-plan",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Create a multi-model (Codex + Antigravity) implementation plan without modifying production code. Requires the external ccg-workflow runtime, not part of the base ECC install (see Prerequisite below). Use when the user explicitly wants dual-model plan drafts; for a single-model plan with no extra runtime use /plan.",
+  "en": "Create a multi-model (Codex + Antigravity) implementation plan without modifying production code. Requires the external ccg-workflow runtime, not part of the base ECC install (see Prerequisite below). Use when the user explicitly wants dual-model plan drafts; for a single-model plan with no extra runtime use /plan."
+ },
+ {
+  "nome": "ecc:multi-workflow",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Run a full multi-model development workflow with research, planning, execution, optimization, and review.",
+  "en": "Run a full multi-model development workflow with research, planning, execution, optimization, and review."
  },
  {
   "nome": "ecc:mybatis-patterns",
@@ -1663,6 +2020,13 @@
   "en": "Orchestrate a behavior-preserving refactor — confirm tests are green, restructure without changing behavior, keep tests green, review, and gated commit. Use when the structure should improve but behavior must not change."
  },
  {
+  "nome": "ecc:orch-review",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Run the orch-review native Workflow over a diff (local changes or a GitHub PR) and report blocking vs advisory findings. Surface for the orch-review workflow. Use for a native-Workflow, adversarially-verified multi-dimension review with fan-out and dedup; for the step-by-step checklist pass use /code-review, and for the multi-agent pass use /review-pr.",
+  "en": "Run the orch-review native Workflow over a diff (local changes or a GitHub PR) and report blocking vs advisory findings. Surface for the orch-review workflow. Use for a native-Workflow, adversarially-verified multi-dimension review with fan-out and dedup; for the step-by-step checklist pass use /code-review, and for the multi-agent pass use /review-pr."
+ },
+ {
   "nome": "ecc:osint-investigation",
   "pacote": "ecc",
   "categoria": "Outro",
@@ -1698,6 +2062,13 @@
   "en": "Perl testing patterns using Test2::V0, Test::More, prove runner, mocking, coverage with Devel::Cover, and TDD methodology. Use when writing Perl tests with Test2::V0 or Test::More, or measuring coverage."
  },
  {
+  "nome": "ecc:plan",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Restate requirements, assess risks, and create step-by-step implementation plan. WAIT for user CONFIRM before touching any code. Use for a single-model inline or PRD-driven implementation plan; for a dual-model (Codex/Antigravity) plan use /multi-plan, and for visual annotate-and-approve review of the resulting plan use /plan-canvas.",
+  "en": "Restate requirements, assess risks, and create step-by-step implementation plan. WAIT for user CONFIRM before touching any code. Use for a single-model inline or PRD-driven implementation plan; for a dual-model (Codex/Antigravity) plan use /multi-plan, and for visual annotate-and-approve review of the resulting plan use /plan-canvas."
+ },
+ {
   "nome": "ecc:plan-canvas",
   "pacote": "ecc",
   "categoria": "Agentes e fluxo",
@@ -1712,6 +2083,13 @@
   "en": "Read a plan document, decompose it into steps, classify each step, and emit the ready-to-paste ECC slash command for that step, carrying the step identifier and scope in the command's own documented argument form. Generative only — never invokes commands itself and never claims to control what a command runs internally. Steps whose command cannot carry plan scope fail closed instead of being emitted. Use when the user has a multi-step plan and wants the right command for each step without picking it by hand."
  },
  {
+  "nome": "ecc:plan-prd",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Generate a lean, problem-first PRD and hand off to /plan for implementation planning.",
+  "en": "Generate a lean, problem-first PRD and hand off to /plan for implementation planning."
+ },
+ {
   "nome": "ecc:plankton-code-quality",
   "pacote": "ecc",
   "categoria": "Revisão e testes",
@@ -1719,11 +2097,25 @@
   "en": "Write-time code quality enforcement using Plankton — auto-formatting, linting, and Claude-powered fixes on every file edit via hooks. Use when setting up write-time formatting, linting, or auto-fix hooks on file edits."
  },
  {
+  "nome": "ecc:pm2",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Analyze a project and generate PM2 service commands for detected frontend, backend, or database services.",
+  "en": "Analyze a project and generate PM2 service commands for detected frontend, backend, or database services."
+ },
+ {
   "nome": "ecc:postgres-patterns",
   "pacote": "ecc",
   "categoria": "Dados e IA",
   "pt": "padrões para banco de dados PostgreSQL, com consultas rápidas, desenho de tabelas, índices e permissões, usados ao projetar o banco ou quando uma consulta está lenta.",
   "en": "PostgreSQL database patterns for query optimization, schema design, indexing, and security. Based on Supabase best practices. Use when designing PostgreSQL schemas, indexes, or RLS policies, or when a query is too slow."
+ },
+ {
+  "nome": "ecc:pr",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Create a GitHub PR from current branch with unpushed commits — discovers templates, analyzes changes, pushes",
+  "en": "Create a GitHub PR from current branch with unpushed commits — discovers templates, analyzes changes, pushes"
  },
  {
   "nome": "ecc:prediction-market-oracle-research",
@@ -1782,6 +2174,27 @@
   "en": "Operate execution flow across GitHub and Linear by triaging issues and pull requests, linking active work, and keeping GitHub public-facing while Linear remains the internal execution layer. Use when the user wants backlog control, PR triage, or GitHub-to-Linear coordination."
  },
  {
+  "nome": "ecc:project-init",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Detect a project's stack and produce a dry-run ECC onboarding plan using the repository's install manifests and stack mappings. Use to onboard ECC into a target project via a reviewable dry-run plan; for general feature discovery and navigation use the ecc-guide skill or /ecc-guide command instead.",
+  "en": "Detect a project's stack and produce a dry-run ECC onboarding plan using the repository's install manifests and stack mappings. Use to onboard ECC into a target project via a reviewable dry-run plan; for general feature discovery and navigation use the ecc-guide skill or /ecc-guide command instead."
+ },
+ {
+  "nome": "ecc:projects",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "List known projects and their instinct statistics",
+  "en": "List known projects and their instinct statistics"
+ },
+ {
+  "nome": "ecc:promote",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Promote project-scoped instincts to global scope",
+  "en": "Promote project-scoped instincts to global scope"
+ },
+ {
   "nome": "ecc:prompt-caching-strategy",
   "pacote": "ecc",
   "categoria": "Dados e IA",
@@ -1796,11 +2209,60 @@
   "en": "Analyze draft prompts, detect intent and missing context, match ECC commands, skills, and agents, and output a ready-to-paste optimized prompt with diagnosis and rationale — advisory only, never executes the task. Use when the user says 'optimize prompt', 'improve my prompt', 'rewrite this prompt', 'help me prompt', 优化prompt, 改进prompt, 怎么写prompt, or 帮我优化这个指令; not for requests to optimize code or performance."
  },
  {
+  "nome": "ecc:prp-commit",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Quick commit with natural language file targeting — describe what to commit in plain English",
+  "en": "Quick commit with natural language file targeting — describe what to commit in plain English"
+ },
+ {
+  "nome": "ecc:prp-implement",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Execute an implementation plan with rigorous validation loops",
+  "en": "Execute an implementation plan with rigorous validation loops"
+ },
+ {
+  "nome": "ecc:prp-plan",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Create comprehensive feature implementation plan with codebase analysis and pattern extraction",
+  "en": "Create comprehensive feature implementation plan with codebase analysis and pattern extraction"
+ },
+ {
+  "nome": "ecc:prp-pr",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Alias of /pr for the PRP workflow series. Use when creating a pull request mid-PRP workflow; otherwise use /pr.",
+  "en": "Alias of /pr for the PRP workflow series. Use when creating a pull request mid-PRP workflow; otherwise use /pr."
+ },
+ {
+  "nome": "ecc:prp-prd",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Interactive PRD generator - problem-first, hypothesis-driven product spec with back-and-forth questioning",
+  "en": "Interactive PRD generator - problem-first, hypothesis-driven product spec with back-and-forth questioning"
+ },
+ {
+  "nome": "ecc:prune",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Delete pending instincts older than 30 days that were never promoted. Thin CLI wrapper for continuous-learning-v2's instinct-cli.py prune command; use to clean up stale pending instincts that were never reviewed or promoted.",
+  "en": "Delete pending instincts older than 30 days that were never promoted. Thin CLI wrapper for continuous-learning-v2's instinct-cli.py prune command; use to clean up stale pending instincts that were never reviewed or promoted."
+ },
+ {
   "nome": "ecc:python-patterns",
   "pacote": "ecc",
   "categoria": "Código",
   "pt": "boas práticas e estilo da linguagem Python, com tipagem e padrão PEP 8, usadas ao escrever ou revisar código Python.",
   "en": "Pythonic idioms, PEP 8 standards, type hints, and best practices for building robust, efficient, and maintainable Python applications. Use when writing or reviewing Python code and idiomatic structure, typing, or PEP 8 is in question."
+ },
+ {
+  "nome": "ecc:python-review",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Comprehensive Python code review for PEP 8 compliance, type hints, security, and Pythonic idioms. Invokes the python-reviewer agent.",
+  "en": "Comprehensive Python code review for PEP 8 compliance, type hints, security, and Pythonic idioms. Invokes the python-reviewer agent."
  },
  {
   "nome": "ecc:python-testing",
@@ -1815,6 +2277,13 @@
   "categoria": "Dados e IA",
   "pt": "boas práticas do PyTorch para treinar modelos de inteligência artificial e carregar dados, usadas ao revisar o código ou quando um treino não se repete igual.",
   "en": "PyTorch deep learning patterns and best practices for building robust, efficient, and reproducible training pipelines, model architectures, and data loading. Use when writing or reviewing PyTorch training loops, model architectures, or data loading, or when a run will not reproduce."
+ },
+ {
+  "nome": "ecc:quality-gate",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Run the ECC formatter quality gate for a single file and report remediation steps.",
+  "en": "Run the ECC formatter quality gate for a single file and report remediation steps."
  },
  {
   "nome": "ecc:quality-nonconformance",
@@ -1866,6 +2335,13 @@
   "en": "Split an RFC into a multi-agent execution DAG — decompose into work units with dependencies and acceptance tests, run research, plan, implement, test, and review per unit, then merge through a queue with re-based branches and final system verification. Use when a feature is too large for a single agent pass, orchestrating RFC-driven multi-agent execution, or managing merge queues across agent-built units."
  },
  {
+  "nome": "ecc:react-build",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Fix React build failures (Vite, webpack, Next.js, CRA, Parcel, esbuild, Bun) incrementally — JSX/TSX compile errors, hydration mismatches, server/client component boundary failures, missing types. Invokes the react-build-resolver agent for minimal, surgical fixes.",
+  "en": "Fix React build failures (Vite, webpack, Next.js, CRA, Parcel, esbuild, Bun) incrementally — JSX/TSX compile errors, hydration mismatches, server/client component boundary failures, missing types. Invokes the react-build-resolver agent for minimal, surgical fixes."
+ },
+ {
   "nome": "ecc:react-native-patterns",
   "pacote": "ecc",
   "categoria": "Código",
@@ -1885,6 +2361,20 @@
   "categoria": "Código",
   "pt": "regras de desempenho para React e Next.js, vindas da Vercel, para deixar páginas mais rápidas e leves, usadas ao escrever, revisar ou melhorar esse código.",
   "en": "React and Next.js performance optimization patterns adapted from Vercel Engineering's React Best Practices (https://github.com/vercel-labs/agent-skills). Organizes 70+ rules across 8 priority categories — waterfalls, bundle size, server-side, client fetching, re-render, rendering, JS micro-perf, advanced. Use when writing, reviewing, or refactoring React/Next.js code for performance."
+ },
+ {
+  "nome": "ecc:react-review",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Comprehensive React/JSX code review for hook correctness, render performance, server/client component boundaries, accessibility, and React-specific security. Invokes the react-reviewer agent (and typescript-reviewer alongside on TSX/JSX changes).",
+  "en": "Comprehensive React/JSX code review for hook correctness, render performance, server/client component boundaries, accessibility, and React-specific security. Invokes the react-reviewer agent (and typescript-reviewer alongside on TSX/JSX changes)."
+ },
+ {
+  "nome": "ecc:react-test",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Enforce TDD workflow for React. Write React Testing Library tests first (behavior-focused, accessibility-first), then implement components. Detects Vitest or Jest and verifies coverage targets.",
+  "en": "Enforce TDD workflow for React. Write React Testing Library tests first (behavior-focused, accessibility-first), then implement components. Detects Vitest or Jest and verifies coverage targets."
  },
  {
   "nome": "ecc:react-testing",
@@ -1915,6 +2405,13 @@
   "en": "Redis data structure patterns, caching strategies, distributed locks, rate limiting, pub/sub, and connection management for production applications. Use when adding caching, a distributed lock, rate limiting, or pub/sub with Redis, or when key design needs review."
  },
  {
+  "nome": "ecc:refactor-clean",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Safely identify and remove dead code with verification after each change.",
+  "en": "Safely identify and remove dead code with verification after each change."
+ },
+ {
   "nome": "ecc:regex-vs-llm-structured-text",
   "pacote": "ecc",
   "categoria": "Dados e IA",
@@ -1943,11 +2440,25 @@
   "en": "Evidence-first current-state research workflow for ECC. Use when the user wants fresh facts, comparisons, enrichment, or a recommendation built from current public evidence and any supplied local context."
  },
  {
+  "nome": "ecc:resume-session",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Load the most recent session file from ~/.claude/session-data/ and resume work with full context from where the last session ended.",
+  "en": "Load the most recent session file from ~/.claude/session-data/ and resume work with full context from where the last session ended."
+ },
+ {
   "nome": "ecc:returns-reverse-logistics",
   "pacote": "ecc",
   "categoria": "Negócio e marketing",
   "pt": "conhecimento para devoluções de produtos, com inspeção, destino do item, reembolso, fraude e garantia, usado ao tratar devoluções e logística reversa.",
   "en": "Codified expertise for returns authorization, receipt and inspection, disposition decisions, refund processing, fraud detection, and warranty claims management. Informed by returns operations managers with 15+ years experience. Includes grading frameworks, disposition economics, fraud pattern recognition, and vendor recovery processes. Use when handling product returns, reverse logistics, refund decisions, return fraud detection, or warranty claims."
+ },
+ {
+  "nome": "ecc:review-pr",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Comprehensive PR review using specialized agents (code-reviewer, comment-analyzer, pr-test-analyzer, silent-failure-hunter, type-design-analyzer, code-simplifier). Use for a multi-agent PR review pass; for the adversarially-verified Workflow pass use /orch-review, and for the standalone step-by-step checklist review use /code-review.",
+  "en": "Comprehensive PR review using specialized agents (code-reviewer, comment-analyzer, pr-test-analyzer, silent-failure-hunter, type-design-analyzer, code-simplifier). Use for a multi-agent PR review pass; for the adversarially-verified Workflow pass use /orch-review, and for the standalone step-by-step checklist review use /code-review."
  },
  {
   "nome": "ecc:rules-distill",
@@ -1957,11 +2468,32 @@
   "en": "Scan skills to extract cross-cutting principles and distill them into rules — append, revise, or create new rule files. Use when the same principle keeps recurring across skills and belongs in a rule file instead."
  },
  {
+  "nome": "ecc:rust-build",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Fix Rust build errors, borrow checker issues, and dependency problems incrementally. Invokes the rust-build-resolver agent for minimal, surgical fixes.",
+  "en": "Fix Rust build errors, borrow checker issues, and dependency problems incrementally. Invokes the rust-build-resolver agent for minimal, surgical fixes."
+ },
+ {
   "nome": "ecc:rust-patterns",
   "pacote": "ecc",
   "categoria": "Código",
   "pt": "padrões da linguagem Rust, com posse de memória, tratamento de erros e execução simultânea, usados ao escrever ou revisar código Rust.",
   "en": "Idiomatic Rust patterns, ownership, error handling, traits, concurrency, and best practices for building safe, performant applications. Use when writing or reviewing Rust code and ownership, error handling, traits, or concurrency is in question."
+ },
+ {
+  "nome": "ecc:rust-review",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Comprehensive Rust code review for ownership, lifetimes, error handling, unsafe usage, and idiomatic patterns. Invokes the rust-reviewer agent.",
+  "en": "Comprehensive Rust code review for ownership, lifetimes, error handling, unsafe usage, and idiomatic patterns. Invokes the rust-reviewer agent."
+ },
+ {
+  "nome": "ecc:rust-test",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Enforce TDD workflow for Rust. Write tests first, then implement. Verify 80%+ coverage with cargo-llvm-cov.",
+  "en": "Enforce TDD workflow for Rust. Write tests first, then implement. Verify 80%+ coverage with cargo-llvm-cov."
  },
  {
   "nome": "ecc:rust-testing",
@@ -1978,11 +2510,25 @@
   "en": "Guard against destructive operations with three modes: Careful intercepts dangerous commands (rm -rf, git push --force, DROP TABLE) for confirmation, Freeze locks writes to one directory, and Guard combines both. Advisory: the agent applies these rules itself; no hook ships with it. Use when working on production systems, running agents autonomously, restricting edits to a directory, or during migrations, deploys, and data changes."
  },
  {
+  "nome": "ecc:santa-loop",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Adversarial dual-review convergence loop — two independent model reviewers must both approve before code ships. Use for the CLI-driven version of this loop; wraps the santa-method skill.",
+  "en": "Adversarial dual-review convergence loop — two independent model reviewers must both approve before code ships. Use for the CLI-driven version of this loop; wraps the santa-method skill."
+ },
+ {
   "nome": "ecc:santa-method",
   "pacote": "ecc",
   "categoria": "Revisão e testes",
   "pt": "dois revisores independentes precisam aprovar a mesma saída antes de ela ser publicada, usado para barrar publicações, conteúdo sensível ou afirmações duvidosas.",
   "en": "Multi-agent adversarial verification: two independent reviewers with the same rubric must both pass before output ships, with a fix-and-re-review convergence loop and human escalation cap. Use when gating publishing, production deploys, compliance or brand-sensitive content, or hallucination-prone claims before they ship."
+ },
+ {
+  "nome": "ecc:save-session",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Save current session state to a dated file in ~/.claude/session-data/ so work can be resumed in a future session with full context.",
+  "en": "Save current session state to a dated file in ~/.claude/session-data/ so work can be resumed in a future session with full context."
  },
  {
   "nome": "ecc:scientific-db-pubmed-database",
@@ -2055,11 +2601,39 @@
   "en": "Audit, plan, and implement SEO improvements across technical SEO, on-page optimization, structured data, Core Web Vitals, and content strategy. Use when the user wants better search visibility, SEO remediation, schema markup, sitemap/robots work, or keyword mapping."
  },
  {
+  "nome": "ecc:sessions",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Manage Claude Code session history, aliases, and session metadata.",
+  "en": "Manage Claude Code session history, aliases, and session metadata."
+ },
+ {
+  "nome": "ecc:setup-pm",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Configure your preferred package manager (npm/pnpm/yarn/bun)",
+  "en": "Configure your preferred package manager (npm/pnpm/yarn/bun)"
+ },
+ {
   "nome": "ecc:skill-comply",
   "pacote": "ecc",
   "categoria": "Agentes e fluxo",
   "pt": "mede se os agentes realmente seguem as habilidades e regras que receberam, testando cenários e mostrando taxa de cumprimento. Entra ao checar obediência em vez de presumir.",
   "en": "Visualize whether skills, rules, and agent definitions are actually followed — auto-generates scenarios at 3 prompt strictness levels, runs agents, classifies behavioral sequences, and reports compliance rates with full tool call timelines. Use when checking whether agents actually follow the skills, rules, and definitions they were given, rather than assuming they do."
+ },
+ {
+  "nome": "ecc:skill-create",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Analyze local git history to extract coding patterns and generate SKILL.md files. Local version of the Skill Creator GitHub App. Use to generate new skills from local git history on demand; check the skill-scout skill first to avoid duplicating an existing local, marketplace, or GitHub skill.",
+  "en": "Analyze local git history to extract coding patterns and generate SKILL.md files. Local version of the Skill Creator GitHub App. Use to generate new skills from local git history on demand; check the skill-scout skill first to avoid duplicating an existing local, marketplace, or GitHub skill."
+ },
+ {
+  "nome": "ecc:skill-health",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Show skill portfolio health dashboard with charts and analytics. Use for the quantitative usage/success-rate dashboard; for a qualitative compliance or quality audit use the skill-stocktake skill.",
+  "en": "Show skill portfolio health dashboard with charts and analytics. Use for the quantitative usage/success-rate dashboard; for a qualitative compliance or quality audit use the skill-stocktake skill."
  },
  {
   "nome": "ecc:skill-host-compat",
@@ -2237,6 +2811,13 @@
   "en": "Inventory and govern a project's test assets. Connect requirements, business rules, risks, bugs, and cross-boundary contracts to stable TEST-IDs and executable evidence in the repository's existing test registry or TESTS.md. Use for test inventory, test gap analysis, unit/integration/contract/E2E/smoke classification, bug-to-test regression protection, consumer/provider contract testing, test-necessity review, and pre-delivery evidence review."
  },
  {
+  "nome": "ecc:test-coverage",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Analyze coverage, identify gaps, and generate missing tests toward the target threshold.",
+  "en": "Analyze coverage, identify gaps, and generate missing tests toward the target threshold."
+ },
+ {
   "nome": "ecc:tinystruct-patterns",
   "pacote": "ecc",
   "categoria": "Código",
@@ -2293,6 +2874,20 @@
   "en": "Operate notifications as one ECC-native workflow across GitHub, Linear, desktop alerts, hooks, and connected communication surfaces. Use when the real problem is alert routing, deduplication, escalation, or inbox collapse."
  },
  {
+  "nome": "ecc:update-codemaps",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Scan project structure and generate token-lean architecture codemaps.",
+  "en": "Scan project structure and generate token-lean architecture codemaps."
+ },
+ {
+  "nome": "ecc:update-docs",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Sync documentation from source-of-truth files such as scripts, schemas, routes, and exports.",
+  "en": "Sync documentation from source-of-truth files such as scripts, schemas, routes, and exports."
+ },
+ {
   "nome": "ecc:verification-loop",
   "pacote": "ecc",
   "categoria": "Revisão e testes",
@@ -2335,6 +2930,13 @@
   "en": "Vue.js 3 Composition API patterns, component architecture, reactivity best practices, Pinia state management, Vue Router navigation, and Nuxt SSR patterns. Activates for Vue, Nuxt, Vite, or Pinia projects. Use when building or reviewing Vue 3, Nuxt, or Pinia code — Composition API, reactivity, or router navigation."
  },
  {
+  "nome": "ecc:vue-review",
+  "pacote": "ecc",
+  "categoria": "Outro",
+  "pt": "Comprehensive Vue.js code review for Composition API correctness, reactivity, composable patterns, template security, accessibility, and Vue-specific performance. Invokes the vue-reviewer agent (and typescript-reviewer alongside on .vue/.ts changes).",
+  "en": "Comprehensive Vue.js code review for Composition API correctness, reactivity, composable patterns, template security, accessibility, and Vue-specific performance. Invokes the vue-reviewer agent (and typescript-reviewer alongside on .vue/.ts changes)."
+ },
+ {
   "nome": "ecc:windows-desktop-e2e",
   "pacote": "ecc",
   "categoria": "Revisão e testes",
@@ -2354,6 +2956,13 @@
   "categoria": "Negócio e marketing",
   "pt": "integra com a API do X (Twitter) para publicar posts e threads, ler linhas do tempo, buscar e ver estatísticas, incluindo autenticação OAuth e limites. Entra quando se quer usar o X por programa.",
   "en": "X/Twitter API integration for posting tweets, threads, reading timelines, search, and analytics. Covers OAuth auth patterns, rate limits, and platform-native content posting. Use when the user wants to interact with X programmatically."
+ },
+ {
+  "nome": "humanizer:humanizer",
+  "pacote": "humanizer",
+  "categoria": "Escrita e docs",
+  "pt": "Reescreve texto com cara de IA para soar como gente, sem mudar o conteúdo. Vinte e seis padrões: encenar em vez de afirmar, trio forçado, travessão, negrito de enfeite, sobras do chat.",
+  "en": "Rewrite AI-sounding text so it reads like the writer without changing what it says. Use when editing or reviewing prose for AI tells: not-X-but-Y contrasts, one-line closers, staged openers, forced triads, dashes everywhere, inflated claims, sales language, stock AI words, bold labels, or filler. Based on Wikipedia's \"Signs of AI writing.\""
  },
  {
   "nome": "google-maps-leads",

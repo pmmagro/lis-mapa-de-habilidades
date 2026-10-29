@@ -47,10 +47,22 @@ for f in sorted(glob.glob(os.path.join(home, ".claude", "skills", "synced", "*",
     fm = frontmatter(f); n = "anthropic-skills:" + (fm.get("name") or os.path.basename(os.path.dirname(f)))
     if any(i["nome"] == n for i in itens): continue
     add(n, "claude-code", fm.get("description", ""))
-for f in sorted(glob.glob(os.path.join(home, ".claude", "plugins", "cache", "*", "*", "*", "skills", "*", "SKILL.md"))):
-    partes = f.split(os.sep); plugin = partes[partes.index("cache") + 2]
-    fm = frontmatter(f); n = plugin + ":" + (fm.get("name") or os.path.basename(os.path.dirname(f)))
-    add(n, plugin, fm.get("description", ""))
+cache = os.path.join(home, ".claude", "plugins", "cache")
+for raiz in sorted(glob.glob(os.path.join(cache, "*", "*", "*"))):
+    plugin = os.path.basename(os.path.dirname(raiz))
+    # 1) skills/<nome>/SKILL.md
+    for f in sorted(glob.glob(os.path.join(raiz, "skills", "*", "SKILL.md"))):
+        fm = frontmatter(f); n = plugin + ":" + (fm.get("name") or os.path.basename(os.path.dirname(f)))
+        add(n, plugin, fm.get("description", ""))
+    # 2) SKILL.md na raiz do plugin (ex.: humanizer)
+    f = os.path.join(raiz, "SKILL.md")
+    if os.path.exists(f):
+        fm = frontmatter(f); n = plugin + ":" + (fm.get("name") or plugin)
+        if not any(i["nome"] == n for i in itens): add(n, plugin, fm.get("description", ""))
+    # 3) commands/<nome>.md (viram /plugin:nome no Claude Code)
+    for f in sorted(glob.glob(os.path.join(raiz, "commands", "*.md"))):
+        fm = frontmatter(f); n = plugin + ":" + os.path.splitext(os.path.basename(f))[0]
+        if not any(i["nome"] == n for i in itens): add(n, plugin, fm.get("description", ""))
 for e in json.load(open(os.path.join(aqui, "extras.json"), encoding="utf-8")):
     if any(i["nome"] == e["nome"] for i in itens): continue
     itens.append({"nome": e["nome"], "pacote": e["pacote"], "categoria": e["categoria"], "pt": e["pt"], "en": "", "gatilhos": e.get("gatilhos", "")})
