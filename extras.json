@@ -1,0 +1,22 @@
+[
+ {"nome":"anthropic-skills:xlsx","pacote":"claude-code","categoria":"Escrita e docs","pt":"Criar, ler, corrigir ou converter planilhas (.xlsx, .csv). Entra quando o pedido é sobre uma planilha.","gatilhos":"planilha excel xlsx csv tabela coluna fórmula"},
+ {"nome":"anthropic-skills:pdf","pacote":"claude-code","categoria":"Escrita e docs","pt":"Ler, juntar, dividir, assinar, preencher ou criar PDFs, inclusive OCR de digitalizado.","gatilhos":"pdf ocr juntar dividir formulário"},
+ {"nome":"anthropic-skills:docx","pacote":"claude-code","categoria":"Escrita e docs","pt":"Criar ou editar documento Word (.docx), com controle de alterações e comentários.","gatilhos":"word docx documento"},
+ {"nome":"anthropic-skills:pptx","pacote":"claude-code","categoria":"Escrita e docs","pt":"Criar ou editar apresentação PowerPoint (.pptx).","gatilhos":"powerpoint pptx apresentação slide deck"},
+ {"nome":"anthropic-skills:docs","pacote":"claude-code","categoria":"Escrita e docs","pt":"Documento editável e compartilhável no claude.ai (memorando, plano, proposta, relatório, contrato).","gatilhos":"documento memorando proposta relatório contrato carta"},
+ {"nome":"anthropic-skills:google-workspace","pacote":"claude-code","categoria":"Negócio e marketing","pt":"Criar ou mudar arquivo do Google Docs, Sheets, Slides ou Drive.","gatilhos":"google docs sheets drive slides"},
+ {"nome":"anthropic-skills:deep-research","pacote":"claude-code","categoria":"Dados e IA","pt":"Pesquisa em várias fontes com relatório narrativo, usando ajudantes em paralelo.","gatilhos":"pesquisa pesquisar comparar mercado estudo fontes"},
+ {"nome":"anthropic-skills:skill-creator","pacote":"claude-code","categoria":"Agentes e fluxo","pt":"Criar, melhorar e testar uma habilidade nova.","gatilhos":"habilidade skill criar nova"},
+ {"nome":"anthropic-skills:computer-use","pacote":"claude-code","categoria":"Agentes e fluxo","pt":"Mexer em programa do computador (Finder, Notas, Ajustes) por tela, clique e teclado.","gatilhos":"computador aplicativo tela finder ajustes"},
+ {"nome":"claude-in-chrome","pacote":"claude-code","categoria":"Agentes e fluxo","pt":"Navegar e operar sites no seu Chrome, com seus logins: clicar, preencher, ler, capturar tela.","gatilhos":"site navegador chrome página web whatsapp web instagram login"},
+ {"nome":"dataviz","pacote":"claude-code","categoria":"Dados e IA","pt":"Qualquer gráfico, painel ou visualização de dados, em qualquer formato.","gatilhos":"gráfico painel dashboard visualização"},
+ {"nome":"artifact-design","pacote":"claude-code","categoria":"Escrita e docs","pt":"Página HTML publicada no claude.ai (explicador, ferramenta, site), com cuidado de design.","gatilhos":"página artifact html publicar site"},
+ {"nome":"update-config","pacote":"claude-code","categoria":"Agentes e fluxo","pt":"Configurar o Claude Code: hooks, permissões, variáveis, settings.json.","gatilhos":"hook permissão configurar settings automático sempre que"},
+ {"nome":"code-review","pacote":"claude-code","categoria":"Revisão e testes","pt":"Revisar o diff ou um PR procurando erros de correção.","gatilhos":"revisar revisão pr diff"},
+ {"nome":"simplify","pacote":"claude-code","categoria":"Revisão e testes","pt":"Simplificar e limpar o código alterado, sem caçar bug.","gatilhos":"simplificar limpar código"},
+ {"nome":"loop","pacote":"claude-code","categoria":"Agentes e fluxo","pt":"Repetir um comando ou pedido em intervalo (ex.: conferir deploy a cada 5 min).","gatilhos":"repetir intervalo a cada minutos monitorar"},
+ {"nome":"schedule","pacote":"claude-code","categoria":"Agentes e fluxo","pt":"Agendar agente na nuvem em horário fixo (rotina) ou uma vez.","gatilhos":"agendar rotina horário cron todo dia"},
+ {"nome":"run","pacote":"claude-code","categoria":"Código","pt":"Subir e operar o app do projeto para ver uma mudança funcionando de verdade.","gatilhos":"rodar subir app testar na tela"},
+ {"nome":"security-review","pacote":"claude-code","categoria":"Segurança","pt":"Revisão de segurança das mudanças pendentes na branch.","gatilhos":"segurança vulnerabilidade"},
+ {"nome":"claude-api","pacote":"claude-code","categoria":"Dados e IA","pt":"Referência da API da Anthropic: modelos, preço, parâmetros, ferramentas, cache.","gatilhos":"api anthropic modelo preço token claude"}
+]

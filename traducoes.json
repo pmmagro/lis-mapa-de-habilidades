@@ -1,0 +1,1310 @@
+{
+ "ecc:agent-security-hardening": {
+  "categoria": "Segurança",
+  "pt": "Orienta a proteger sistemas de agentes de IA que lidam com conteúdo não confiável, ferramentas, arquivos e senhas. Não serve para segurança de sites em geral."
+ },
+ "ecc:defi-amm-security": {
+  "categoria": "Segurança",
+  "pt": "lista de verificação de segurança para contratos Solidity de trocas e pools de liquidez em blockchain, usada ao auditar ou escrever esse código."
+ },
+ "ecc:django-security": {
+  "categoria": "Segurança",
+  "pt": "boas práticas de segurança em Django (framework Python): login, permissões, proteção contra ataques comuns e configuração segura de publicação."
+ },
+ "ecc:healthcare-phi-compliance": {
+  "categoria": "Segurança",
+  "pt": "protege dados de saúde e dados pessoais, com controle de acesso, registro de quem mexeu e prevenção de vazamentos; entra quando o código toca dados de pacientes."
+ },
+ "ecc:hipaa-compliance": {
+  "categoria": "Segurança",
+  "pt": "porta de entrada para exigências da HIPAA, lei americana de privacidade em saúde; entra quando a tarefa fala de dados de pacientes, contratos de proteção ou vazamentos."
+ },
+ "ecc:laravel-security": {
+  "categoria": "Segurança",
+  "pt": "boas práticas de segurança no Laravel, como login, permissões, proteção contra ataques em formulários e implantação segura; entra ao revisar esses pontos."
+ },
+ "ecc:llm-trading-agent-security": {
+  "categoria": "Segurança",
+  "pt": "protege agentes de IA autônomos que operam carteira ou transações, com limites de gasto, simulação prévia e guarda de chaves; entra ao revisar esses limites."
+ },
+ "ecc:mcp-dependency-review": {
+  "categoria": "Segurança",
+  "pt": "revisa sem executar a configuração de servidores MCP (conexões de ferramentas), procurando pacotes que podem mudar sem aviso; entra antes de aprovar ou publicar."
+ },
+ "ecc:perl-security": {
+  "categoria": "Segurança",
+  "pt": "cuidados de segurança em Perl, como validar entradas, rodar comandos com segurança e proteger consultas ao banco, usados ao revisar código exposto à web."
+ },
+ "ecc:prediction-market-risk-review": {
+  "categoria": "Segurança",
+  "pt": "revisa riscos de conformidade, segurança, dados e execução em fluxos com mercados de previsão, usada antes de lidar com acesso, carteira, chaves ou ordens."
+ },
+ "ecc:quarkus-security": {
+  "categoria": "Segurança",
+  "pt": "práticas de segurança em Quarkus, como login, permissões, validação de entradas, senhas e segredos, usadas ao proteger ou reforçar uma aplicação."
+ },
+ "ecc:safety-guard": {
+  "categoria": "Segurança",
+  "pt": "protege contra ações destrutivas, pedindo confirmação para comandos perigosos e podendo travar edições em uma pasta, usada em produção ou com agentes autônomos."
+ },
+ "ecc:security-bounty-hunter": {
+  "categoria": "Segurança",
+  "pt": "caça falhas de segurança graves e acessíveis pela internet em um repositório, do tipo que rende recompensa em programas de bug bounty. Entra ao procurar vulnerabilidades reportáveis."
+ },
+ "ecc:security-review": {
+  "categoria": "Segurança",
+  "pt": "lista de verificação de segurança para quando o código lida com login, dados digitados por usuários, senhas e chaves, endpoints (portas de acesso) ou pagamentos."
+ },
+ "ecc:security-scan": {
+  "categoria": "Segurança",
+  "pt": "examina a configuração do Claude Code (pasta .claude, CLAUDE.md, hooks, servidores MCP) em busca de falhas e riscos de injeção, usando o AgentShield. Entra ao auditar essa pasta."
+ },
+ "ecc:springboot-security": {
+  "categoria": "Segurança",
+  "pt": "boas práticas de segurança em serviços Java Spring Boot: login e permissões, validação, CSRF (golpe por sessão aberta), segredos, limite de acessos e dependências. Entra ao revisar a segurança."
+ },
+ "ecc:agent-eval": {
+  "categoria": "Revisão e testes",
+  "pt": "Compara agentes de programação (Claude Code, Aider, Codex) nas mesmas tarefas, medindo acertos, custo, tempo e consistência, para escolher o melhor."
+ },
+ "ecc:ai-regression-testing": {
+  "categoria": "Revisão e testes",
+  "pt": "Cria testes que pegam erros que voltam em código feito com IA, principalmente quando o mesmo modelo escreveu e revisou a mudança."
+ },
+ "ecc:brownfield-retrospective": {
+  "categoria": "Revisão e testes",
+  "pt": "Aplica o processo do ECC a um projeto que já existe: revisa o estado atual, reconstrói decisões passadas, lista falhas e corrige em seguida."
+ },
+ "ecc:browser-qa": {
+  "categoria": "Revisão e testes",
+  "pt": "Testa automaticamente um site publicado no navegador: erros, velocidade, formulários, login, layout em três tamanhos de tela e acessibilidade, terminando em liberar ou não."
+ },
+ "ecc:change-impact": {
+  "categoria": "Revisão e testes",
+  "pt": "antes de mudar código, banco ou interface, levanta com provas o que a mudança atinge (chamadas, dados, testes, docs, implantação) e depois compara o plano com o que foi feito."
+ },
+ "ecc:click-path-audit": {
+  "categoria": "Revisão e testes",
+  "pt": "Segue cada botão da tela até o fim para achar defeitos em que funções funcionam sozinhas, mas se anulam e deixam a tela errada."
+ },
+ "ecc:codehealth-mcp": {
+  "categoria": "Revisão e testes",
+  "pt": "Mede a saúde do código com o CodeScene antes e depois das mudanças, para ver se a IA piorou um arquivo antes de salvar ou enviar."
+ },
+ "ecc:cpp-testing": {
+  "categoria": "Revisão e testes",
+  "pt": "entra só para escrever, corrigir ou configurar testes em C++, achar testes que falham ou oscilam e medir cobertura."
+ },
+ "ecc:csharp-testing": {
+  "categoria": "Revisão e testes",
+  "pt": "padrões de teste para C# e .NET, usados ao escrever ou revisar testes unitários, simulações (mocks) e testes de integração."
+ },
+ "ecc:delivery-gate": {
+  "categoria": "Revisão e testes",
+  "pt": "trava automática que impede o Claude de dar o trabalho por terminado antes de passar nas checagens de qualidade e registrar o aprendizado."
+ },
+ "ecc:django-tdd": {
+  "categoria": "Revisão e testes",
+  "pt": "estratégias de teste em Django com pytest, escrevendo o teste antes do código, ao testar APIs ou desenvolver recurso novo."
+ },
+ "ecc:django-verification": {
+  "categoria": "Revisão e testes",
+  "pt": "roda a verificação completa de um projeto Django, com estilo, migrações, testes, varreduras de segurança e relatório de aprovado ou reprovado antes do lançamento."
+ },
+ "ecc:e2e-testing": {
+  "categoria": "Revisão e testes",
+  "pt": "padrões de testes de ponta a ponta com Playwright (robô que usa o site como um usuário), incluindo como consertar testes instáveis em automação."
+ },
+ "ecc:eval-harness": {
+  "categoria": "Revisão e testes",
+  "pt": "define de antemão critérios de aprovação para tarefas de IA e mede a confiabilidade do agente, ao mudar prompts ou comparar versões de modelo."
+ },
+ "ecc:flutter-dart-code-review": {
+  "categoria": "Revisão e testes",
+  "pt": "lista de revisão para código Flutter e Dart (apps de celular), cobrindo organização, desempenho, acessibilidade, segurança e gerenciamento de estado."
+ },
+ "ecc:fsharp-testing": {
+  "categoria": "Revisão e testes",
+  "pt": "padrões de teste para a linguagem F# com xUnit, FsUnit e FsCheck, usados ao escrever e organizar testes nesse ambiente."
+ },
+ "ecc:golang-testing": {
+  "categoria": "Revisão e testes",
+  "pt": "padrões de teste em Go, como testes em tabela, subtestes, medições de velocidade e cobertura, seguindo o método de escrever o teste primeiro."
+ },
+ "ecc:healthcare-eval-harness": {
+  "categoria": "Revisão e testes",
+  "pt": "roda testes de segurança do paciente em sistemas de saúde e bloqueia a publicação se algo falhar; entra antes de publicar software hospitalar."
+ },
+ "ecc:kotlin-testing": {
+  "categoria": "Revisão e testes",
+  "pt": "padrões de teste em Kotlin com Kotest e MockK, seguindo o método de escrever o teste primeiro; entra ao testar código Kotlin ou medir cobertura."
+ },
+ "ecc:laravel-tdd": {
+  "categoria": "Revisão e testes",
+  "pt": "estratégias de teste no Laravel com PHPUnit e Pest, escrevendo o teste antes da funcionalidade; entra ao testar ou desenvolver guiado por testes."
+ },
+ "ecc:laravel-verification": {
+  "categoria": "Revisão e testes",
+  "pt": "roteiro de conferência de projetos Laravel com ambiente, estilo do código, testes, segurança e prontidão para publicar; entra antes de juntar mudanças ou publicar."
+ },
+ "ecc:module-regression": {
+  "categoria": "Revisão e testes",
+  "pt": "em repositório grande, mantém um REGRESSION.md com quem depende de cada módulo e o comando de aceite; após mudar A, roda A e todo B afetado e usa o resultado como prova."
+ },
+ "ecc:perl-testing": {
+  "categoria": "Revisão e testes",
+  "pt": "padrões para escrever testes em Perl e medir quanto do código eles cobrem, usados ao criar testes nessa linguagem."
+ },
+ "ecc:plankton-code-quality": {
+  "categoria": "Revisão e testes",
+  "pt": "aplica formatação, verificação e correções automáticas a cada arquivo editado, usando ganchos (ações disparadas na edição), ao configurar essa qualidade de código."
+ },
+ "ecc:production-audit": {
+  "categoria": "Revisão e testes",
+  "pt": "auditoria local de prontidão para produção de apps, usada antes de lançar, depois de uma junção de código ou ao perguntar o que pode quebrar no ar."
+ },
+ "ecc:python-testing": {
+  "categoria": "Revisão e testes",
+  "pt": "estratégias de teste em Python com pytest, incluindo preparação de dados, simulações e cobertura, usadas ao escrever esses testes."
+ },
+ "ecc:quarkus-tdd": {
+  "categoria": "Revisão e testes",
+  "pt": "desenvolvimento guiado por testes em Quarkus, escrevendo o teste antes do código, usado ao adicionar funções, corrigir defeitos ou reorganizar serviços."
+ },
+ "ecc:quarkus-verification": {
+  "categoria": "Revisão e testes",
+  "pt": "roteiro de verificação de projetos Quarkus, com compilação, análise do código, testes, buscas por falhas de segurança e checagens, usado antes de entregar ou publicar."
+ },
+ "ecc:react-testing": {
+  "categoria": "Revisão e testes",
+  "pt": "testes de componentes React com Testing Library, Vitest ou Jest, rede simulada e acessibilidade, usados ao escrever ou consertar esses testes."
+ },
+ "ecc:rust-testing": {
+  "categoria": "Revisão e testes",
+  "pt": "padrões de teste em Rust, como testes unitários, de integração e assíncronos, seguindo o método de escrever o teste primeiro, usados ao criar esses testes."
+ },
+ "ecc:santa-method": {
+  "categoria": "Revisão e testes",
+  "pt": "dois revisores independentes precisam aprovar a mesma saída antes de ela ser publicada, usado para barrar publicações, conteúdo sensível ou afirmações duvidosas."
+ },
+ "ecc:scientific-thinking-scholar-evaluation": {
+  "categoria": "Revisão e testes",
+  "pt": "avalia trabalhos acadêmicos (artigos, propostas, métodos) com uma lista fixa de critérios, olhando qualidade das evidências e das citações. Entra ao analisar um estudo."
+ },
+ "ecc:springboot-tdd": {
+  "categoria": "Revisão e testes",
+  "pt": "desenvolvimento guiado por testes em Spring Boot, com JUnit, Mockito, MockMvc, Testcontainers e JaCoCo. Entra ao adicionar funcionalidade, corrigir erro ou reorganizar código."
+ },
+ "ecc:springboot-verification": {
+  "categoria": "Revisão e testes",
+  "pt": "roda a verificação completa de um projeto Spring Boot: build, análise estática, testes com cobertura, varredura de segredos e revisão das mudanças, gerando relatório de aprovado ou reprovado."
+ },
+ "ecc:swift-protocol-di-testing": {
+  "categoria": "Revisão e testes",
+  "pt": "permite testar código Swift trocando arquivos, rede e APIs externas por simulações, usando protocolos pequenos e o Swift Testing. Entra quando o código depende desses recursos."
+ },
+ "ecc:tdd-workflow": {
+  "categoria": "Revisão e testes",
+  "pt": "método de escrever o teste que falha primeiro, fazer passar com a menor mudança e depois refinar, com 80% ou mais de cobertura. Entra em funcionalidade nova, correção ou reorganização."
+ },
+ "ecc:test-collaboration": {
+  "categoria": "Revisão e testes",
+  "pt": "faz o inventário dos testes do projeto, ligando requisitos, regras de negócio, riscos e erros a testes com código fixo e evidência. Entra para achar lacunas e proteger contra erros repetidos."
+ },
+ "ecc:verification-loop": {
+  "categoria": "Revisão e testes",
+  "pt": "roda seis verificações do trabalho feito: build, tipos, estilo, testes com cobertura, busca de segurança e revisão das mudanças, com relatório de aprovado ou reprovado. Entra antes de abrir um PR."
+ },
+ "ecc:windows-desktop-e2e": {
+  "categoria": "Revisão e testes",
+  "pt": "testa de ponta a ponta programas nativos do Windows (WPF, WinForms, Win32, Qt) com pywinauto e UI Automation, que simulam cliques e digitação. Entra ao escrever esses testes."
+ },
+ "ecc:agent-architecture-audit": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Faz um diagnóstico completo de um agente de IA que se comporta mal, apontando em qual camada está o defeito e como corrigir."
+ },
+ "ecc:agent-harness-construction": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Ajuda a definir as ferramentas e ações que um agente de IA pode usar e como ele enxerga os resultados, para concluir mais tarefas."
+ },
+ "ecc:agent-introspection-debugging": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Roteiro para diagnosticar por que um agente de IA falhou, registrando o erro e a recuperação, em vez de só tentar de novo."
+ },
+ "ecc:agent-payment-x402": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Permite que um agente de IA pague por serviços sozinho, com limite de gasto por tarefa e carteira digital própria (protocolo x402)."
+ },
+ "ecc:agent-self-evaluation": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Entra após uma tarefa grande: o agente dá nota de 1 a 5 ao próprio trabalho em cinco critérios, com provas e sugestões de melhoria."
+ },
+ "ecc:agent-sort": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Monta um plano de instalação do ECC sob medida para um projeto, separando o que se usa todo dia do que fica de biblioteca."
+ },
+ "ecc:agentic-engineering": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Método para trabalhar com agentes de IA: definir como medir o resultado antes, dividir o trabalho e escolher o modelo mais barato que dá conta."
+ },
+ "ecc:agentic-os": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Ensina a montar, no Claude Code, um sistema de vários agentes com memória em arquivos, comandos próprios e tarefas agendadas, sem banco de dados externo."
+ },
+ "ecc:ai-first-engineering": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Define regras de processo, revisão e responsabilidade para equipes em que agentes de IA escrevem boa parte do código."
+ },
+ "ecc:autonomous-agent-harness": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Transforma o Claude Code em um agente autônomo com memória, tarefas agendadas, controle do computador e fila de tarefas. Entra para operação contínua."
+ },
+ "ecc:autonomous-loops": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Padrões antigos de ciclos autônomos do Claude Code, mantidos só por compatibilidade. Para algo novo, usa-se a habilidade continuous-agent-loop."
+ },
+ "ecc:blueprint": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Transforma um objetivo de uma linha em plano passo a passo para projetos grandes, em várias sessões e agentes. Não serve para tarefas pequenas."
+ },
+ "ecc:ck": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Memória por projeto no Claude Code: salva o estado da sessão, próximos passos e decisões, e retoma de onde parou sem reexplicar tudo."
+ },
+ "ecc:claude-devfleet": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Coordena vários agentes de programação em paralelo, cada um em sua cópia isolada do projeto, e reúne os relatórios."
+ },
+ "ecc:config-gc": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Faz faxina na configuração do Claude Code, achando itens repetidos, velhos ou inúteis e apagando só o que você confirmar um a um."
+ },
+ "ecc:configure-ecc": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Assistente por conversa para instalar, atualizar, reconfigurar ou consertar o ECC e mudar o nível dos ganchos (gatilhos automáticos)."
+ },
+ "ecc:context-budget": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Mostra quanto espaço de conversa ainda resta no Codex ou Claude Code e, se pedido, audita o peso dos componentes instalados."
+ },
+ "ecc:continuous-agent-loop": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Padrões para um agente que roda em ciclos contínuos, com checagens de qualidade, testes de desempenho e recuperação de falhas."
+ },
+ "ecc:continuous-learning-v2": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Sistema que observa as sessões e cria pequenos aprendizados com nível de confiança, que podem virar habilidades, comandos ou agentes."
+ },
+ "ecc:continuous-learning": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Versão antiga e descontinuada do aprendizado contínuo. Não usar: o pedido deve ir para continuous-learning-v2."
+ },
+ "ecc:council-multi-model": {
+  "categoria": "Agentes e fluxo",
+  "pt": "Pede uma crítica extra de outro modelo (Codex) a uma decisão importante já rascunhada, só depois de sua autorização para enviar o texto."
+ },
+ "ecc:council": {
+  "categoria": "Agentes e fluxo",
+  "pt": "reúne quatro vozes que discordam entre si para ajudar numa decisão difícil, quando há mais de um caminho válido e você precisa escolher."
+ },
+ "ecc:counterparty-channel-discipline": {
+  "categoria": "Agentes e fluxo",
+  "pt": "ensina um agente em grupos com gente de fora a falar só quando chamado, não vazar dados internos e deixar conteúdo arriscado como rascunho para aprovação."
+ },
+ "ecc:deepseek-harness-setup": {
+  "categoria": "Agentes e fluxo",
+  "pt": "instala e configura o pacote ECC no DeepSeek Harness (outro ambiente de agentes), inclusive os ganchos automáticos, e ajuda a achar por que não aparecem."
+ },
+ "ecc:dev-team": {
+  "categoria": "Agentes e fluxo",
+  "pt": "simula uma equipe com gerente, arquiteto, desenvolvedor e testador respondendo juntos ao mesmo problema, para ver vários pontos de vista numa conversa só."
+ },
+ "ecc:dmux-workflows": {
+  "categoria": "Agentes e fluxo",
+  "pt": "coordena vários agentes de IA trabalhando em paralelo no terminal com o dmux, em Claude Code, Codex e outros ambientes."
+ },
+ "ecc:dynamic-workflow-mode": {
+  "categoria": "Agentes e fluxo",
+  "pt": "monta roteiros próprios para uma tarefa, com portões de avaliação, e transforma um trabalho improvisado em habilidade reutilizável."
+ },
+ "ecc:ecc-guide": {
+  "categoria": "Agentes e fluxo",
+  "pt": "responde dúvidas sobre o ECC lendo o repositório atual: o que inclui, como instalar, qual habilidade ou comando serve a cada tarefa."
+ },
+ "ecc:ecc-recipes": {
+  "categoria": "Agentes e fluxo",
+  "pt": "indica quais comandos do ECC usar para um fluxo de trabalho, em que ordem e quando parar, sem executar nada, só aconselhando."
+ },
+ "ecc:gan-style-harness": {
+  "categoria": "Agentes e fluxo",
+  "pt": "faz um agente construir um app sozinho em ciclos, com um que gera e outro que avalia, até atingir o nível de qualidade pedido."
+ },
+ "ecc:gateguard": {
+  "categoria": "Agentes e fluxo",
+  "pt": "trava que nega a primeira edição ou comando do agente até ele apresentar fatos concretos, melhorando a qualidade; entra ao configurar esse gancho."
+ },
+ "ecc:hermes-imports": {
+  "categoria": "Agentes e fluxo",
+  "pt": "converte rotinas locais do Hermes (um operador de automações) em habilidades limpas, sem expor senhas nem caminhos privados; entra ao preparar uso público."
+ },
+ "ecc:hookify-rules": {
+  "categoria": "Agentes e fluxo",
+  "pt": "cria regras em arquivo que avisam ou bloqueiam o agente em certas ações, como comandos perigosos ou edição de .env; entra ao criar travas de proteção."
+ },
+ "ecc:iterative-retrieval": {
+  "categoria": "Agentes e fluxo",
+  "pt": "refina em várias rodadas a busca de contexto para que um subagente (ajudante da IA) receba o que precisa; entra quando ele fica sem informação suficiente."
+ },
+ "ecc:jira-integration": {
+  "categoria": "Agentes e fluxo",
+  "pt": "busca chamados do Jira, analisa requisitos, atualiza status e comenta, por conexão MCP (ligação com ferramentas) ou direta; entra ao trabalhar com tarefas do Jira."
+ },
+ "ecc:knowledge-ops": {
+  "categoria": "Agentes e fluxo",
+  "pt": "organiza, sincroniza, remove duplicatas e busca conhecimento espalhado entre arquivos locais, memória e repositórios Git; entra ao guardar ou procurar informação nesses lugares."
+ },
+ "ecc:loop-design-check": {
+  "categoria": "Agentes e fluxo",
+  "pt": "ajuda a projetar ou revisar ciclos automáticos de agente, evitando girar sem fim, burlar a verificação ou entregar resposta errada; entra ao criar um ciclo."
+ },
+ "ecc:messages-ops": {
+  "categoria": "Agentes e fluxo",
+  "pt": "lê mensagens e DMs ao vivo, recupera códigos recentes e examina uma conversa antes de responder, provando qual fonte foi consultada; entra ao ler mensagens."
+ },
+ "ecc:nanoclaw-repl": {
+  "categoria": "Agentes e fluxo",
+  "pt": "opera e amplia o NanoClaw, console da ECC com sessões salvas em texto, troca de modelo, busca e exportação; entra ao retomar, ramificar ou exportar sessões."
+ },
+ "ecc:openclaw-persona-forge": {
+  "categoria": "Agentes e fluxo",
+  "pt": "cria a personalidade completa de um agente OpenClaw, com identidade, descrição, regras, nome e prompt de avatar, quando se quer desenhar esse personagem."
+ },
+ "ecc:operator-approval-loop": {
+  "categoria": "Agentes e fluxo",
+  "pt": "exige aprovação humana para cada mensagem externa redigida por um agente, com registro das decisões, usado antes de qualquer envio a terceiros."
+ },
+ "ecc:orch-add-feature": {
+  "categoria": "Agentes e fluxo",
+  "pt": "coordena a criação de uma funcionalidade nova do início ao fim, com pesquisa, plano, testes, revisão e commit (registro de versão), quando ela ainda não existe."
+ },
+ "ecc:orch-build-mvp": {
+  "categoria": "Agentes e fluxo",
+  "pt": "transforma um documento de especificação em um primeiro produto funcionando, por etapas curtas com revisão, quando um projeto precisa sair do papel."
+ },
+ "ecc:orch-change-feature": {
+  "categoria": "Agentes e fluxo",
+  "pt": "coordena a mudança de uma funcionalidade que funciona para um novo comportamento, atualizando testes e código, quando ela não está quebrada, mas deve ser diferente."
+ },
+ "ecc:orch-fix-defect": {
+  "categoria": "Agentes e fluxo",
+  "pt": "coordena a correção de um defeito, criando antes um teste que falha, corrigindo, revisando e registrando, quando algo existente está errado."
+ },
+ "ecc:orch-pipeline": {
+  "categoria": "Agentes e fluxo",
+  "pt": "motor comum das habilidades orch, com etapas de pesquisa, plano, teste, revisão e commit e duas aprovações humanas, lido só ao ajustar essas etapas."
+ },
+ "ecc:orch-refine-code": {
+  "categoria": "Agentes e fluxo",
+  "pt": "coordena uma reorganização do código sem mudar o comportamento, mantendo os testes passando, quando a estrutura deve melhorar mas o funcionamento não."
+ },
+ "ecc:parallel-execution-optimizer": {
+  "categoria": "Agentes e fluxo",
+  "pt": "acelera uma tarefa dividindo-a em partes que andam em paralelo, com verificação final, quando se quer terminar muito mais rápido sem perder a correção."
+ },
+ "ecc:plan-canvas": {
+  "categoria": "Agentes e fluxo",
+  "pt": "abre planos e páginas HTML numa tela no navegador onde a pessoa comenta, conversa e aprova ou pede mudanças, usada ao apresentar um plano para revisão."
+ },
+ "ecc:plan-orchestrate": {
+  "categoria": "Agentes e fluxo",
+  "pt": "lê um plano com várias etapas e gera o comando pronto para colar em cada uma, sem executar nada, quando se quer o comando certo por etapa."
+ },
+ "ecc:project-flow-ops": {
+  "categoria": "Agentes e fluxo",
+  "pt": "organiza o fluxo de trabalho entre GitHub e Linear, triando tarefas e pedidos de mudança, quando se quer controle da lista de pendências."
+ },
+ "ecc:prompt-optimizer": {
+  "categoria": "Agentes e fluxo",
+  "pt": "analisa um pedido rascunhado, aponta o contexto que falta e entrega uma versão melhorada para colar, sem executar a tarefa, quando se pede para melhorar o prompt."
+ },
+ "ecc:ralphinho-rfc-pipeline": {
+  "categoria": "Agentes e fluxo",
+  "pt": "divide um documento de proposta em tarefas com dependências para vários agentes executarem e depois junta tudo, usado quando a função é grande demais para um só agente."
+ },
+ "ecc:recursive-decision-ledger": {
+  "categoria": "Agentes e fluxo",
+  "pt": "roda tentativas repetidas guardando um registro de decisões e evidências, para que a confiança acumulada nunca aprove sozinha ações como negociar ou publicar."
+ },
+ "ecc:rules-distill": {
+  "categoria": "Agentes e fluxo",
+  "pt": "examina habilidades para extrair princípios que se repetem e transformá-los em regras, usada quando o mesmo princípio aparece em várias habilidades."
+ },
+ "ecc:skill-comply": {
+  "categoria": "Agentes e fluxo",
+  "pt": "mede se os agentes realmente seguem as habilidades e regras que receberam, testando cenários e mostrando taxa de cumprimento. Entra ao checar obediência em vez de presumir."
+ },
+ "ecc:skill-scout": {
+  "categoria": "Agentes e fluxo",
+  "pt": "procura habilidades já existentes (locais, em lojas, no GitHub e na web) antes de criar uma nova. Entra quando alguém quer criar, copiar ou achar uma habilidade."
+ },
+ "ecc:skill-stocktake": {
+  "categoria": "Agentes e fluxo",
+  "pt": "faz um inventário de qualidade das habilidades e comandos do Claude, em modo rápido (só o que mudou) ou completo, com subagentes avaliando em lotes. Entra ao auditar habilidades."
+ },
+ "ecc:story-lifecycle": {
+  "categoria": "Agentes e fluxo",
+  "pt": "gerencia em arquivos o ciclo épico, história e sprint (ciclos curtos de trabalho), sem Jira ou Linear. Cria e acompanha tarefas e conduz a implementação uma a uma."
+ },
+ "ecc:strategic-compact": {
+  "categoria": "Agentes e fluxo",
+  "pt": "sugere compactar (resumir) o contexto da conversa em pontos lógicos, não de forma aleatória, para preservar o que importa. Entra quando a sessão se aproxima do limite."
+ },
+ "ecc:team-agent-orchestration": {
+  "categoria": "Agentes e fluxo",
+  "pt": "coordena equipes de agentes com tarefas, donos, quadro de andamento, ramos isolados e travas antes de juntar o resultado. Entra quando vários agentes trabalham em paralelo."
+ },
+ "ecc:team-builder": {
+  "categoria": "Agentes e fluxo",
+  "pt": "lista os agentes disponíveis, agrupa por área, deixa escolher até cinco, roda todos juntos na mesma tarefa e resume onde concordam e divergem. Entra ao montar um time de agentes."
+ },
+ "ecc:token-budget-advisor": {
+  "categoria": "Agentes e fluxo",
+  "pt": "oferece escolher a profundidade da resposta (25%, 50%, 75% ou 100%) com estimativa de tokens (unidade de custo do texto) e responde nesse nível. Entra quando se quer controlar o tamanho."
+ },
+ "ecc:unified-memory": {
+  "categoria": "Agentes e fluxo",
+  "pt": "compartilha contexto e passagens de trabalho entre Claude, Codex, Cursor e outros agentes por um cofre local de memória. Entra para salvar o estado, transferir ou retomar uma tarefa."
+ },
+ "ecc:workspace-surface-audit": {
+  "categoria": "Agentes e fluxo",
+  "pt": "audita repositório, servidores MCP, plugins, conectores e configuração, e recomenda habilidades, hooks e agentes mais úteis. Entra para entender o que o ambiente do Claude Code realmente oferece."
+ },
+ "ecc:benchmark-methodology": {
+  "categoria": "Negócio e marketing",
+  "pt": "Dá notas comparáveis a concorrentes em nove critérios (posicionamento, preço, evidências etc.) e monta fichas de cada um. Vem depois de competitive-platform-analysis."
+ },
+ "ecc:brand-discovery": {
+  "categoria": "Negócio e marketing",
+  "pt": "Conduz uma entrevista em várias sessões sobre propósito, público, personalidade e voz da marca, e gera um manual de marca completo."
+ },
+ "ecc:carrier-relationship-management": {
+  "categoria": "Negócio e marketing",
+  "pt": "Gerencia transportadoras de carga: escolha, checagem, negociação de frete, cotações, avaliação de desempenho e renovação de contratos."
+ },
+ "ecc:competitive-platform-analysis": {
+  "categoria": "Negócio e marketing",
+  "pt": "Define quem conta como concorrente, em qual nível ele entra e quais fontes pesquisar. É o primeiro passo antes de comparar concorrentes."
+ },
+ "ecc:competitive-report-structure": {
+  "categoria": "Negócio e marketing",
+  "pt": "Junta as fichas de concorrentes em um relatório de decisão com mapa do mercado, comparativo, espaços livres e recomendações para a diretoria."
+ },
+ "ecc:connections-optimizer": {
+  "categoria": "Negócio e marketing",
+  "pt": "Reorganiza sua rede no X e no LinkedIn, sugerindo quem parar de seguir ou seguir, e redige mensagens de aproximação no seu jeito de falar."
+ },
+ "ecc:content-engine": {
+  "categoria": "Negócio e marketing",
+  "pt": "Cria conteúdo para X, LinkedIn, TikTok, YouTube e newsletters: posts, roteiros e calendários, adaptando uma mesma ideia para cada rede."
+ },
+ "ecc:crosspost": {
+  "categoria": "Negócio e marketing",
+  "pt": "distribui o mesmo conteúdo em X, LinkedIn, Threads e Bluesky, adaptando o texto a cada rede e nunca postando igual em todas."
+ },
+ "ecc:customer-billing-ops": {
+  "categoria": "Negócio e marketing",
+  "pt": "cuida de cobranças de clientes, como assinaturas, reembolsos e cancelamentos, usando ferramentas como o Stripe (plataforma de pagamentos), quando é preciso ajudar um cliente."
+ },
+ "ecc:customs-trade-compliance": {
+  "categoria": "Negócio e marketing",
+  "pt": "orienta importação e exportação: classificação de mercadorias, documentos, tarifas, acordos comerciais, checagem de empresas restritas e defesa em fiscalização aduaneira."
+ },
+ "ecc:email-ops": {
+  "categoria": "Negócio e marketing",
+  "pt": "organiza a caixa de e-mail, escreve rascunhos, envia pelo correio de verdade e comprova o que foi para a pasta Enviados."
+ },
+ "ecc:energy-procurement": {
+  "categoria": "Negócio e marketing",
+  "pt": "ajuda a comprar energia elétrica e gás para empresas: escolher tarifa, reduzir cobrança por demanda, cotar fornecedores e avaliar contratos de energia renovável."
+ },
+ "ecc:esign-field-placement": {
+  "categoria": "Negócio e marketing",
+  "pt": "método fixo para posicionar campos de assinatura e data numa plataforma de assinatura eletrônica por automação, deixando como rascunho antes de qualquer envio."
+ },
+ "ecc:finance-billing-ops": {
+  "categoria": "Negócio e marketing",
+  "pt": "levanta a verdade sobre vendas, preços, reembolsos e cobranças duplicadas com base em evidências, em vez de conselhos genéricos de pagamento."
+ },
+ "ecc:google-workspace-ops": {
+  "categoria": "Negócio e marketing",
+  "pt": "trabalha com Google Drive, Docs, Sheets e Slides como um fluxo só, para achar, resumir, editar, migrar e limpar planilhas, documentos e apresentações."
+ },
+ "ecc:inventory-demand-planning": {
+  "categoria": "Negócio e marketing",
+  "pt": "reúne técnicas de previsão de demanda, estoque de segurança, reposição e efeito de promoções para varejo com várias lojas; entra ao planejar compras e estoque."
+ },
+ "ecc:investor-materials": {
+  "categoria": "Negócio e marketing",
+  "pt": "cria e atualiza apresentações, resumos, memorandos e modelos financeiros para captar investimento, mantendo os números coerentes; entra ao preparar material para investidores."
+ },
+ "ecc:investor-outreach": {
+  "categoria": "Negócio e marketing",
+  "pt": "redige e-mails de primeiro contato, apresentações por indicação e acompanhamentos para investidores; entra ao buscar anjos, fundos ou aceleradoras."
+ },
+ "ecc:lead-intelligence": {
+  "categoria": "Negócio e marketing",
+  "pt": "encontra, qualifica e aborda contatos valiosos com IA, pontuando sinais e criando mensagens para e-mail, LinkedIn e X; entra para prospectar clientes."
+ },
+ "ecc:logistics-exception-management": {
+  "categoria": "Negócio e marketing",
+  "pt": "orienta o tratamento de problemas de frete, como atrasos, avarias, perdas e disputas com transportadoras, incluindo reclamações; entra ao lidar com entregas problemáticas."
+ },
+ "ecc:market-research": {
+  "categoria": "Negócio e marketing",
+  "pt": "faz pesquisa de mercado, análise de concorrentes e levantamentos do setor, citando as fontes e resumindo para decisão; entra ao medir mercado ou comparar concorrentes."
+ },
+ "ecc:marketing-campaign": {
+  "categoria": "Negócio e marketing",
+  "pt": "planeja e executa campanhas completas, de público e posicionamento a textos de página, e-mails, posts, anúncios e calendário; entra em lançamentos em vários canais."
+ },
+ "ecc:product-capability": {
+  "categoria": "Negócio e marketing",
+  "pt": "transforma pedidos de produto e planos em um plano de implementação claro, com limites e decisões em aberto, antes de começar trabalho em vários serviços."
+ },
+ "ecc:product-lens": {
+  "categoria": "Negócio e marketing",
+  "pt": "valida o motivo de construir antes de construir, com diagnóstico do produto, avaliação do fundador, jornada do usuário e priorização, ao decidir rumo ou lançamento."
+ },
+ "ecc:production-scheduling": {
+  "categoria": "Negócio e marketing",
+  "pt": "conhecimento para programar a produção em fábricas, com sequência de tarefas, linhas equilibradas, trocas e gargalos, usado ao agendar ou resolver imprevistos."
+ },
+ "ecc:quality-nonconformance": {
+  "categoria": "Negócio e marketing",
+  "pt": "controle de qualidade em indústria regulada, com tratamento de não conformidades, análise de causa raiz, ações corretivas e auditoria de fornecedores, usado ao investigar falhas."
+ },
+ "ecc:research-ops": {
+  "categoria": "Negócio e marketing",
+  "pt": "pesquisa baseada em evidências atuais e públicas, para fatos recentes, comparações e recomendações, usada quando se quer uma resposta fundamentada."
+ },
+ "ecc:returns-reverse-logistics": {
+  "categoria": "Negócio e marketing",
+  "pt": "conhecimento para devoluções de produtos, com inspeção, destino do item, reembolso, fraude e garantia, usado ao tratar devoluções e logística reversa."
+ },
+ "ecc:seo": {
+  "categoria": "Negócio e marketing",
+  "pt": "audita e melhora o SEO (aparecer melhor no Google): parte técnica, textos das páginas, dados estruturados, velocidade e estratégia de conteúdo. Entra quando se quer mais visibilidade na busca."
+ },
+ "ecc:social-graph-ranker": {
+  "categoria": "Negócio e marketing",
+  "pt": "ranqueia contatos no X e LinkedIn por peso para achar apresentações quentes, pontes entre pessoas e lacunas na rede. É o motor de cálculo, sem o fluxo de contato por cima."
+ },
+ "ecc:social-publisher": {
+  "categoria": "Negócio e marketing",
+  "pt": "agenda e publica posts em 13 redes (X, LinkedIn, Instagram, Facebook, TikTok, YouTube e outras) pelo SocialClaw, acompanhando campanhas, mídia e status de entrega."
+ },
+ "ecc:x-api": {
+  "categoria": "Negócio e marketing",
+  "pt": "integra com a API do X (Twitter) para publicar posts e threads, ler linhas do tempo, buscar e ver estatísticas, incluindo autenticação OAuth e limites. Entra quando se quer usar o X por programa."
+ },
+ "ecc:bengali-nlp": {
+  "categoria": "Dados e IA",
+  "pt": "Padrões para processar texto em bengali em aplicações de IA, como normalização de caracteres, separação de palavras e letras compostas."
+ },
+ "ecc:clickhouse-io": {
+  "categoria": "Dados e IA",
+  "pt": "Boas práticas para o ClickHouse, banco de dados feito para análises pesadas. Entra ao escrever consultas ou quando uma consulta está lenta."
+ },
+ "ecc:cost-aware-llm-pipeline": {
+  "categoria": "Dados e IA",
+  "pt": "Padrões para reduzir o gasto com modelos de IA: escolher o modelo pela dificuldade da tarefa, controlar orçamento, repetir com limite e reaproveitar prompts."
+ },
+ "ecc:cost-tracking": {
+  "categoria": "Dados e IA",
+  "pt": "Mostra o uso e o gasto do Claude Code em tokens (unidade de texto cobrada), por modelo, sessão e data, e confere orçamentos."
+ },
+ "ecc:dashboard-builder": {
+  "categoria": "Dados e IA",
+  "pt": "monta painéis de monitoramento no Grafana e similares que respondem perguntas reais de quem opera, em vez de painéis só para enfeite."
+ },
+ "ecc:data-scraper-agent": {
+  "categoria": "Dados e IA",
+  "pt": "cria um agente que coleta dados de qualquer fonte pública sozinho, em horário fixo, e guarda em planilha ou banco, de graça."
+ },
+ "ecc:data-throughput-accelerator": {
+  "categoria": "Dados e IA",
+  "pt": "acha o gargalo de movimentações grandes de dados e deixa o processo mais rápido, provando que nenhuma linha se perdeu."
+ },
+ "ecc:database-migrations": {
+  "categoria": "Dados e IA",
+  "pt": "padrões seguros e reversíveis para mudar a estrutura de um banco de dados, sem derrubar o sistema, com plano de volta atrás."
+ },
+ "ecc:deep-research": {
+  "categoria": "Dados e IA",
+  "pt": "faz pesquisa aprofundada em várias fontes da internet e entrega relatório com citações, útil em análise de concorrência, mercado ou empresa."
+ },
+ "ecc:exa-search": {
+  "categoria": "Dados e IA",
+  "pt": "busca neural na internet pelo Exa, para pesquisar sites, exemplos de código, informações de empresas e pessoas ou fazer pesquisa profunda."
+ },
+ "ecc:fal-ai-media": {
+  "categoria": "Dados e IA",
+  "pt": "gera imagens, vídeos e áudios com IA pelo fal.ai, quando o usuário quer criar mídia a partir de texto ou de uma imagem."
+ },
+ "ecc:ito-baskets": {
+  "categoria": "Dados e IA",
+  "pt": "consulta somente leitura de cestas e mercados de previsão da Itô, para comparar com pesquisas e montar resumos, sem recomendar nem executar operações; entra ao pesquisar essas cestas."
+ },
+ "ecc:ito-inference": {
+  "categoria": "Dados e IA",
+  "pt": "verifica se há serviço de modelos de IA num aluguel de GPU da Itô e, quando disponível, repassa um pedido confirmado; entra depois de reservar as máquinas."
+ },
+ "ecc:ito-training": {
+  "categoria": "Dados e IA",
+  "pt": "verifica se há treinamento de IA num aluguel de GPU da Itô e, quando disponível, repassa um pedido confirmado; entra depois de reservar as máquinas."
+ },
+ "ecc:ml-adoption-playbook": {
+  "categoria": "Dados e IA",
+  "pt": "método para incluir aprendizado de máquina (programa que aprende com dados) em um sistema que não tem, do enquadramento do problema ao modelo básico; entra nessa primeira adoção."
+ },
+ "ecc:mle-workflow": {
+  "categoria": "Dados e IA",
+  "pt": "fluxo profissional para sistemas de aprendizado de máquina, com treino repetível, avaliação, publicação, monitoramento e volta atrás; entra ao construir ou reforçar sistemas além de testes soltos."
+ },
+ "ecc:mysql-patterns": {
+  "categoria": "Dados e IA",
+  "pt": "padrões para bancos MySQL e MariaDB, com tabelas, consultas, índices, transações e réplicas; entra ao desenhar o banco ou resolver consulta lenta e réplica atrasada."
+ },
+ "ecc:nutrient-document-processing": {
+  "categoria": "Dados e IA",
+  "pt": "converte, lê por OCR (reconhecimento de texto), extrai, assina, preenche e oculta trechos de documentos como PDF, Word e Excel usando a API Nutrient DWS."
+ },
+ "ecc:postgres-patterns": {
+  "categoria": "Dados e IA",
+  "pt": "padrões para banco de dados PostgreSQL, com consultas rápidas, desenho de tabelas, índices e permissões, usados ao projetar o banco ou quando uma consulta está lenta."
+ },
+ "ecc:prediction-market-oracle-research": {
+  "categoria": "Dados e IA",
+  "pt": "pesquisa mercados de previsão como fonte de dados e sinal de probabilidade para produtos e painéis, sem conselho de investimento, ao avaliar essa fonte."
+ },
+ "ecc:prompt-caching-strategy": {
+  "categoria": "Dados e IA",
+  "pt": "analisa a estrutura dos prompts enviados a um modelo de IA e reorganiza para reaproveitar o cache, baixando custo e tempo de resposta."
+ },
+ "ecc:pytorch-patterns": {
+  "categoria": "Dados e IA",
+  "pt": "boas práticas do PyTorch para treinar modelos de inteligência artificial e carregar dados, usadas ao revisar o código ou quando um treino não se repete igual."
+ },
+ "ecc:recsys-pipeline-architect": {
+  "categoria": "Dados e IA",
+  "pt": "desenha sistemas que escolhem os melhores itens para cada pessoa, como feeds e rankings, em seis etapas, usado ao montar qualquer lista priorizada."
+ },
+ "ecc:redis-patterns": {
+  "categoria": "Dados e IA",
+  "pt": "padrões do Redis (memória rápida de dados) para cache, travas, limite de acessos e mensagens, usados ao adicionar esses recursos ou revisar chaves."
+ },
+ "ecc:regex-vs-llm-structured-text": {
+  "categoria": "Dados e IA",
+  "pt": "guia para ler textos estruturados como notas e formulários, usando regras simples primeiro e IA só nos casos difíceis, para gastar menos com boa precisão."
+ },
+ "ecc:scientific-db-pubmed-database": {
+  "categoria": "Dados e IA",
+  "pt": "busca direta no PubMed (base de artigos médicos) para literatura biomédica, usada quando a tarefa precisa desses artigos e não de uma busca comum na web."
+ },
+ "ecc:scientific-db-uspto-database": {
+  "categoria": "Dados e IA",
+  "pt": "consulta registros oficiais de patentes e marcas dos Estados Unidos no USPTO, com registro reproduzível, usada quando a tarefa pede dados oficiais de propriedade intelectual."
+ },
+ "ecc:scientific-pkg-gget": {
+  "categoria": "Dados e IA",
+  "pt": "usa a ferramenta gget para consultar rapidamente bancos de dados de genes e sequências e registrar as evidências. Entra em pesquisas de bioinformática (biologia com dados)."
+ },
+ "ecc:videodb": {
+  "categoria": "Dados e IA",
+  "pt": "envia, indexa, busca, edita e monitora vídeo e áudio com o SDK VideoDB: transcrição, clipes, legendas, dublagem e alertas em transmissões ao vivo. Entra em busca, corte ou monitoramento de vídeo."
+ },
+ "ecc:architecture-decision-records": {
+  "categoria": "Escrita e docs",
+  "pt": "Registra decisões técnicas importantes em arquivos numerados, com contexto, alternativas e consequências. Entra quando se escolhe entre ferramentas ou se diz \"registre essa decisão\"."
+ },
+ "ecc:article-writing": {
+  "categoria": "Escrita e docs",
+  "pt": "Escreve artigos, guias, posts de blog e newsletters longos, no tom de voz de exemplos ou da marca fornecidos."
+ },
+ "ecc:brand-voice": {
+  "categoria": "Escrita e docs",
+  "pt": "Cria um perfil do seu jeito de escrever a partir de textos reais e o reaproveita em conteúdo e mensagens, sem cara de texto genérico de IA."
+ },
+ "ecc:code-tour": {
+  "categoria": "Escrita e docs",
+  "pt": "Cria roteiros guiados passo a passo pelo código, com arquivos e linhas reais, para apresentar o projeto a alguém ou explicar como algo funciona."
+ },
+ "ecc:codebase-onboarding": {
+  "categoria": "Escrita e docs",
+  "pt": "Analisa um projeto desconhecido e gera um guia de entrada com mapa da estrutura, pontos principais, convenções e um CLAUDE.md inicial."
+ },
+ "ecc:context-and-decisions": {
+  "categoria": "Escrita e docs",
+  "pt": "mantém um CONTEXT.md curto com o significado dos termos do negócio e encaminha decisões difíceis de desfazer para o registro de decisões de arquitetura."
+ },
+ "ecc:docs-governance": {
+  "categoria": "Escrita e docs",
+  "pt": "direciona pedidos amplos sobre organização de documentação e faz uma auditoria só de leitura de links, índices e referências dos documentos."
+ },
+ "ecc:documentation-lookup": {
+  "categoria": "Escrita e docs",
+  "pt": "consulta a documentação atual de bibliotecas e frameworks via Context7, em vez de depender da memória do modelo, ao tirar dúvida de uso ou exemplo."
+ },
+ "ecc:frontend-slides": {
+  "categoria": "Escrita e docs",
+  "pt": "cria apresentações em HTML com animações, do zero ou convertendo um PowerPoint, ajudando quem não é designer a escolher o visual."
+ },
+ "ecc:growth-log": {
+  "categoria": "Escrita e docs",
+  "pt": "registra o que se aprendeu em um trabalho concluído como causa, regra reaproveitável e sinal de alerta, em vez de diário de eventos."
+ },
+ "ecc:living-docs-governance": {
+  "categoria": "Escrita e docs",
+  "pt": "evita que a documentação de um projeto longo fique desatualizada, dando papéis claros a cada documento e ligando o agente a eles; entra quando docs e código divergem."
+ },
+ "ecc:manim-video": {
+  "categoria": "Escrita e docs",
+  "pt": "cria vídeos explicativos animados com o Manim, para conceitos técnicos, gráficos e demonstrações de produto; entra quando se quer animação limpa em vez de roteiro de pessoa falando."
+ },
+ "ecc:master-agreement-generator": {
+  "categoria": "Escrita e docs",
+  "pt": "gera minutas de contratos-mestres a partir de um modelo e uma especificação, com cláusulas por papel das partes; entra quando se quer redação reproduzível, para revisão."
+ },
+ "ecc:scientific-thinking-literature-review": {
+  "categoria": "Escrita e docs",
+  "pt": "guia uma revisão de literatura: planejar a busca, selecionar fontes, resumir, conferir citações e registrar evidências. Entra quando é preciso reunir e citar estudos acadêmicos."
+ },
+ "ecc:ui-demo": {
+  "categoria": "Escrita e docs",
+  "pt": "grava vídeos de demonstração de aplicativos web com Playwright, com cursor visível e ritmo natural. Entra ao criar demonstração, passo a passo em vídeo ou tutorial de um sistema."
+ },
+ "ecc:visa-doc-translate": {
+  "categoria": "Escrita e docs",
+  "pt": "traduz para o inglês imagens de documentos de visto (extratos, comprovantes de emprego e renda) por leitura óptica e gera um PDF bilíngue. Entra em processos de visto ou imigração."
+ },
+ "ecc:agent-runtime-gateway-smoke-test": {
+  "categoria": "Infra e DevOps",
+  "pt": "Testa se uma API local de agente, um túnel temporário e a resposta de um ambiente remoto funcionam, e depois restaura a conexão original."
+ },
+ "ecc:automation-audit-ops": {
+  "categoria": "Infra e DevOps",
+  "pt": "Faz o inventário, com provas, das automações, conexões e rotinas existentes, mostrando o que está ativo, quebrado, repetido ou faltando antes de consertar."
+ },
+ "ecc:benchmark": {
+  "categoria": "Infra e DevOps",
+  "pt": "Mede a velocidade de páginas, APIs e builds (montagem do programa), compara antes e depois e acusa pioras. Entra quando algo \"está lento\"."
+ },
+ "ecc:canary-watch": {
+  "categoria": "Infra e DevOps",
+  "pt": "Monitora um endereço no ar depois de uma publicação, checando páginas, arquivos, erros e queda de desempenho após atualizações."
+ },
+ "ecc:cisco-ios-patterns": {
+  "categoria": "Infra e DevOps",
+  "pt": "Padrões para ler, escrever e revisar configuração de equipamentos de rede Cisco e planejar mudanças com segurança."
+ },
+ "ecc:deployment-patterns": {
+  "categoria": "Infra e DevOps",
+  "pt": "reúne práticas para publicar sistemas web: entrega automática (CI/CD), contêineres Docker, checagem de saúde, volta atrás e lista de prontidão antes do lançamento."
+ },
+ "ecc:docker-patterns": {
+  "categoria": "Infra e DevOps",
+  "pt": "padrões de Docker e Docker Compose (contêineres, que empacotam o app com tudo o que ele precisa) para desenvolvimento local, segurança, redes e vários serviços juntos."
+ },
+ "ecc:ecc-tools-cost-audit": {
+  "categoria": "Infra e DevOps",
+  "pt": "investiga gasto e cobrança fora do normal no repositório do ECC Tools, como pedidos duplicados, cota furada ou vazamento de modelo caro."
+ },
+ "ecc:enterprise-agent-ops": {
+  "categoria": "Infra e DevOps",
+  "pt": "controles para agentes de IA que ficam rodando o tempo todo: ligar e desligar, logs, permissões mínimas, botão de emergência e histórico de mudanças."
+ },
+ "ecc:flox-environments": {
+  "categoria": "Infra e DevOps",
+  "pt": "cria ambientes de desenvolvimento reproduzíveis no Mac e Linux com o Flox, para fixar versões de ferramentas e acabar com o \"na minha máquina funciona\"."
+ },
+ "ecc:generating-python-installer": {
+  "categoria": "Infra e DevOps",
+  "pt": "gera instaladores Windows pequenos e rápidos para aplicativos Python, com compilação otimizada e empacotamento Inno Setup, indo além de converter script em programa."
+ },
+ "ecc:github-ops": {
+  "categoria": "Infra e DevOps",
+  "pt": "opera repositórios do GitHub pela linha de comando: triagem de problemas, pull requests, checagens automáticas, versões publicadas e monitoramento de segurança."
+ },
+ "ecc:homelab-network-readiness": {
+  "categoria": "Infra e DevOps",
+  "pt": "lista de conferência antes de mudar a rede de casa, como separar redes (VLAN), filtrar DNS e acesso remoto por VPN; entra antes de mexer no roteador."
+ },
+ "ecc:homelab-network-setup": {
+  "categoria": "Infra e DevOps",
+  "pt": "ajuda a planejar e consertar a rede doméstica: roteador, switch, Wi-Fi, faixas de IP, DNS e cabos; entra ao montar ou corrigir uma rede."
+ },
+ "ecc:homelab-pihole-dns": {
+  "categoria": "Infra e DevOps",
+  "pt": "instala e configura o Pi-hole (bloqueador de anúncios na rede), listas de bloqueio, DNS seguro e resolve falhas de DNS; entra quando o Pi-hole é citado."
+ },
+ "ecc:homelab-vlan-segmentation": {
+  "categoria": "Infra e DevOps",
+  "pt": "divide a rede de casa em redes separadas (visitas, aparelhos inteligentes, servidores) em UniFi, pfSense/OPNsense ou MikroTik; entra ao separar a rede."
+ },
+ "ecc:homelab-wireguard-vpn": {
+  "categoria": "Infra e DevOps",
+  "pt": "monta o WireGuard (VPN, túnel seguro) para acessar a rede de casa de longe pelo celular ou notebook; entra ao configurar acesso remoto."
+ },
+ "ecc:ito-compute": {
+  "categoria": "Infra e DevOps",
+  "pt": "consulta estoque de GPUs (placas de vídeo para IA), pede cotação de preço fixo na Itô e acompanha o status; entra ao procurar ou alugar capacidade de GPU."
+ },
+ "ecc:kubernetes-patterns": {
+  "categoria": "Infra e DevOps",
+  "pt": "padrões do Kubernetes (orquestrador de servidores em contêineres), com permissões, escala automática e depuração; entra ao escrever, revisar ou consertar esses arquivos."
+ },
+ "ecc:latency-critical-systems": {
+  "categoria": "Infra e DevOps",
+  "pt": "otimiza e confere sistemas que precisam de resposta muito rápida, medindo tempos de resposta, atualidade dos dados e filas; entra quando velocidade importa."
+ },
+ "ecc:nasiko-control-plane": {
+  "categoria": "Infra e DevOps",
+  "pt": "gerencia o ciclo do programa Nasiko, com checagem de status, instalação consentida na versão qualificada e remoção segura; entra ao instalar, inspecionar ou remover."
+ },
+ "ecc:netmiko-ssh-automation": {
+  "categoria": "Infra e DevOps",
+  "pt": "padrões seguros em Python para acessar equipamentos de rede por SSH (acesso remoto), coletar dados e aplicar mudanças com cuidado, quando se automatiza esse acesso."
+ },
+ "ecc:network-bgp-diagnostics": {
+  "categoria": "Infra e DevOps",
+  "pt": "roteiro só de diagnóstico para problemas de BGP (troca de rotas entre redes), usado quando um vizinho cai, rotas somem ou é preciso inspecionar o caminho."
+ },
+ "ecc:network-config-validation": {
+  "categoria": "Infra e DevOps",
+  "pt": "confere a configuração de roteadores e switches antes de colocar no ar, procurando comandos perigosos, endereços repetidos e riscos de segurança."
+ },
+ "ecc:network-interface-health": {
+  "categoria": "Infra e DevOps",
+  "pt": "diagnostica erros, perdas e quedas em conexões de rede de roteadores, switches e servidores Linux, quando uma interface falha ou oscila."
+ },
+ "ecc:terminal-opener": {
+  "categoria": "Infra e DevOps",
+  "pt": "abre um programa de linha de comando em uma janela de terminal visível, com plano de execução seguro e alternativas. Entra para abrir sessão interativa, SSH ou processo local."
+ },
+ "ecc:terminal-ops": {
+  "categoria": "Infra e DevOps",
+  "pt": "executa comandos e confere repositórios com provas do que foi rodado e verificado. Entra quando se quer um comando executado, uma falha de CI (testes automáticos) investigada ou uma correção pequena enviada."
+ },
+ "ecc:uncloud": {
+  "categoria": "Infra e DevOps",
+  "pt": "gerencia um cluster Uncloud (grupo de servidores) com a ferramenta uc: publica serviços, configura entrada com Caddy, abre portas, escala, vê logs e cuida de máquinas e volumes."
+ },
+ "ecc:unified-notifications-ops": {
+  "categoria": "Infra e DevOps",
+  "pt": "trata notificações do GitHub, Linear, alertas de tela e hooks como um fluxo só. Entra quando o problema é direcionar alertas, evitar repetidos, escalar ou reduzir a caixa de entrada."
+ },
+ "ecc:accessibility": {
+  "categoria": "Código",
+  "pt": "Ajuda a criar e revisar telas do site e do app que pessoas com deficiência consigam usar, seguindo o padrão WCAG 2.2 AA."
+ },
+ "ecc:android-clean-architecture": {
+  "categoria": "Código",
+  "pt": "Padrões para organizar apps Android e Kotlin Multiplatform em camadas e módulos separados. Entra ao estruturar esse tipo de app."
+ },
+ "ecc:angular-developer": {
+  "categoria": "Código",
+  "pt": "Gera código Angular (framework de sites da Google) e dá orientação de boas práticas ao criar projetos, telas, formulários, rotas e testes."
+ },
+ "ecc:api-connector-builder": {
+  "categoria": "Código",
+  "pt": "Cria uma nova integração com um serviço externo (API) copiando exatamente o padrão que o projeto já usa nas outras integrações."
+ },
+ "ecc:api-design": {
+  "categoria": "Código",
+  "pt": "Boas práticas para desenhar a API (porta de comunicação entre sistemas) REST: nomes, códigos de resposta, paginação, versões e limite de uso."
+ },
+ "ecc:backend-patterns": {
+  "categoria": "Código",
+  "pt": "Boas práticas para a parte do servidor de sistemas feitos com Node.js, Express e Next.js: rotas de API e acesso a dados."
+ },
+ "ecc:benchmark-optimization-loop": {
+  "categoria": "Código",
+  "pt": "Transforma o pedido \"deixe mais rápido\" em ciclo medido: mede o ponto de partida, testa uma variação por vez e adota a mais rápida e segura."
+ },
+ "ecc:bun-runtime": {
+  "categoria": "Código",
+  "pt": "Explica o Bun, alternativa ao Node para rodar, empacotar e testar programas JavaScript, e quando escolher um ou outro."
+ },
+ "ecc:coding-standards": {
+  "categoria": "Código",
+  "pt": "Regras básicas de nomes, legibilidade e qualidade de código para qualquer projeto, quando não há habilidade específica para a tecnologia usada."
+ },
+ "ecc:compose-multiplatform-patterns": {
+  "categoria": "Código",
+  "pt": "Padrões para criar telas, navegação e temas com Compose (kit de interfaces do Android) em projetos que servem vários sistemas."
+ },
+ "ecc:content-hash-cache-pattern": {
+  "categoria": "Código",
+  "pt": "Guarda resultados de processamento pesado de arquivos usando a impressão digital do conteúdo, refazendo só quando o arquivo muda."
+ },
+ "ecc:contract-first": {
+  "categoria": "Código",
+  "pt": "Faz telas e servidores seguirem um único contrato escrito (OpenAPI, JSON Schema) para evitar campos diferentes entre as duas partes."
+ },
+ "ecc:conventional-commit-review": {
+  "categoria": "Código",
+  "pt": "Revisa as mudanças prontas para salvar e redige a mensagem do commit (registro da alteração) no padrão Conventional Commits."
+ },
+ "ecc:cpp-coding-standards": {
+  "categoria": "Código",
+  "pt": "aplica boas práticas modernas e seguras da linguagem C++ ao escrever, revisar ou reformular código nessa linguagem."
+ },
+ "ecc:dart-flutter-patterns": {
+  "categoria": "Código",
+  "pt": "padrões prontos para programar em Dart e Flutter (criação de apps de celular), incluindo estado, telas, navegação, rede e testes."
+ },
+ "ecc:design-system": {
+  "categoria": "Código",
+  "pt": "extrai cores, fontes e espaçamentos de um código existente, ou audita a consistência visual do app, antes de um redesenho ou na revisão de estilo."
+ },
+ "ecc:django-celery": {
+  "categoria": "Código",
+  "pt": "padrões para tarefas em segundo plano e agendadas em apps Django (framework Python), com repetição em caso de falha, monitoramento e testes."
+ },
+ "ecc:django-patterns": {
+  "categoria": "Código",
+  "pt": "padrões de arquitetura para apps Django (framework Python), APIs, consultas ao banco e cache, ao construir ou revisar esse tipo de sistema."
+ },
+ "ecc:dotnet-patterns": {
+  "categoria": "Código",
+  "pt": "padrões e convenções de C# e .NET, como injeção de dependência e código assíncrono, ao escrever ou revisar aplicações nessa tecnologia."
+ },
+ "ecc:error-handling": {
+  "categoria": "Código",
+  "pt": "padrões para tratar erros em TypeScript, Python e Go, com tentativas repetidas, proteção contra falha em cadeia e mensagens claras ao usuário."
+ },
+ "ecc:evm-token-decimals": {
+  "categoria": "Código",
+  "pt": "evita erros silenciosos de casas decimais em valores de moedas digitais em redes EVM (tipo Ethereum), quando um saldo ou preço aparece errado por ordens de grandeza."
+ },
+ "ecc:fastapi-patterns": {
+  "categoria": "Código",
+  "pt": "boas práticas para criar ou revisar APIs em FastAPI (framework Python), incluindo estrutura, validação de dados, login, permissões e testes."
+ },
+ "ecc:foundation-models-on-device": {
+  "categoria": "Código",
+  "pt": "usa o recurso de IA da Apple que roda dentro do iPhone (iOS 26 ou mais novo) para gerar texto e chamar ferramentas, sem enviar dados para a nuvem."
+ },
+ "ecc:frontend-a11y": {
+  "categoria": "Código",
+  "pt": "padrões de acessibilidade em React e Next.js, como formulários, menus e navegação por teclado, para o site funcionar com leitor de tela."
+ },
+ "ecc:frontend-design-direction": {
+  "categoria": "Código",
+  "pt": "define uma direção de design para telas de produção, ao criar ou melhorar sites, painéis, aplicativos e páginas, com mais critério visual próprio do produto."
+ },
+ "ecc:frontend-patterns": {
+  "categoria": "Código",
+  "pt": "padrões de desenvolvimento de interface em React e Next.js, incluindo estado e desempenho, ao construir ou revisar componentes de tela."
+ },
+ "ecc:git-workflow": {
+  "categoria": "Código",
+  "pt": "práticas de Git: escolher estratégia de ramos, padronizar mensagens de commit, limpar o histórico, decidir entre merge e rebase e resolver conflitos."
+ },
+ "ecc:golang-patterns": {
+  "categoria": "Código",
+  "pt": "padrões e convenções idiomáticas da linguagem Go, usados ao escrever ou revisar código em que a estrutura correta está em dúvida."
+ },
+ "ecc:healthcare-cdss-patterns": {
+  "categoria": "Código",
+  "pt": "padrões para sistemas de apoio à decisão clínica, como interação entre remédios, validação de doses, escores clínicos e níveis de alerta."
+ },
+ "ecc:healthcare-emr-patterns": {
+  "categoria": "Código",
+  "pt": "padrões para prontuário eletrônico de saúde, com segurança clínica, atendimentos, receitas e telas acessíveis de entrada de dados médicos."
+ },
+ "ecc:hexagonal-architecture": {
+  "categoria": "Código",
+  "pt": "organiza sistemas separando a regra do negócio das conexões externas (banco, APIs), facilitando testes; entra ao criar ou reorganizar um serviço que ficou misturado."
+ },
+ "ecc:i18n-sync": {
+  "categoria": "Código",
+  "pt": "traduz e mantém sincronizados os arquivos de idiomas de um aplicativo, usando a terminologia do projeto; entra ao adicionar textos ou idiomas, ou revisar traduções faltando."
+ },
+ "ecc:inherit-legacy-style": {
+  "categoria": "Código",
+  "pt": "lê um projeto antigo, descobre as convenções não escritas e grava um arquivo de regras para a IA não fugir do estilo; entra ao colocar a IA em código legado."
+ },
+ "ecc:intent-driven-development": {
+  "categoria": "Código",
+  "pt": "transforma pedidos vagos ou de alto impacto em critérios claros e verificáveis antes de programar; entra para esclarecer funcionalidades ou mudanças arriscadas, não em ajustes simples."
+ },
+ "ecc:ios-icon-gen": {
+  "categoria": "Código",
+  "pt": "gera ícones de app de iPhone em PNG para o Xcode, a partir de bibliotecas de ícones gratuitas e da Apple; entra ao criar ou procurar ícones de app iOS."
+ },
+ "ecc:java-coding-standards": {
+  "categoria": "Código",
+  "pt": "padrões de escrita de código Java para serviços Spring Boot e Quarkus, como nomes, tratamento de erros e organização do projeto; entra ao escrever ou revisar Java."
+ },
+ "ecc:jpa-patterns": {
+  "categoria": "Código",
+  "pt": "boas práticas de JPA/Hibernate (ligação de programas Java com banco de dados) em Spring Boot, incluindo consultas lentas e transações; entra ao modelar tabelas ou corrigir desempenho."
+ },
+ "ecc:kotlin-coroutines-flows": {
+  "categoria": "Código",
+  "pt": "padrões de coroutines e Flow (tarefas simultâneas e fluxos de dados) em Kotlin para Android; entra ao escrever esse código ou depurar cancelamentos."
+ },
+ "ecc:kotlin-exposed-patterns": {
+  "categoria": "Código",
+  "pt": "padrões do Exposed, biblioteca Kotlin para acessar banco de dados, com consultas, transações e migrações; entra ao trabalhar com ela."
+ },
+ "ecc:kotlin-ktor-patterns": {
+  "categoria": "Código",
+  "pt": "padrões do Ktor, ferramenta Kotlin para criar servidores web, com rotas, login, serialização e testes; entra ao construir um servidor com ela."
+ },
+ "ecc:kotlin-patterns": {
+  "categoria": "Código",
+  "pt": "boas práticas e estilo idiomático da linguagem Kotlin, incluindo segurança contra valores nulos; entra ao escrever ou revisar código Kotlin."
+ },
+ "ecc:laravel-patterns": {
+  "categoria": "Código",
+  "pt": "padrões de arquitetura do Laravel (estrutura para sites em PHP), com rotas, banco, filas e APIs; entra ao construir ou revisar aplicações Laravel."
+ },
+ "ecc:laravel-plugin-discovery": {
+  "categoria": "Código",
+  "pt": "encontra e avalia pacotes do Laravel pelo LaraPlugins.io, checando saúde e compatibilidade; entra quando se procura um plugin ou se avalia um pacote PHP."
+ },
+ "ecc:liquid-glass-design": {
+  "categoria": "Código",
+  "pt": "sistema visual Liquid Glass do iOS 26, com efeito de vidro, desfoque e animações em SwiftUI, UIKit e WidgetKit; entra ao criar telas de iPhone nesse estilo."
+ },
+ "ecc:mailtrap-email-integration": {
+  "categoria": "Código",
+  "pt": "ensina a enviar e-mails automáticos pelo Mailtrap, com ambiente de teste, verificação de domínio e autenticação; entra ao implementar envio ou depurar entregas."
+ },
+ "ecc:make-interfaces-feel-better": {
+  "categoria": "Código",
+  "pt": "aplica detalhes de design que deixam telas mais bem acabadas, como espaçamento, texto, sombras, animações e áreas de toque; entra ao revisar ou melhorar uma interface."
+ },
+ "ecc:mcp-server-patterns": {
+  "categoria": "Código",
+  "pt": "ensina a construir servidores MCP (conexões de ferramentas para IA) em Node e TypeScript, com ferramentas, validação e transporte; entra ao criar ou depurar um."
+ },
+ "ecc:motion-advanced": {
+  "categoria": "Código",
+  "pt": "padrões avançados de animação em React e Next.js, como arrastar e soltar, gestos, textos animados e desenho de traços; entra ao construir esses efeitos."
+ },
+ "ecc:motion-foundations": {
+  "categoria": "Código",
+  "pt": "base das animações em React e Next.js, com padrões de movimento, desempenho, acessibilidade e segurança no servidor; entra ao configurar animações, e as outras dependem dela."
+ },
+ "ecc:motion-patterns": {
+  "categoria": "Código",
+  "pt": "animações prontas para React e Next.js em botões, janelas, avisos, listas, trocas de página e rolagem; entra ao animar um elemento específico."
+ },
+ "ecc:mybatis-patterns": {
+  "categoria": "Código",
+  "pt": "padrões do MyBatis (ligação de Java com banco de dados) para consultas SQL, mapeamento, transações e desempenho; entra ao construir ou revisar essa camada em Java."
+ },
+ "ecc:nestjs-patterns": {
+  "categoria": "Código",
+  "pt": "padrões de arquitetura do NestJS (estrutura de servidores em TypeScript), com módulos, validação, guardas e configuração; entra ao construir ou revisar um back-end nele."
+ },
+ "ecc:nextjs-turbopack": {
+  "categoria": "Código",
+  "pt": "orientações para Next.js 16 ou superior (ferramenta para criar sites) e o Turbopack (empacotador rápido), usadas ao desenvolver, depurar ou diagnosticar início lento."
+ },
+ "ecc:nodejs-keccak256": {
+  "categoria": "Código",
+  "pt": "evita erro de cálculo de hash (código de verificação) do Ethereum em JavaScript, entrando quando um endereço, assinatura ou seletor sai errado."
+ },
+ "ecc:nuxt4-patterns": {
+  "categoria": "Código",
+  "pt": "padrões para criar e revisar apps em Nuxt 4 (ferramenta para sites), cuidando de desempenho e busca de dados, e para corrigir erros de exibição."
+ },
+ "ecc:opensource-pipeline": {
+  "categoria": "Código",
+  "pt": "prepara um projeto privado para publicação aberta, copiando, retirando segredos e empacotando, quando ele precisa se tornar público com segurança."
+ },
+ "ecc:perl-patterns": {
+  "categoria": "Código",
+  "pt": "boas práticas e estilo moderno da linguagem Perl 5.36 ou superior, usadas ao escrever ou revisar código nessa linguagem."
+ },
+ "ecc:prisma-patterns": {
+  "categoria": "Código",
+  "pt": "padrões do Prisma (ferramenta que conecta o código ao banco) para TypeScript, com armadilhas conhecidas, usados ao escrever consultas ou depurar migrações e conexões."
+ },
+ "ecc:python-patterns": {
+  "categoria": "Código",
+  "pt": "boas práticas e estilo da linguagem Python, com tipagem e padrão PEP 8, usadas ao escrever ou revisar código Python."
+ },
+ "ecc:quarkus-patterns": {
+  "categoria": "Código",
+  "pt": "padrões de arquitetura para serviços em Quarkus (estrutura Java), com mensagens, API e acesso a dados, usados ao criar ou revisar esse tipo de serviço."
+ },
+ "ecc:rails-patterns": {
+  "categoria": "Código",
+  "pt": "padrões do Ruby on Rails (estrutura para sites em Ruby), cobrindo organização, banco de dados, tarefas em segundo plano e telas, usados ao criar ou revisar apps."
+ },
+ "ecc:react-native-patterns": {
+  "categoria": "Código",
+  "pt": "padrões para apps de celular em React Native e Expo, com navegação, dados, listas rápidas e armazenamento seguro, usados ao criar ou editar telas."
+ },
+ "ecc:react-patterns": {
+  "categoria": "Código",
+  "pt": "padrões do React 18 e 19 (biblioteca para telas web), com estado, carregamento de dados e acessibilidade, usados ao escrever ou revisar componentes."
+ },
+ "ecc:react-performance": {
+  "categoria": "Código",
+  "pt": "regras de desempenho para React e Next.js, vindas da Vercel, para deixar páginas mais rápidas e leves, usadas ao escrever, revisar ou melhorar esse código."
+ },
+ "ecc:remotion-video-creation": {
+  "categoria": "Código",
+  "pt": "boas práticas do Remotion para criar vídeos com código em React, incluindo animações, áudio, legendas e gráficos, usadas ao montar vídeo assim."
+ },
+ "ecc:repo-scan": {
+  "categoria": "Código",
+  "pt": "ponteiro que instala a habilidade externa repo-scan, de auditoria de código, a partir de uma versão fixa; ele mesmo não faz a auditoria."
+ },
+ "ecc:rust-patterns": {
+  "categoria": "Código",
+  "pt": "padrões da linguagem Rust, com posse de memória, tratamento de erros e execução simultânea, usados ao escrever ou revisar código Rust."
+ },
+ "ecc:search-first": {
+  "categoria": "Código",
+  "pt": "manda pesquisar ferramentas prontas (npm, PyPI, GitHub, servidores MCP) antes de programar algo do zero, e decide entre usar, adaptar ou construir. Entra ao iniciar funcionalidade ou integração."
+ },
+ "ecc:skill-host-compat": {
+  "categoria": "Código",
+  "pt": "confere se as habilidades do ECC estão escritas de forma compatível com Codex e Cursor, outras ferramentas de IA, antes de enviar uma alteração. Entra antes de um pull request (proposta de mudança)."
+ },
+ "ecc:springboot-patterns": {
+  "categoria": "Código",
+  "pt": "padrões para sistemas em Java Spring Boot: API REST, camadas de serviço, acesso a dados, cache, tarefas em segundo plano e registro de logs. Entra ao criar ou revisar esse tipo de servidor."
+ },
+ "ecc:swift-actor-persistence": {
+  "categoria": "Código",
+  "pt": "guarda dados em Swift (linguagem de apps iPhone) com actors, combinando cache em memória e arquivo, de modo que acessos simultâneos não corrompam os dados. Entra ao projetar essa persistência."
+ },
+ "ecc:swift-concurrency-6-2": {
+  "categoria": "Código",
+  "pt": "explica a concorrência do Swift 6.2 (fazer várias coisas ao mesmo tempo no app): execução única por padrão e @concurrent para segundo plano. Entra ao adotar essa versão."
+ },
+ "ecc:swiftui-patterns": {
+  "categoria": "Código",
+  "pt": "padrões do SwiftUI para telas de iPhone e Mac: organização, estado com @Observable, composição de telas, navegação e desempenho. Entra ao criar ou revisar telas."
+ },
+ "ecc:tinystruct-patterns": {
+  "categoria": "Código",
+  "pt": "orienta o desenvolvimento com o framework Java tinystruct: classes de aplicação, rotas, testes, servidor HTTP, eventos, JSON, banco de dados e envio de arquivos. Entra em projetos feitos nele."
+ },
+ "ecc:ui-to-vue": {
+  "categoria": "Código",
+  "pt": "converte em lote capturas de tela ou desenhos de telas em componentes Vue 3, com bibliotecas como Vant, Element Plus ou Ant Design Vue. Entra quando há imagens de interface para transformar em código."
+ },
+ "ecc:vite-patterns": {
+  "categoria": "Código",
+  "pt": "padrões da ferramenta de build Vite (que prepara o site para publicar): configuração, plugins, variáveis de ambiente, proxy, SSR e otimização. Entra ao mexer em projetos Vite."
+ },
+ "ecc:vue-patterns": {
+  "categoria": "Código",
+  "pt": "padrões de Vue 3, Nuxt e Pinia (criação de telas web): API de composição, organização de componentes, reatividade, estado e rotas. Entra ao construir ou revisar esse código."
+ },
+ "ecc:blender-motion-state-inspection": {
+  "categoria": "Outro",
+  "pt": "Inspeciona personagens, esqueletos e animações no Blender (programa de 3D), conferindo pose, contato com o chão e direção, quando só captura de tela não basta."
+ },
+ "ecc:osint-investigation": {
+  "categoria": "Outro",
+  "pt": "método de investigação com fontes públicas a partir de poucas pistas, ligando evidências soltas, usado em desafios, geolocalização de imagens e verificação de contas."
+ },
+ "ecc:taste-application": {
+  "categoria": "Outro",
+  "pt": "gera vídeo novo seguindo um estilo já capturado e monta o corte final: planeja cenas, gera clipes, aplica cor, cadência e verifica o resultado. Entra para fazer vídeo naquele estilo."
+ },
+ "ecc:taste-distillation": {
+  "categoria": "Outro",
+  "pt": "mede vídeos de referência e cria um pacote de estilo reutilizável com cor, ritmo de cortes, imagens e texto-guia. Entra para capturar o visual de um material e repeti-lo."
+ },
+ "ecc:taste": {
+  "categoria": "Outro",
+  "pt": "camada de direção criativa para clipes musicais e vídeos curtos de estética angelcore e hyperpop, com vocabulário visual e edição no ritmo da música. Entra quando o vídeo precisa de intenção."
+ },
+ "ecc:tasteforge-video": {
+  "categoria": "Outro",
+  "pt": "planeja offline imagens, vídeos e modelos 3D a partir de arquivos, com entrevistas de gosto, validação de estilo e exportação editável, e para antes de gerar se algo falhar."
+ },
+ "ecc:token-card": {
+  "categoria": "Outro",
+  "pt": "gera um cartão com o consumo de tokens (unidade de custo do texto) lido dos registros locais de Claude Code, Codex, Gemini CLI e OpenCode, salvo no repositório. Entra para exibir o uso em um README."
+ },
+ "ecc:video-editing": {
+  "categoria": "Outro",
+  "pt": "fluxos de edição de vídeo com IA para cortar, estruturar e melhorar filmagens reais, usando FFmpeg, Remotion, ElevenLabs, fal.ai e acabamento no Descript ou CapCut. Entra ao editar vídeo ou fazer vlog."
+ },
+ "superpowers:using-superpowers": {
+  "categoria": "Agentes e fluxo",
+  "pt": "a porta de entrada. Antes de responder qualquer coisa, eu confiro se existe uma habilidade para o pedido e a uso. Vale até para pergunta de esclarecimento."
+ },
+ "superpowers:brainstorming": {
+  "categoria": "Agentes e fluxo",
+  "pt": "antes de criar algo novo (função do app, automação, campanha, até uma reforma), eu levanto o problema com você, proponho caminhos e só então desenho a solução. Evita construir a coisa errada."
+ },
+ "superpowers:writing-plans": {
+  "categoria": "Agentes e fluxo",
+  "pt": "com o pedido claro, escrevo um plano em etapas pequenas, cada uma com o que fazer e como conferir. Serve de contrato antes de tocar no código."
+ },
+ "superpowers:executing-plans": {
+  "categoria": "Agentes e fluxo",
+  "pt": "como seguir esse plano eu mesma, etapa por etapa, sem pular a conferência de cada uma."
+ },
+ "superpowers:subagent-driven-development": {
+  "categoria": "Agentes e fluxo",
+  "pt": "executar o plano distribuindo as etapas independentes para ajudantes, cada um com instrução fechada, e revisar o que volta."
+ },
+ "superpowers:dispatching-parallel-agents": {
+  "categoria": "Agentes e fluxo",
+  "pt": "quando há duas ou mais tarefas sem dependência entre si, disparo em paralelo em vez de fazer em fila. Ganha tempo."
+ },
+ "superpowers:test-driven-development": {
+  "categoria": "Agentes e fluxo",
+  "pt": "escrever primeiro o teste que prova o comportamento, ver ele falhar, depois escrever o código que faz passar. É a trava contra \"funciona na minha cabeça\"."
+ },
+ "superpowers:systematic-debugging": {
+  "categoria": "Agentes e fluxo",
+  "pt": "diante de um defeito, não chutar correção. Reproduzir, isolar a causa, provar a hipótese e só então consertar. Casa com a sua ordem de consertar a Lis antes de fazer na mão."
+ },
+ "superpowers:verification-before-completion": {
+  "categoria": "Agentes e fluxo",
+  "pt": "antes de dizer \"pronto\", \"corrigido\" ou \"passou\", rodar a conferência e mostrar a saída. Evidência antes da afirmação. É a sua regra de 09/10 escrita como habilidade."
+ },
+ "superpowers:requesting-code-review": {
+  "categoria": "Agentes e fluxo",
+  "pt": "ao fechar uma tarefa, pedir uma revisão independente do que foi feito, com o que conferir."
+ },
+ "superpowers:receiving-code-review": {
+  "categoria": "Agentes e fluxo",
+  "pt": "ao receber crítica, verificar tecnicamente antes de aceitar ou rejeitar. Nem concordar por educação nem aplicar às cegas."
+ },
+ "superpowers:using-git-worktrees": {
+  "categoria": "Agentes e fluxo",
+  "pt": "trabalhar em uma cópia isolada do repositório quando a mudança é grande, para não bagunçar o que está funcionando."
+ },
+ "superpowers:finishing-a-development-branch": {
+  "categoria": "Agentes e fluxo",
+  "pt": "com tudo pronto e testado, decidir como integrar: juntar ao principal, abrir PR ou descartar."
+ },
+ "superpowers:writing-skills": {
+  "categoria": "Agentes e fluxo",
+  "pt": "como escrever e testar uma habilidade nova. Útil para eu transformar o que aprendo com você (conciliação, SGL) em roteiro."
+ },
+ "superpowers:diagnosing-superpowers": {
+  "categoria": "Agentes e fluxo",
+  "pt": "quando uma sessão deu errado (demorou, gastou demais, ignorou o plano), investigar o porquê e montar o relato."
+ },
+ "humanizer:humanizer": {
+  "categoria": "Escrita e docs",
+  "pt": "Reescreve texto com cara de IA para soar como gente, sem mudar o conteúdo. Vinte e seis padrões: encenar em vez de afirmar, trio forçado, travessão, negrito de enfeite, sobras do chat."
+ }
+}
