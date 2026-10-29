@@ -3,91 +3,91 @@
   "nome": "anthropic-skills:built-in-browser",
   "pacote": "claude-code",
   "categoria": "Outro",
-  "pt": "Read this skill before the first step that uses the built-in browser, the browser pane inside the Claude desktop app (also called the in-app browser, the browser pane, Claude's browser, or \\\"your own browser\\\"), whose tools are named mcp__Claude_Browser__* when the session runs in the desktop app and mcp__remote-devices__Claude_Browser__* when a cloud session is linked to the person's computer; before those tools are turned on there may be a single enable__mcp__remote-devices__Claude_Browser tool instead. It covers the pane's persistent sign-ins, tabs and preview_start, reading pages as text, site approvals, what the pane cannot open, and what to do when it cannot be reached. It is not for Claude in Chrome (mcp__claude-in-chrome__* tools), which has its own skill, and it does not decide which browser to use.",
+  "pt": "guia de uso do navegador embutido no app Claude desktop, com logins salvos, abas e leitura de páginas; entra antes de usar esse navegador.",
   "en": "Read this skill before the first step that uses the built-in browser, the browser pane inside the Claude desktop app (also called the in-app browser, the browser pane, Claude's browser, or \\\"your own browser\\\"), whose tools are named mcp__Claude_Browser__* when the session runs in the desktop app and mcp__remote-devices__Claude_Browser__* when a cloud session is linked to the person's computer; before those tools are turned on there may be a single enable__mcp__remote-devices__Claude_Browser tool instead. It covers the pane's persistent sign-ins, tabs and preview_start, reading pages as text, site approvals, what the pane cannot open, and what to do when it cannot be reached. It is not for Claude in Chrome (mcp__claude-in-chrome__* tools), which has its own skill, and it does not decide which browser to use."
  },
  {
   "nome": "anthropic-skills:chrome-browser",
   "pacote": "claude-code",
   "categoria": "Outro",
-  "pt": "Read this skill before the first step that uses Claude in Chrome, the browser extension whose tools are named mcp__claude-in-chrome__* (also called Chrome, the browser extension, or the external browser) and which acts in the person's real Chrome with their own sign-ins; before those tools are turned on there may be a single enable__mcp__claude-in-chrome tool instead. It covers loading the tools in one ToolSearch call, checking the person's open tabs and working in a new tab, site permissions, GIF recordings, console logs, dialogs to avoid, and when to stop and ask. It is not for the built-in browser (mcp__Claude_Browser__* or mcp__remote-devices__Claude_Browser__* tools), which has its own skill, and it does not decide which browser to use.",
+  "pt": "guia para controlar o seu Chrome real pela extensão, com permissões de sites e abas novas; entra antes de qualquer passo que use o Chrome.",
   "en": "Read this skill before the first step that uses Claude in Chrome, the browser extension whose tools are named mcp__claude-in-chrome__* (also called Chrome, the browser extension, or the external browser) and which acts in the person's real Chrome with their own sign-ins; before those tools are turned on there may be a single enable__mcp__claude-in-chrome tool instead. It covers loading the tools in one ToolSearch call, checking the person's open tabs and working in a new tab, site permissions, GIF recordings, console logs, dialogs to avoid, and when to stop and ask. It is not for the built-in browser (mcp__Claude_Browser__* or mcp__remote-devices__Claude_Browser__* tools), which has its own skill, and it does not decide which browser to use."
  },
  {
   "nome": "anthropic-skills:computer-use",
   "pacote": "claude-code",
   "categoria": "Outro",
-  "pt": "Read this skill before the first step of any request to do something in an app on the person's own computer (Notes, Finder, System Settings, any desktop app), to look at their screen, or for \\\"computer use\\\". Computer use (desktop control) lets Claude take screenshots of the person's desktop and control it with clicks, typing and scrolling through the Claude desktop app; its tools are named mcp__computer-use__* when the session runs in the desktop app and mcp__remote-devices__computer_* when a cloud session is linked to the person's computer; before computer use is turned on for a conversation there may be no such tools, only an enable__mcp__remote-devices__computer tool, which turns it on. It covers turning it on, picking the right tool, the access flow, and the safety rules for tiered apps, links and financial actions. It is not for websites, which go through Claude in Chrome or the built-in browser and their own skills.",
+  "pt": "guia para o Claude controlar apps do seu computador por capturas de tela, cliques e digitação; entra quando o pedido envolve um app local ou a sua tela.",
   "en": "Read this skill before the first step of any request to do something in an app on the person's own computer (Notes, Finder, System Settings, any desktop app), to look at their screen, or for \\\"computer use\\\". Computer use (desktop control) lets Claude take screenshots of the person's desktop and control it with clicks, typing and scrolling through the Claude desktop app; its tools are named mcp__computer-use__* when the session runs in the desktop app and mcp__remote-devices__computer_* when a cloud session is linked to the person's computer; before computer use is turned on for a conversation there may be no such tools, only an enable__mcp__remote-devices__computer tool, which turns it on. It covers turning it on, picking the right tool, the access flow, and the safety rules for tiered apps, links and financial actions. It is not for websites, which go through Claude in Chrome or the built-in browser and their own skills."
  },
  {
   "nome": "anthropic-skills:deep-research",
   "pacote": "claude-code",
-  "categoria": "Outro",
-  "pt": "Use this skill when the user's prompt requires (1) researching a topic across multiple sources, comparing options or alternatives, analyzing trends or history, understanding markets or industries, or reviewing literature or studies and (2) synthesizing that research into a comprehensive, narrative report. If you're planning to search the web or internal knowledge bases, consider using this skill. This skill coordinates research subagents, so use it only when you have a tool for spawning subagents (the Agent or Task tool); otherwise, research the question directly.",
+  "categoria": "Escrita e docs",
+  "pt": "pesquisa um tema em várias fontes, compara opções e junta tudo num relatório completo; entra quando o pedido exige pesquisa ampla com síntese.",
   "en": "Use this skill when the user's prompt requires (1) researching a topic across multiple sources, comparing options or alternatives, analyzing trends or history, understanding markets or industries, or reviewing literature or studies and (2) synthesizing that research into a comprehensive, narrative report. If you're planning to search the web or internal knowledge bases, consider using this skill. This skill coordinates research subagents, so use it only when you have a tool for spawning subagents (the Agent or Task tool); otherwise, research the question directly."
  },
  {
   "nome": "anthropic-skills:docs",
   "pacote": "claude-code",
-  "categoria": "Outro",
-  "pt": "docs (editable docs people share and comment on; the default for any document, named as a doc or not: a document, report, proposal, resume, cover letter, letter, contract, policy, form, template, worksheet, essay, handbook, guide, how-to, cheat sheet, SOP or other writing to keep, share, collaborate on, send, submit, print or sign; a doc exports to Word, PDF, Markdown or Google Docs, so needing a file to send, attach, upload, submit or print is no reason to pick Word, and a file nobody asked for is a doc, not Word; a plan, comparison, summary or notes asked in chat stays in chat; a pasted claude.ai artifact link may be a doc: check with docs tools first; Word or another file format named, tracked changes wanted, or a .docx to change or use as a template → that format''s skill): making one → if no docs-connector instructions are in context, call its `guide` (topic.instructions) first; then create the doc (headings only, no body) before any search, file read or plan, even with files attached.",
+  "categoria": "Escrita e docs",
+  "pt": "cria documentos editáveis para compartilhar e comentar, como relatório, proposta ou carta, e exporta para Word ou PDF; é o padrão para qualquer documento.",
   "en": "docs (editable docs people share and comment on; the default for any document, named as a doc or not: a document, report, proposal, resume, cover letter, letter, contract, policy, form, template, worksheet, essay, handbook, guide, how-to, cheat sheet, SOP or other writing to keep, share, collaborate on, send, submit, print or sign; a doc exports to Word, PDF, Markdown or Google Docs, so needing a file to send, attach, upload, submit or print is no reason to pick Word, and a file nobody asked for is a doc, not Word; a plan, comparison, summary or notes asked in chat stays in chat; a pasted claude.ai artifact link may be a doc: check with docs tools first; Word or another file format named, tracked changes wanted, or a .docx to change or use as a template → that format''s skill): making one → if no docs-connector instructions are in context, call its `guide` (topic.instructions) first; then create the doc (headings only, no body) before any search, file read or plan, even with files attached."
  },
  {
   "nome": "anthropic-skills:docx",
   "pacote": "claude-code",
-  "categoria": "Outro",
-  "pt": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx) or Word templates (.dotx). Triggers include: any mention of Microsoft Word Documents, such as 'Word doc', 'word document', '.docx', '.dotx', 'microsoft doc'. Also use when extracting or reorganizing content from .docx or .dotx files, inserting or replacing images in documents, find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a deliverable as a Word or .docx file (to download, email or print), use this skill. However, if they ask for a document, page, report, memo, or notes WITHOUT naming a file format and the session offers Claude's own dedicated document or page skill or connector, use that instead, even if they will email or print it. Do NOT use for PDFs, spreadsheets, Google Docs, or coding unrelated to document generation.",
+  "categoria": "Escrita e docs",
+  "pt": "cria, lê e edita arquivos do Word (.docx), incluindo comentários e alterações; entra quando o pedido cita Word ou .docx.",
   "en": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx) or Word templates (.dotx). Triggers include: any mention of Microsoft Word Documents, such as 'Word doc', 'word document', '.docx', '.dotx', 'microsoft doc'. Also use when extracting or reorganizing content from .docx or .dotx files, inserting or replacing images in documents, find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a deliverable as a Word or .docx file (to download, email or print), use this skill. However, if they ask for a document, page, report, memo, or notes WITHOUT naming a file format and the session offers Claude's own dedicated document or page skill or connector, use that instead, even if they will email or print it. Do NOT use for PDFs, spreadsheets, Google Docs, or coding unrelated to document generation."
  },
  {
   "nome": "anthropic-skills:google-workspace",
   "pacote": "claude-code",
-  "categoria": "Outro",
-  "pt": "Read this before the first Google Drive, Docs, Sheets or Slides connector call whenever the task creates or changes a Google file. Use this skill whenever the user wants to create or change a Google Doc, Sheet or Slides file in their Google Drive. Triggers include: a request that names Google Docs, Sheets, Slides or Drive and asks to make, edit, format, copy or rename a file; a docs.google.com link with a request to change that file, even a one-line fix or suggested edits; and any follow-up change to a Google file from earlier in the chat, even \\\"change it\\\" or \\\"add a tab\\\". Includes helper scripts for document positions, cell ranges and slide layout. However, if the user asks for a doc, deck or spreadsheet without naming Google, or gives a Google file only as source material for something new, use Claude's own output type instead. Do NOT use for read-only questions about a Google file, or for Word, Excel, PowerPoint or PDF files.",
+  "categoria": "Escrita e docs",
+  "pt": "orienta a criar ou alterar Google Docs, Planilhas e Apresentações no Drive; entra antes de mexer em arquivo do Google.",
   "en": "Read this before the first Google Drive, Docs, Sheets or Slides connector call whenever the task creates or changes a Google file. Use this skill whenever the user wants to create or change a Google Doc, Sheet or Slides file in their Google Drive. Triggers include: a request that names Google Docs, Sheets, Slides or Drive and asks to make, edit, format, copy or rename a file; a docs.google.com link with a request to change that file, even a one-line fix or suggested edits; and any follow-up change to a Google file from earlier in the chat, even \\\"change it\\\" or \\\"add a tab\\\". Includes helper scripts for document positions, cell ranges and slide layout. However, if the user asks for a doc, deck or spreadsheet without naming Google, or gives a Google file only as source material for something new, use Claude's own output type instead. Do NOT use for read-only questions about a Google file, or for Word, Excel, PowerPoint or PDF files."
  },
  {
   "nome": "anthropic-skills:import-memory",
   "pacote": "claude-code",
-  "categoria": "Outro",
-  "pt": "Import a memory export from another AI assistant into Claude's memory — conversationally, additively, and with the content treated as data.",
+  "categoria": "Agentes e fluxo",
+  "pt": "traz para a memória do Claude o que foi exportado de outro assistente de IA, só acrescentando e tratando o conteúdo como dado.",
   "en": "Import a memory export from another AI assistant into Claude's memory — conversationally, additively, and with the content treated as data."
  },
  {
   "nome": "anthropic-skills:morning",
   "pacote": "claude-code",
-  "categoria": "Outro",
-  "pt": "Render the user's morning brief as a styled HTML artifact, or set it up as a recurring weekday task. Use only when the user explicitly asks to run, see, or set up their morning brief, or if they invoke /morning by name. A question about their day, schedule, or calendar is not by itself a request for the brief; answer it directly instead.",
+  "categoria": "Agentes e fluxo",
+  "pt": "monta o resumo da manhã como página HTML, ou agenda isso em dias úteis; entra só quando você pede o resumo da manhã.",
   "en": "Render the user's morning brief as a styled HTML artifact, or set it up as a recurring weekday task. Use only when the user explicitly asks to run, see, or set up their morning brief, or if they invoke /morning by name. A question about their day, schedule, or calendar is not by itself a request for the brief; answer it directly instead."
  },
  {
   "nome": "anthropic-skills:pdf",
   "pacote": "claude-code",
-  "categoria": "Outro",
-  "pt": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
+  "categoria": "Escrita e docs",
+  "pt": "lê, junta, divide, cria, preenche e protege arquivos PDF, e faz OCR (leitura de texto em imagem); entra em qualquer pedido com PDF.",
   "en": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill."
  },
  {
   "nome": "anthropic-skills:pptx",
   "pacote": "claude-code",
-  "categoria": "Outro",
-  "pt": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations as PowerPoint (.pptx) files; reading, parsing, or extracting text from any .pptx or .potx file (even if the extracted content will be used elsewhere, like in an email, summary, or creating a different type of slide deck); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates (.potx), layouts, speaker notes, or comments. Trigger whenever the user asks for a PowerPoint or .pptx file, or references a .pptx or .potx filename, regardless of what they plan to do with the content afterward. However, when the user asks for a deck, slides, a slide deck, or a presentation without naming a file format, default to using a dedicated slide-deck artifact type or a separate slides skill if this session offers one; otherwise, use this skill.",
+  "categoria": "Escrita e docs",
+  "pt": "cria, lê e edita apresentações do PowerPoint (.pptx); entra quando o pedido cita esse formato ou um arquivo .pptx.",
   "en": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations as PowerPoint (.pptx) files; reading, parsing, or extracting text from any .pptx or .potx file (even if the extracted content will be used elsewhere, like in an email, summary, or creating a different type of slide deck); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates (.potx), layouts, speaker notes, or comments. Trigger whenever the user asks for a PowerPoint or .pptx file, or references a .pptx or .potx filename, regardless of what they plan to do with the content afterward. However, when the user asks for a deck, slides, a slide deck, or a presentation without naming a file format, default to using a dedicated slide-deck artifact type or a separate slides skill if this session offers one; otherwise, use this skill."
  },
  {
   "nome": "anthropic-skills:skill-creator",
   "pacote": "claude-code",
-  "categoria": "Outro",
-  "pt": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+  "categoria": "Agentes e fluxo",
+  "pt": "cria novas habilidades, melhora as existentes e mede o desempenho delas; entra quando você quer montar ou ajustar uma habilidade.",
   "en": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy."
  },
  {
   "nome": "anthropic-skills:xlsx",
   "pacote": "claude-code",
-  "categoria": "Outro",
-  "pt": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .xltx, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \\\"the xlsx in my downloads\\\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
+  "categoria": "Dados e IA",
+  "pt": "abre, corrige, cria e converte planilhas (.xlsx, .csv), com fórmulas e gráficos; entra quando a planilha é o arquivo de entrada ou de saída.",
   "en": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .xltx, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \\\"the xlsx in my downloads\\\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved."
  },
  {
@@ -321,22 +321,22 @@
  {
   "nome": "ecc:aside",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Answer a quick side question without interrupting or losing context from the current task. Resume work automatically after answering.",
+  "categoria": "Agentes e fluxo",
+  "pt": "responde uma pergunta rápida sem interromper a tarefa em andamento e depois retoma o trabalho sozinho.",
   "en": "Answer a quick side question without interrupting or losing context from the current task. Resume work automatically after answering."
  },
  {
   "nome": "ecc:astra-review",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Send Claude-written code to GPT-6-Astra (ChatGPT, via Codex CLI) for an independent cross-provider review, then fix what it finds.",
+  "categoria": "Revisão e testes",
+  "pt": "envia o código escrito pelo Claude para outra IA (GPT-6-Astra) revisar de forma independente e corrige o que ela achar.",
   "en": "Send Claude-written code to GPT-6-Astra (ChatGPT, via Codex CLI) for an independent cross-provider review, then fix what it finds."
  },
  {
   "nome": "ecc:auto-update",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Pull the latest ECC repo changes and reinstall the current managed targets.",
+  "categoria": "Infra e DevOps",
+  "pt": "baixa as últimas mudanças do repositório ECC e reinstala os componentes gerenciados; entra para manter o ECC atualizado.",
   "en": "Pull the latest ECC repo changes and reinstall the current managed targets."
  },
  {
@@ -440,8 +440,8 @@
  {
   "nome": "ecc:build-fix",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Detect the project build system and incrementally fix build/type errors with minimal safe changes.",
+  "categoria": "Código",
+  "pt": "detecta como o projeto é compilado e corrige aos poucos os erros de compilação e de tipos, com mudanças mínimas e seguras.",
   "en": "Detect the project build system and incrementally fix build/type errors with minimal safe changes."
  },
  {
@@ -475,8 +475,8 @@
  {
   "nome": "ecc:checkpoint",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Create, verify, or list workflow checkpoints after running verification checks.",
+  "categoria": "Agentes e fluxo",
+  "pt": "cria, confere ou lista pontos de salvamento do trabalho depois de rodar as verificações.",
   "en": "Create, verify, or list workflow checkpoints after running verification checks."
  },
  {
@@ -517,8 +517,8 @@
  {
   "nome": "ecc:code-review",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Code review — local uncommitted changes or GitHub PR (pass PR number/URL for PR mode). Use for a step-by-step PRP-style checklist review; for a multi-agent pass use /review-pr, and for the adversarially-verified Workflow pass use /orch-review.",
+  "categoria": "Revisão e testes",
+  "pt": "revisa mudanças locais ainda não salvas ou um pull request (proposta de mudança no GitHub), item por item; para revisão com vários agentes há outros comandos.",
   "en": "Code review — local uncommitted changes or GitHub PR (pass PR number/URL for PR mode). Use for a step-by-step PRP-style checklist review; for a multi-agent pass use /review-pr, and for the adversarially-verified Workflow pass use /orch-review."
  },
  {
@@ -664,8 +664,8 @@
  {
   "nome": "ecc:cost-report",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Generate a local Claude Code cost report from the ECC cost-tracker metrics log. Use for a terminal summary or CSV export of tracked spend; the cost-tracking skill covers the same metrics log for on-demand cost/budget questions asked in conversation.",
+  "categoria": "Infra e DevOps",
+  "pt": "gera um relatório local de custo do Claude Code a partir do registro do ECC, no terminal ou em planilha CSV.",
   "en": "Generate a local Claude Code cost report from the ECC cost-tracker metrics log. Use for a terminal summary or CSV export of tracked spend; the cost-tracking skill covers the same metrics log for on-demand cost/budget questions asked in conversation."
  },
  {
@@ -699,8 +699,8 @@
  {
   "nome": "ecc:cpp-build",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Fix C++ build errors, CMake issues, and linker problems incrementally. Invokes the cpp-build-resolver agent for minimal, surgical fixes.",
+  "categoria": "Código",
+  "pt": "corrige erros de compilação, de CMake e de ligação em projetos C++, com mudanças pequenas e precisas.",
   "en": "Fix C++ build errors, CMake issues, and linker problems incrementally. Invokes the cpp-build-resolver agent for minimal, surgical fixes."
  },
  {
@@ -713,15 +713,15 @@
  {
   "nome": "ecc:cpp-review",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Comprehensive C++ code review for memory safety, modern C++ idioms, concurrency, and security. Invokes the cpp-reviewer agent.",
+  "categoria": "Revisão e testes",
+  "pt": "revisa código C++ quanto a segurança de memória, boas práticas modernas, concorrência e segurança.",
   "en": "Comprehensive C++ code review for memory safety, modern C++ idioms, concurrency, and security. Invokes the cpp-reviewer agent."
  },
  {
   "nome": "ecc:cpp-test",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Enforce TDD workflow for C++. Write GoogleTest tests first, then implement. Verify coverage with gcov/lcov.",
+  "categoria": "Revisão e testes",
+  "pt": "aplica desenvolvimento guiado por testes em C++, escrevendo o teste antes do código e conferindo a cobertura.",
   "en": "Enforce TDD workflow for C++. Write GoogleTest tests first, then implement. Verify coverage with gcov/lcov."
  },
  {
@@ -972,50 +972,50 @@
  {
   "nome": "ecc:epic-claim",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Claim an epic issue, stamp coordination state, and sync local ownership.",
+  "categoria": "Agentes e fluxo",
+  "pt": "assume a responsabilidade por uma tarefa grande (epic) no GitHub, registra o estado e sincroniza quem é o dono.",
   "en": "Claim an epic issue, stamp coordination state, and sync local ownership."
  },
  {
   "nome": "ecc:epic-decompose",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Break an epic into task children without creating task branches.",
+  "categoria": "Agentes e fluxo",
+  "pt": "quebra uma tarefa grande (epic) em tarefas menores, sem criar ramos de código para cada uma.",
   "en": "Break an epic into task children without creating task branches."
  },
  {
   "nome": "ecc:epic-publish",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Publish a validated epic update back to the issue and local cache.",
+  "categoria": "Agentes e fluxo",
+  "pt": "publica de volta na tarefa do GitHub e no cache local uma atualização já validada de uma tarefa grande (epic).",
   "en": "Publish a validated epic update back to the issue and local cache."
  },
  {
   "nome": "ecc:epic-review",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Mark epic review requested, approved, or changes requested.",
+  "categoria": "Agentes e fluxo",
+  "pt": "marca uma tarefa grande (epic) como revisão pedida, aprovada ou com mudanças solicitadas.",
   "en": "Mark epic review requested, approved, or changes requested."
  },
  {
   "nome": "ecc:epic-sync",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Sync epic issue bodies, labels, and local coordination snapshots from GitHub.",
+  "categoria": "Agentes e fluxo",
+  "pt": "sincroniza com o GitHub o texto, as etiquetas e o estado local das tarefas grandes (epics).",
   "en": "Sync epic issue bodies, labels, and local coordination snapshots from GitHub."
  },
  {
   "nome": "ecc:epic-unblock",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Sweep blocked epic issues and reopen anything whose dependencies are closed.",
+  "categoria": "Agentes e fluxo",
+  "pt": "varre as tarefas grandes (epics) bloqueadas e reabre as que já tiveram as dependências concluídas.",
   "en": "Sweep blocked epic issues and reopen anything whose dependencies are closed."
  },
  {
   "nome": "ecc:epic-validate",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Validate epic readiness, dependencies, and coordination policy.",
+  "categoria": "Agentes e fluxo",
+  "pt": "confere se uma tarefa grande (epic) está pronta, se as dependências fecham e se as regras de coordenação foram cumpridas.",
   "en": "Validate epic readiness, dependencies, and coordination policy."
  },
  {
@@ -1049,8 +1049,8 @@
  {
   "nome": "ecc:evolve",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Analyze instincts and suggest or generate evolved structures",
+  "categoria": "Agentes e fluxo",
+  "pt": "analisa os padrões aprendidos (instincts) e sugere ou gera estruturas mais evoluídas a partir deles.",
   "en": "Analyze instincts and suggest or generate evolved structures"
  },
  {
@@ -1077,15 +1077,15 @@
  {
   "nome": "ecc:fastapi-review",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Review a FastAPI application for architecture, async correctness, dependency injection, Pydantic schemas, security, performance, and testability.",
+  "categoria": "Revisão e testes",
+  "pt": "revisa uma aplicação FastAPI (framework de APIs em Python) quanto a arquitetura, segurança, desempenho e facilidade de teste.",
   "en": "Review a FastAPI application for architecture, async correctness, dependency injection, Pydantic schemas, security, performance, and testability."
  },
  {
   "nome": "ecc:feature-dev",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Guided feature development with codebase understanding and architecture focus",
+  "categoria": "Código",
+  "pt": "conduz o desenvolvimento de uma funcionalidade nova, passo a passo, entendendo antes o código existente e a arquitetura.",
   "en": "Guided feature development with codebase understanding and architecture focus"
  },
  {
@@ -1105,8 +1105,8 @@
  {
   "nome": "ecc:flutter-build",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Fix Dart analyzer errors and Flutter build failures incrementally. Invokes the dart-build-resolver agent for minimal, surgical fixes.",
+  "categoria": "Código",
+  "pt": "corrige erros do analisador Dart e falhas de compilação do Flutter (app de celular), com mudanças mínimas e precisas.",
   "en": "Fix Dart analyzer errors and Flutter build failures incrementally. Invokes the dart-build-resolver agent for minimal, surgical fixes."
  },
  {
@@ -1119,15 +1119,15 @@
  {
   "nome": "ecc:flutter-review",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Review Flutter/Dart code for idiomatic patterns, widget best practices, state management, performance, accessibility, and security. Invokes the flutter-reviewer agent.",
+  "categoria": "Revisão e testes",
+  "pt": "revisa código Flutter e Dart quanto a boas práticas, desempenho, acessibilidade e segurança.",
   "en": "Review Flutter/Dart code for idiomatic patterns, widget best practices, state management, performance, accessibility, and security. Invokes the flutter-reviewer agent."
  },
  {
   "nome": "ecc:flutter-test",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Run Flutter/Dart tests, report failures, and incrementally fix test issues. Covers unit, widget, golden, and integration tests.",
+  "categoria": "Revisão e testes",
+  "pt": "roda os testes de Flutter e Dart, relata as falhas e corrige aos poucos os testes quebrados.",
   "en": "Run Flutter/Dart tests, report failures, and incrementally fix test issues. Covers unit, widget, golden, and integration tests."
  },
  {
@@ -1175,15 +1175,15 @@
  {
   "nome": "ecc:gan-build",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Run a generator/evaluator build loop for implementation tasks with bounded iterations and scoring.",
+  "categoria": "Agentes e fluxo",
+  "pt": "roda um ciclo em que um agente constrói e outro avalia, com limite de voltas e nota, para tarefas de implementação.",
   "en": "Run a generator/evaluator build loop for implementation tasks with bounded iterations and scoring."
  },
  {
   "nome": "ecc:gan-design",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Run a generator/evaluator design loop for frontend or visual work with bounded iterations and scoring.",
+  "categoria": "Agentes e fluxo",
+  "pt": "roda um ciclo em que um agente cria e outro avalia, com limite de voltas e nota, para telas e trabalho visual.",
   "en": "Run a generator/evaluator design loop for frontend or visual work with bounded iterations and scoring."
  },
  {
@@ -1224,22 +1224,22 @@
  {
   "nome": "ecc:go-build",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Fix Go build errors, go vet warnings, and linter issues incrementally. Invokes the go-build-resolver agent for minimal, surgical fixes.",
+  "categoria": "Código",
+  "pt": "corrige erros de compilação, avisos do go vet e problemas de lint em projetos Go, com mudanças pequenas e precisas.",
   "en": "Fix Go build errors, go vet warnings, and linter issues incrementally. Invokes the go-build-resolver agent for minimal, surgical fixes."
  },
  {
   "nome": "ecc:go-review",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Comprehensive Go code review for idiomatic patterns, concurrency safety, error handling, and security. Invokes the go-reviewer agent.",
+  "categoria": "Revisão e testes",
+  "pt": "revisa código Go quanto a estilo correto, concorrência, tratamento de erros e segurança.",
   "en": "Comprehensive Go code review for idiomatic patterns, concurrency safety, error handling, and security. Invokes the go-reviewer agent."
  },
  {
   "nome": "ecc:go-test",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Enforce TDD workflow for Go. Write table-driven tests first, then implement. Verify 80%+ coverage with go test -cover.",
+  "categoria": "Revisão e testes",
+  "pt": "aplica desenvolvimento guiado por testes em Go, escrevendo o teste primeiro e exigindo cobertura de 80% ou mais.",
   "en": "Enforce TDD workflow for Go. Write table-driven tests first, then implement. Verify 80%+ coverage with go test -cover."
  },
  {
@@ -1266,8 +1266,8 @@
  {
   "nome": "ecc:gradle-build",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Fix Gradle build errors for Android and KMP projects",
+  "categoria": "Código",
+  "pt": "corrige erros de compilação do Gradle (ferramenta de build) em projetos Android e KMP.",
   "en": "Fix Gradle build errors for Android and KMP projects"
  },
  {
@@ -1280,8 +1280,8 @@
  {
   "nome": "ecc:harness-audit",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Run a deterministic repository harness audit and return a prioritized scorecard. Use for a deterministic overall repo-readiness scorecard; for a security-specific audit use the security-scan command.",
+  "categoria": "Revisão e testes",
+  "pt": "audita o repositório de forma fixa e devolve uma nota com prioridades; para auditoria só de segurança há outro comando.",
   "en": "Run a deterministic repository harness audit and return a prioritized scorecard. Use for a deterministic overall repo-readiness scorecard; for a security-specific audit use the security-scan command."
  },
  {
@@ -1371,29 +1371,29 @@
  {
   "nome": "ecc:hookify",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Create hooks to prevent unwanted behaviors from conversation analysis or explicit instructions. Use to generate a new hook rule file from conversation analysis or a described behavior; the hookify-rules skill covers hookify rule syntax and patterns for authoring or editing rules directly.",
+  "categoria": "Agentes e fluxo",
+  "pt": "cria regras (hooks) que impedem comportamentos indesejados, a partir da conversa ou de uma instrução explícita sua.",
   "en": "Create hooks to prevent unwanted behaviors from conversation analysis or explicit instructions. Use to generate a new hook rule file from conversation analysis or a described behavior; the hookify-rules skill covers hookify rule syntax and patterns for authoring or editing rules directly."
  },
  {
   "nome": "ecc:hookify-configure",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Enable or disable hookify rules interactively",
+  "categoria": "Agentes e fluxo",
+  "pt": "liga ou desliga, de forma interativa, as regras do hookify.",
   "en": "Enable or disable hookify rules interactively"
  },
  {
   "nome": "ecc:hookify-help",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Get help with the hookify system",
+  "categoria": "Agentes e fluxo",
+  "pt": "mostra ajuda sobre o sistema hookify, que cria regras para evitar comportamentos indesejados.",
   "en": "Get help with the hookify system"
  },
  {
   "nome": "ecc:hookify-list",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "List all configured hookify rules",
+  "categoria": "Agentes e fluxo",
+  "pt": "lista todas as regras do hookify que estão configuradas.",
   "en": "List all configured hookify rules"
  },
  {
@@ -1420,22 +1420,22 @@
  {
   "nome": "ecc:instinct-export",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Export instincts from project/global scope to a file",
+  "categoria": "Agentes e fluxo",
+  "pt": "exporta para um arquivo os padrões aprendidos (instincts) do projeto ou do escopo global.",
   "en": "Export instincts from project/global scope to a file"
  },
  {
   "nome": "ecc:instinct-import",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Import instincts from file or URL into project/global scope",
+  "categoria": "Agentes e fluxo",
+  "pt": "importa padrões aprendidos (instincts) de um arquivo ou endereço da internet para o projeto ou para o escopo global.",
   "en": "Import instincts from file or URL into project/global scope"
  },
  {
   "nome": "ecc:instinct-status",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Show learned instincts (project + global) with confidence",
+  "categoria": "Agentes e fluxo",
+  "pt": "mostra os padrões aprendidos (instincts) do projeto e globais, com o nível de confiança de cada um.",
   "en": "Show learned instincts (project + global) with confidence"
  },
  {
@@ -1518,8 +1518,8 @@
  {
   "nome": "ecc:jira",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Retrieve a Jira ticket, analyze requirements, update status, or add comments. Uses the jira-integration skill and MCP or REST API.",
+  "categoria": "Agentes e fluxo",
+  "pt": "busca um chamado do Jira, analisa os requisitos, atualiza o status ou adiciona comentários.",
   "en": "Retrieve a Jira ticket, analyze requirements, update status, or add comments. Uses the jira-integration skill and MCP or REST API."
  },
  {
@@ -1546,8 +1546,8 @@
  {
   "nome": "ecc:kotlin-build",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Fix Kotlin/Gradle build errors, compiler warnings, and dependency issues incrementally. Invokes the kotlin-build-resolver agent for minimal, surgical fixes.",
+  "categoria": "Código",
+  "pt": "corrige erros de Kotlin e Gradle, avisos do compilador e problemas de dependências, aos poucos e com mudanças mínimas.",
   "en": "Fix Kotlin/Gradle build errors, compiler warnings, and dependency issues incrementally. Invokes the kotlin-build-resolver agent for minimal, surgical fixes."
  },
  {
@@ -1581,15 +1581,15 @@
  {
   "nome": "ecc:kotlin-review",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Comprehensive Kotlin code review for idiomatic patterns, null safety, coroutine safety, and security. Invokes the kotlin-reviewer agent.",
+  "categoria": "Revisão e testes",
+  "pt": "revisa código Kotlin (linguagem de apps Android) quanto a boas práticas, segurança contra valores nulos e falhas em tarefas simultâneas. Entra ao mexer em código Kotlin.",
   "en": "Comprehensive Kotlin code review for idiomatic patterns, null safety, coroutine safety, and security. Invokes the kotlin-reviewer agent."
  },
  {
   "nome": "ecc:kotlin-test",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Enforce TDD workflow for Kotlin. Write Kotest tests first, then implement. Verify 80%+ coverage with Kover.",
+  "categoria": "Revisão e testes",
+  "pt": "obriga a escrever os testes antes do código Kotlin e confere se pelo menos 80% do código está coberto por testes.",
   "en": "Enforce TDD workflow for Kotlin. Write Kotest tests first, then implement. Verify 80%+ coverage with Kover."
  },
  {
@@ -1658,15 +1658,15 @@
  {
   "nome": "ecc:learn",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Extract reusable patterns from the current session and save them as candidate skills or guidance. Use to review a session on demand and persist an approved skill file; continuous-learning-v2 is a separate, configurable Stop/PreToolUse/PostToolUse hook-observation and instinct-evolution system (background observer disabled by default) and is not an automatic equivalent of this command.",
+  "categoria": "Agentes e fluxo",
+  "pt": "revisa a conversa atual, extrai padrões que se repetem e salva como habilidade candidata, quando você aprova. Entra sob demanda, no fim de uma sessão.",
   "en": "Extract reusable patterns from the current session and save them as candidate skills or guidance. Use to review a session on demand and persist an approved skill file; continuous-learning-v2 is a separate, configurable Stop/PreToolUse/PostToolUse hook-observation and instinct-evolution system (background observer disabled by default) and is not an automatic equivalent of this command."
  },
  {
   "nome": "ecc:learn-eval",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Extract reusable patterns from the session, self-evaluate quality before saving, and determine the right save location (Global vs Project).",
+  "categoria": "Agentes e fluxo",
+  "pt": "extrai padrões da sessão, avalia a qualidade antes de salvar e decide se o aprendizado vale para todos os projetos ou só para este.",
   "en": "Extract reusable patterns from the session, self-evaluate quality before saving, and determine the right save location (Global vs Project)."
  },
  {
@@ -1707,15 +1707,15 @@
  {
   "nome": "ecc:loop-start",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Prepare a managed autonomous loop pattern with safety defaults and explicit stop conditions, then print the commands to launch and monitor it. Use to set up sequential, continuous-pr, rfc-dag, or infinite loop patterns with safety gates before starting one; the continuous-agent-loop skill covers the same pattern selection and quality-gate guidance for in-conversation use (supersedes the deprecated autonomous-loops skill).",
+  "categoria": "Agentes e fluxo",
+  "pt": "prepara um ciclo automático de trabalho com travas de segurança e condições claras de parada, e mostra os comandos para iniciar e acompanhar.",
   "en": "Prepare a managed autonomous loop pattern with safety defaults and explicit stop conditions, then print the commands to launch and monitor it. Use to set up sequential, continuous-pr, rfc-dag, or infinite loop patterns with safety gates before starting one; the continuous-agent-loop skill covers the same pattern selection and quality-gate guidance for in-conversation use (supersedes the deprecated autonomous-loops skill)."
  },
  {
   "nome": "ecc:loop-status",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Inspect active loop state, progress, failure signals, and recommended intervention.",
+  "categoria": "Agentes e fluxo",
+  "pt": "confere um ciclo automático em andamento, mostra o progresso, sinais de falha e recomenda quando intervir.",
   "en": "Inspect active loop state, progress, failure signals, and recommended intervention."
  },
  {
@@ -1798,8 +1798,8 @@
  {
   "nome": "ecc:model-route",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Recommend the best model tier for the current task based on complexity, risk, and budget.",
+  "categoria": "Agentes e fluxo",
+  "pt": "recomenda qual nível de modelo de IA usar na tarefa, pesando complexidade, risco e orçamento. Entra para controlar custo.",
   "en": "Recommend the best model tier for the current task based on complexity, risk, and budget."
  },
  {
@@ -1833,36 +1833,36 @@
  {
   "nome": "ecc:multi-backend",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Run a backend-focused multi-model workflow for APIs, algorithms, data, and business logic.",
+  "categoria": "Código",
+  "pt": "roda um fluxo com vários modelos de IA para a parte de servidor: APIs (conexões entre sistemas), algoritmos, dados e regras de negócio.",
   "en": "Run a backend-focused multi-model workflow for APIs, algorithms, data, and business logic."
  },
  {
   "nome": "ecc:multi-execute",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Execute a multi-model implementation plan while preserving Claude as the only filesystem writer.",
+  "categoria": "Código",
+  "pt": "executa um plano de implementação feito por vários modelos de IA, mantendo o Claude como único que grava arquivos.",
   "en": "Execute a multi-model implementation plan while preserving Claude as the only filesystem writer."
  },
  {
   "nome": "ecc:multi-frontend",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Run a frontend-focused multi-model workflow for components, layouts, animation, and UI polish.",
+  "categoria": "Código",
+  "pt": "roda um fluxo com vários modelos de IA para a parte visual do app: componentes, layouts, animações e acabamento da interface.",
   "en": "Run a frontend-focused multi-model workflow for components, layouts, animation, and UI polish."
  },
  {
   "nome": "ecc:multi-plan",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Create a multi-model (Codex + Antigravity) implementation plan without modifying production code. Requires the external ccg-workflow runtime, not part of the base ECC install (see Prerequisite below). Use when the user explicitly wants dual-model plan drafts; for a single-model plan with no extra runtime use /plan.",
+  "categoria": "Agentes e fluxo",
+  "pt": "cria um plano feito por dois modelos (Codex e Antigravity) sem mexer no código. Exige um programa externo não incluído e só entra se você pedir.",
   "en": "Create a multi-model (Codex + Antigravity) implementation plan without modifying production code. Requires the external ccg-workflow runtime, not part of the base ECC install (see Prerequisite below). Use when the user explicitly wants dual-model plan drafts; for a single-model plan with no extra runtime use /plan."
  },
  {
   "nome": "ecc:multi-workflow",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Run a full multi-model development workflow with research, planning, execution, optimization, and review.",
+  "categoria": "Agentes e fluxo",
+  "pt": "roda o desenvolvimento completo com vários modelos de IA: pesquisa, plano, execução, otimização e revisão.",
   "en": "Run a full multi-model development workflow with research, planning, execution, optimization, and review."
  },
  {
@@ -2022,8 +2022,8 @@
  {
   "nome": "ecc:orch-review",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Run the orch-review native Workflow over a diff (local changes or a GitHub PR) and report blocking vs advisory findings. Surface for the orch-review workflow. Use for a native-Workflow, adversarially-verified multi-dimension review with fan-out and dedup; for the step-by-step checklist pass use /code-review, and for the multi-agent pass use /review-pr.",
+  "categoria": "Revisão e testes",
+  "pt": "revisa mudanças locais ou um pull request (pedido de incorporação de código) em várias frentes, e confere a fundo cada falha grave. Separa o que bloqueia do que é sugestão.",
   "en": "Run the orch-review native Workflow over a diff (local changes or a GitHub PR) and report blocking vs advisory findings. Surface for the orch-review workflow. Use for a native-Workflow, adversarially-verified multi-dimension review with fan-out and dedup; for the step-by-step checklist pass use /code-review, and for the multi-agent pass use /review-pr."
  },
  {
@@ -2064,8 +2064,8 @@
  {
   "nome": "ecc:plan",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Restate requirements, assess risks, and create step-by-step implementation plan. WAIT for user CONFIRM before touching any code. Use for a single-model inline or PRD-driven implementation plan; for a dual-model (Codex/Antigravity) plan use /multi-plan, and for visual annotate-and-approve review of the resulting plan use /plan-canvas.",
+  "categoria": "Agentes e fluxo",
+  "pt": "reescreve o pedido, avalia riscos e monta um plano passo a passo, e espera sua confirmação antes de mexer em qualquer código.",
   "en": "Restate requirements, assess risks, and create step-by-step implementation plan. WAIT for user CONFIRM before touching any code. Use for a single-model inline or PRD-driven implementation plan; for a dual-model (Codex/Antigravity) plan use /multi-plan, and for visual annotate-and-approve review of the resulting plan use /plan-canvas."
  },
  {
@@ -2085,8 +2085,8 @@
  {
   "nome": "ecc:plan-prd",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Generate a lean, problem-first PRD and hand off to /plan for implementation planning.",
+  "categoria": "Escrita e docs",
+  "pt": "gera um documento enxuto de requisitos (PRD), começando pelo problema, e passa para o comando de plano de implementação.",
   "en": "Generate a lean, problem-first PRD and hand off to /plan for implementation planning."
  },
  {
@@ -2099,8 +2099,8 @@
  {
   "nome": "ecc:pm2",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Analyze a project and generate PM2 service commands for detected frontend, backend, or database services.",
+  "categoria": "Infra e DevOps",
+  "pt": "analisa o projeto e gera os comandos do PM2 (programa que mantém serviços rodando) para as partes visual, servidor e banco de dados detectadas.",
   "en": "Analyze a project and generate PM2 service commands for detected frontend, backend, or database services."
  },
  {
@@ -2113,8 +2113,8 @@
  {
   "nome": "ecc:pr",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Create a GitHub PR from current branch with unpushed commits — discovers templates, analyzes changes, pushes",
+  "categoria": "Código",
+  "pt": "cria um pull request (pedido de incorporação de código) no GitHub a partir da branch atual, achando o modelo, analisando as mudanças e enviando.",
   "en": "Create a GitHub PR from current branch with unpushed commits — discovers templates, analyzes changes, pushes"
  },
  {
@@ -2176,22 +2176,22 @@
  {
   "nome": "ecc:project-init",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Detect a project's stack and produce a dry-run ECC onboarding plan using the repository's install manifests and stack mappings. Use to onboard ECC into a target project via a reviewable dry-run plan; for general feature discovery and navigation use the ecc-guide skill or /ecc-guide command instead.",
+  "categoria": "Infra e DevOps",
+  "pt": "detecta as tecnologias do projeto e monta um plano de teste, sem alterar nada, para instalar o ECC nele. Entra ao começar a usar o ECC num projeto.",
   "en": "Detect a project's stack and produce a dry-run ECC onboarding plan using the repository's install manifests and stack mappings. Use to onboard ECC into a target project via a reviewable dry-run plan; for general feature discovery and navigation use the ecc-guide skill or /ecc-guide command instead."
  },
  {
   "nome": "ecc:projects",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "List known projects and their instinct statistics",
+  "categoria": "Agentes e fluxo",
+  "pt": "lista os projetos conhecidos e as estatísticas dos instintos (padrões aprendidos) de cada um.",
   "en": "List known projects and their instinct statistics"
  },
  {
   "nome": "ecc:promote",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Promote project-scoped instincts to global scope",
+  "categoria": "Agentes e fluxo",
+  "pt": "promove instintos (padrões aprendidos) de um projeto para valerem em todos os projetos.",
   "en": "Promote project-scoped instincts to global scope"
  },
  {
@@ -2211,43 +2211,43 @@
  {
   "nome": "ecc:prp-commit",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Quick commit with natural language file targeting — describe what to commit in plain English",
+  "categoria": "Código",
+  "pt": "faz um commit (registro de mudanças no Git) rápido, escolhendo os arquivos por uma descrição em linguagem comum.",
   "en": "Quick commit with natural language file targeting — describe what to commit in plain English"
  },
  {
   "nome": "ecc:prp-implement",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Execute an implementation plan with rigorous validation loops",
+  "categoria": "Código",
+  "pt": "executa um plano de implementação com ciclos rigorosos de validação a cada etapa.",
   "en": "Execute an implementation plan with rigorous validation loops"
  },
  {
   "nome": "ecc:prp-plan",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Create comprehensive feature implementation plan with codebase analysis and pattern extraction",
+  "categoria": "Agentes e fluxo",
+  "pt": "cria um plano completo para uma nova funcionalidade, analisando o código existente e extraindo os padrões já usados.",
   "en": "Create comprehensive feature implementation plan with codebase analysis and pattern extraction"
  },
  {
   "nome": "ecc:prp-pr",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Alias of /pr for the PRP workflow series. Use when creating a pull request mid-PRP workflow; otherwise use /pr.",
+  "categoria": "Código",
+  "pt": "apelido do comando de pull request (pedido de incorporação de código), para quem está no fluxo PRP. Fora dele, usa-se o comando normal.",
   "en": "Alias of /pr for the PRP workflow series. Use when creating a pull request mid-PRP workflow; otherwise use /pr."
  },
  {
   "nome": "ecc:prp-prd",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Interactive PRD generator - problem-first, hypothesis-driven product spec with back-and-forth questioning",
+  "categoria": "Escrita e docs",
+  "pt": "gera um documento de requisitos de produto conversando com você, começando pelo problema e testando hipóteses por perguntas e respostas.",
   "en": "Interactive PRD generator - problem-first, hypothesis-driven product spec with back-and-forth questioning"
  },
  {
   "nome": "ecc:prune",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Delete pending instincts older than 30 days that were never promoted. Thin CLI wrapper for continuous-learning-v2's instinct-cli.py prune command; use to clean up stale pending instincts that were never reviewed or promoted.",
+  "categoria": "Agentes e fluxo",
+  "pt": "apaga instintos pendentes (padrões aprendidos) com mais de 30 dias que nunca foram promovidos. Serve para limpar o que ficou parado.",
   "en": "Delete pending instincts older than 30 days that were never promoted. Thin CLI wrapper for continuous-learning-v2's instinct-cli.py prune command; use to clean up stale pending instincts that were never reviewed or promoted."
  },
  {
@@ -2260,8 +2260,8 @@
  {
   "nome": "ecc:python-review",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Comprehensive Python code review for PEP 8 compliance, type hints, security, and Pythonic idioms. Invokes the python-reviewer agent.",
+  "categoria": "Revisão e testes",
+  "pt": "revisa código Python quanto a estilo (PEP 8), tipos, segurança e jeito idiomático de escrever. Entra ao mexer em scripts Python, como os da Lis.",
   "en": "Comprehensive Python code review for PEP 8 compliance, type hints, security, and Pythonic idioms. Invokes the python-reviewer agent."
  },
  {
@@ -2281,8 +2281,8 @@
  {
   "nome": "ecc:quality-gate",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Run the ECC formatter quality gate for a single file and report remediation steps.",
+  "categoria": "Revisão e testes",
+  "pt": "roda a checagem de formatação do ECC em um arquivo e diz o que corrigir.",
   "en": "Run the ECC formatter quality gate for a single file and report remediation steps."
  },
  {
@@ -2337,8 +2337,8 @@
  {
   "nome": "ecc:react-build",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Fix React build failures (Vite, webpack, Next.js, CRA, Parcel, esbuild, Bun) incrementally — JSX/TSX compile errors, hydration mismatches, server/client component boundary failures, missing types. Invokes the react-build-resolver agent for minimal, surgical fixes.",
+  "categoria": "Código",
+  "pt": "corrige aos poucos falhas de build (montagem do app) em React, como erros de compilação e de telas, com ajustes mínimos.",
   "en": "Fix React build failures (Vite, webpack, Next.js, CRA, Parcel, esbuild, Bun) incrementally — JSX/TSX compile errors, hydration mismatches, server/client component boundary failures, missing types. Invokes the react-build-resolver agent for minimal, surgical fixes."
  },
  {
@@ -2365,15 +2365,15 @@
  {
   "nome": "ecc:react-review",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Comprehensive React/JSX code review for hook correctness, render performance, server/client component boundaries, accessibility, and React-specific security. Invokes the react-reviewer agent (and typescript-reviewer alongside on TSX/JSX changes).",
+  "categoria": "Revisão e testes",
+  "pt": "revisa código React (biblioteca de telas web) quanto a uso correto, desempenho, acessibilidade e segurança. Entra ao mexer em arquivos de tela.",
   "en": "Comprehensive React/JSX code review for hook correctness, render performance, server/client component boundaries, accessibility, and React-specific security. Invokes the react-reviewer agent (and typescript-reviewer alongside on TSX/JSX changes)."
  },
  {
   "nome": "ecc:react-test",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Enforce TDD workflow for React. Write React Testing Library tests first (behavior-focused, accessibility-first), then implement components. Detects Vitest or Jest and verifies coverage targets.",
+  "categoria": "Revisão e testes",
+  "pt": "obriga a escrever os testes antes dos componentes React, focando no comportamento e na acessibilidade, e confere a cobertura de testes.",
   "en": "Enforce TDD workflow for React. Write React Testing Library tests first (behavior-focused, accessibility-first), then implement components. Detects Vitest or Jest and verifies coverage targets."
  },
  {
@@ -2407,8 +2407,8 @@
  {
   "nome": "ecc:refactor-clean",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Safely identify and remove dead code with verification after each change.",
+  "categoria": "Código",
+  "pt": "identifica e remove com segurança código morto (sem uso), conferindo o funcionamento depois de cada mudança.",
   "en": "Safely identify and remove dead code with verification after each change."
  },
  {
@@ -2442,8 +2442,8 @@
  {
   "nome": "ecc:resume-session",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Load the most recent session file from ~/.claude/session-data/ and resume work with full context from where the last session ended.",
+  "categoria": "Agentes e fluxo",
+  "pt": "carrega a sessão salva mais recente e retoma o trabalho com todo o contexto de onde parou.",
   "en": "Load the most recent session file from ~/.claude/session-data/ and resume work with full context from where the last session ended."
  },
  {
@@ -2456,8 +2456,8 @@
  {
   "nome": "ecc:review-pr",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Comprehensive PR review using specialized agents (code-reviewer, comment-analyzer, pr-test-analyzer, silent-failure-hunter, type-design-analyzer, code-simplifier). Use for a multi-agent PR review pass; for the adversarially-verified Workflow pass use /orch-review, and for the standalone step-by-step checklist review use /code-review.",
+  "categoria": "Revisão e testes",
+  "pt": "revisa um pull request (pedido de incorporação de código) com vários agentes especializados: comentários, testes, falhas silenciosas, tipos e simplificação. Entra para uma revisão ampla.",
   "en": "Comprehensive PR review using specialized agents (code-reviewer, comment-analyzer, pr-test-analyzer, silent-failure-hunter, type-design-analyzer, code-simplifier). Use for a multi-agent PR review pass; for the adversarially-verified Workflow pass use /orch-review, and for the standalone step-by-step checklist review use /code-review."
  },
  {
@@ -2470,8 +2470,8 @@
  {
   "nome": "ecc:rust-build",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Fix Rust build errors, borrow checker issues, and dependency problems incrementally. Invokes the rust-build-resolver agent for minimal, surgical fixes.",
+  "categoria": "Código",
+  "pt": "corrige aos poucos erros de build em Rust (linguagem de sistemas), incluindo regras de memória e dependências, com ajustes mínimos.",
   "en": "Fix Rust build errors, borrow checker issues, and dependency problems incrementally. Invokes the rust-build-resolver agent for minimal, surgical fixes."
  },
  {
@@ -2484,15 +2484,15 @@
  {
   "nome": "ecc:rust-review",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Comprehensive Rust code review for ownership, lifetimes, error handling, unsafe usage, and idiomatic patterns. Invokes the rust-reviewer agent.",
+  "categoria": "Revisão e testes",
+  "pt": "revisa código Rust quanto a uso de memória, tratamento de erros, trechos inseguros e jeito idiomático. Entra ao mexer em Rust.",
   "en": "Comprehensive Rust code review for ownership, lifetimes, error handling, unsafe usage, and idiomatic patterns. Invokes the rust-reviewer agent."
  },
  {
   "nome": "ecc:rust-test",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Enforce TDD workflow for Rust. Write tests first, then implement. Verify 80%+ coverage with cargo-llvm-cov.",
+  "categoria": "Revisão e testes",
+  "pt": "obriga a escrever os testes antes do código Rust e confere se pelo menos 80% está coberto por testes.",
   "en": "Enforce TDD workflow for Rust. Write tests first, then implement. Verify 80%+ coverage with cargo-llvm-cov."
  },
  {
@@ -2512,8 +2512,8 @@
  {
   "nome": "ecc:santa-loop",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Adversarial dual-review convergence loop — two independent model reviewers must both approve before code ships. Use for the CLI-driven version of this loop; wraps the santa-method skill.",
+  "categoria": "Revisão e testes",
+  "pt": "ciclo em que dois revisores de modelos diferentes precisam aprovar o código antes de ele ser entregue. É a versão por linha de comando.",
   "en": "Adversarial dual-review convergence loop — two independent model reviewers must both approve before code ships. Use for the CLI-driven version of this loop; wraps the santa-method skill."
  },
  {
@@ -2526,8 +2526,8 @@
  {
   "nome": "ecc:save-session",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Save current session state to a dated file in ~/.claude/session-data/ so work can be resumed in a future session with full context.",
+  "categoria": "Agentes e fluxo",
+  "pt": "salva o estado da sessão atual em um arquivo com data, para retomar depois com todo o contexto.",
   "en": "Save current session state to a dated file in ~/.claude/session-data/ so work can be resumed in a future session with full context."
  },
  {
@@ -2603,15 +2603,15 @@
  {
   "nome": "ecc:sessions",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Manage Claude Code session history, aliases, and session metadata.",
+  "categoria": "Agentes e fluxo",
+  "pt": "gerencia o histórico de sessões do Claude Code, com apelidos e informações de cada sessão.",
   "en": "Manage Claude Code session history, aliases, and session metadata."
  },
  {
   "nome": "ecc:setup-pm",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Configure your preferred package manager (npm/pnpm/yarn/bun)",
+  "categoria": "Infra e DevOps",
+  "pt": "configura o gerenciador de pacotes preferido (npm, pnpm, yarn ou bun), que são programas que instalam as peças de um projeto.",
   "en": "Configure your preferred package manager (npm/pnpm/yarn/bun)"
  },
  {
@@ -2624,15 +2624,15 @@
  {
   "nome": "ecc:skill-create",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Analyze local git history to extract coding patterns and generate SKILL.md files. Local version of the Skill Creator GitHub App. Use to generate new skills from local git history on demand; check the skill-scout skill first to avoid duplicating an existing local, marketplace, or GitHub skill.",
+  "categoria": "Agentes e fluxo",
+  "pt": "analisa o histórico de commits (registro de mudanças) local, extrai padrões de código e gera arquivos de habilidade. Convém checar antes se a habilidade já existe.",
   "en": "Analyze local git history to extract coding patterns and generate SKILL.md files. Local version of the Skill Creator GitHub App. Use to generate new skills from local git history on demand; check the skill-scout skill first to avoid duplicating an existing local, marketplace, or GitHub skill."
  },
  {
   "nome": "ecc:skill-health",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Show skill portfolio health dashboard with charts and analytics. Use for the quantitative usage/success-rate dashboard; for a qualitative compliance or quality audit use the skill-stocktake skill.",
+  "categoria": "Agentes e fluxo",
+  "pt": "mostra um painel com gráficos sobre a saúde das habilidades, com uso e taxa de sucesso. Para auditoria de qualidade, outra habilidade serve melhor.",
   "en": "Show skill portfolio health dashboard with charts and analytics. Use for the quantitative usage/success-rate dashboard; for a qualitative compliance or quality audit use the skill-stocktake skill."
  },
  {
@@ -2813,8 +2813,8 @@
  {
   "nome": "ecc:test-coverage",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Analyze coverage, identify gaps, and generate missing tests toward the target threshold.",
+  "categoria": "Revisão e testes",
+  "pt": "analisa quanto do código é coberto por testes, aponta lacunas e gera os testes que faltam até a meta.",
   "en": "Analyze coverage, identify gaps, and generate missing tests toward the target threshold."
  },
  {
@@ -2876,15 +2876,15 @@
  {
   "nome": "ecc:update-codemaps",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Scan project structure and generate token-lean architecture codemaps.",
+  "categoria": "Escrita e docs",
+  "pt": "varre a estrutura do projeto e gera mapas enxutos da arquitetura, que gastam pouco da memória da IA.",
   "en": "Scan project structure and generate token-lean architecture codemaps."
  },
  {
   "nome": "ecc:update-docs",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Sync documentation from source-of-truth files such as scripts, schemas, routes, and exports.",
+  "categoria": "Escrita e docs",
+  "pt": "sincroniza a documentação com as fontes de verdade, como scripts, esquemas de dados, rotas e funções exportadas.",
   "en": "Sync documentation from source-of-truth files such as scripts, schemas, routes, and exports."
  },
  {
@@ -2932,8 +2932,8 @@
  {
   "nome": "ecc:vue-review",
   "pacote": "ecc",
-  "categoria": "Outro",
-  "pt": "Comprehensive Vue.js code review for Composition API correctness, reactivity, composable patterns, template security, accessibility, and Vue-specific performance. Invokes the vue-reviewer agent (and typescript-reviewer alongside on .vue/.ts changes).",
+  "categoria": "Revisão e testes",
+  "pt": "revisa código Vue.js (biblioteca de telas web) quanto a reatividade, modelos de tela, acessibilidade, segurança e desempenho. Entra ao mexer em arquivos .vue.",
   "en": "Comprehensive Vue.js code review for Composition API correctness, reactivity, composable patterns, template security, accessibility, and Vue-specific performance. Invokes the vue-reviewer agent (and typescript-reviewer alongside on .vue/.ts changes)."
  },
  {
@@ -2967,15 +2967,15 @@
  {
   "nome": "google-maps-leads",
   "pacote": "minhas",
-  "categoria": "Outro",
-  "pt": "Lista de empresas do Google Maps (nome, telefone, e-mail, site, categoria, endereço, nota) para prospecção. Usar quando o Pedro pedir \"lista de [tipo de empresa] em [cidade]\", leads, contatos de revendas, lojas, produtores, clínicas etc. Roda o Google Maps Scraper Kit instalado no Mac (Docker local em 127.0.0.1:8080).",
+  "categoria": "Negócio e marketing",
+  "pt": "gera lista de empresas do Google Maps (nome, telefone, e-mail, site, endereço, nota) para prospecção. Entra quando você pede lista de revendas, lojas ou produtores numa cidade.",
   "en": "Lista de empresas do Google Maps (nome, telefone, e-mail, site, categoria, endereço, nota) para prospecção. Usar quando o Pedro pedir \"lista de [tipo de empresa] em [cidade]\", leads, contatos de revendas, lojas, produtores, clínicas etc. Roda o Google Maps Scraper Kit instalado no Mac (Docker local em 127.0.0.1:8080)."
  },
  {
   "nome": "mapa-de-habilidades",
   "pacote": "minhas",
-  "categoria": "Outro",
-  "pt": "Mapa de todas as habilidades instaladas (Superpowers, ECC, Humanizer, embutidas do Claude Code e as minhas). Usar no começo de QUALQUER pedido do Pedro para dizer, em uma linha, qual habilidade entra e por quê, antes de fazer. Inclui tabela de roteamento por tipo de pedido e o script sugerir.py para os casos em dúvida.",
+  "categoria": "Agentes e fluxo",
+  "pt": "mapa de todas as habilidades instaladas, que entra no começo de qualquer pedido para dizer em uma linha qual habilidade serve e por quê.",
   "en": "Mapa de todas as habilidades instaladas (Superpowers, ECC, Humanizer, embutidas do Claude Code e as minhas). Usar no começo de QUALQUER pedido do Pedro para dizer, em uma linha, qual habilidade entra e por quê, antes de fazer. Inclui tabela de roteamento por tipo de pedido e o script sugerir.py para os casos em dúvida."
  },
  {

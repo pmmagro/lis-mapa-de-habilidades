@@ -1306,5 +1306,417 @@
  "humanizer:humanizer": {
   "categoria": "Escrita e docs",
   "pt": "Reescreve texto com cara de IA para soar como gente, sem mudar o conteúdo. Vinte e seis padrões: encenar em vez de afirmar, trio forçado, travessão, negrito de enfeite, sobras do chat."
+ },
+ "anthropic-skills:built-in-browser": {
+  "categoria": "Outro",
+  "pt": "guia de uso do navegador embutido no app Claude desktop, com logins salvos, abas e leitura de páginas; entra antes de usar esse navegador."
+ },
+ "anthropic-skills:chrome-browser": {
+  "categoria": "Outro",
+  "pt": "guia para controlar o seu Chrome real pela extensão, com permissões de sites e abas novas; entra antes de qualquer passo que use o Chrome."
+ },
+ "anthropic-skills:computer-use": {
+  "categoria": "Outro",
+  "pt": "guia para o Claude controlar apps do seu computador por capturas de tela, cliques e digitação; entra quando o pedido envolve um app local ou a sua tela."
+ },
+ "anthropic-skills:deep-research": {
+  "categoria": "Escrita e docs",
+  "pt": "pesquisa um tema em várias fontes, compara opções e junta tudo num relatório completo; entra quando o pedido exige pesquisa ampla com síntese."
+ },
+ "anthropic-skills:docs": {
+  "categoria": "Escrita e docs",
+  "pt": "cria documentos editáveis para compartilhar e comentar, como relatório, proposta ou carta, e exporta para Word ou PDF; é o padrão para qualquer documento."
+ },
+ "anthropic-skills:docx": {
+  "categoria": "Escrita e docs",
+  "pt": "cria, lê e edita arquivos do Word (.docx), incluindo comentários e alterações; entra quando o pedido cita Word ou .docx."
+ },
+ "anthropic-skills:google-workspace": {
+  "categoria": "Escrita e docs",
+  "pt": "orienta a criar ou alterar Google Docs, Planilhas e Apresentações no Drive; entra antes de mexer em arquivo do Google."
+ },
+ "anthropic-skills:import-memory": {
+  "categoria": "Agentes e fluxo",
+  "pt": "traz para a memória do Claude o que foi exportado de outro assistente de IA, só acrescentando e tratando o conteúdo como dado."
+ },
+ "anthropic-skills:morning": {
+  "categoria": "Agentes e fluxo",
+  "pt": "monta o resumo da manhã como página HTML, ou agenda isso em dias úteis; entra só quando você pede o resumo da manhã."
+ },
+ "anthropic-skills:pdf": {
+  "categoria": "Escrita e docs",
+  "pt": "lê, junta, divide, cria, preenche e protege arquivos PDF, e faz OCR (leitura de texto em imagem); entra em qualquer pedido com PDF."
+ },
+ "anthropic-skills:pptx": {
+  "categoria": "Escrita e docs",
+  "pt": "cria, lê e edita apresentações do PowerPoint (.pptx); entra quando o pedido cita esse formato ou um arquivo .pptx."
+ },
+ "anthropic-skills:skill-creator": {
+  "categoria": "Agentes e fluxo",
+  "pt": "cria novas habilidades, melhora as existentes e mede o desempenho delas; entra quando você quer montar ou ajustar uma habilidade."
+ },
+ "anthropic-skills:xlsx": {
+  "categoria": "Dados e IA",
+  "pt": "abre, corrige, cria e converte planilhas (.xlsx, .csv), com fórmulas e gráficos; entra quando a planilha é o arquivo de entrada ou de saída."
+ },
+ "ecc:aside": {
+  "categoria": "Agentes e fluxo",
+  "pt": "responde uma pergunta rápida sem interromper a tarefa em andamento e depois retoma o trabalho sozinho."
+ },
+ "ecc:astra-review": {
+  "categoria": "Revisão e testes",
+  "pt": "envia o código escrito pelo Claude para outra IA (GPT-6-Astra) revisar de forma independente e corrige o que ela achar."
+ },
+ "ecc:auto-update": {
+  "categoria": "Infra e DevOps",
+  "pt": "baixa as últimas mudanças do repositório ECC e reinstala os componentes gerenciados; entra para manter o ECC atualizado."
+ },
+ "ecc:build-fix": {
+  "categoria": "Código",
+  "pt": "detecta como o projeto é compilado e corrige aos poucos os erros de compilação e de tipos, com mudanças mínimas e seguras."
+ },
+ "ecc:checkpoint": {
+  "categoria": "Agentes e fluxo",
+  "pt": "cria, confere ou lista pontos de salvamento do trabalho depois de rodar as verificações."
+ },
+ "ecc:code-review": {
+  "categoria": "Revisão e testes",
+  "pt": "revisa mudanças locais ainda não salvas ou um pull request (proposta de mudança no GitHub), item por item; para revisão com vários agentes há outros comandos."
+ },
+ "ecc:cost-report": {
+  "categoria": "Infra e DevOps",
+  "pt": "gera um relatório local de custo do Claude Code a partir do registro do ECC, no terminal ou em planilha CSV."
+ },
+ "ecc:cpp-build": {
+  "categoria": "Código",
+  "pt": "corrige erros de compilação, de CMake e de ligação em projetos C++, com mudanças pequenas e precisas."
+ },
+ "ecc:cpp-review": {
+  "categoria": "Revisão e testes",
+  "pt": "revisa código C++ quanto a segurança de memória, boas práticas modernas, concorrência e segurança."
+ },
+ "ecc:cpp-test": {
+  "categoria": "Revisão e testes",
+  "pt": "aplica desenvolvimento guiado por testes em C++, escrevendo o teste antes do código e conferindo a cobertura."
+ },
+ "ecc:epic-claim": {
+  "categoria": "Agentes e fluxo",
+  "pt": "assume a responsabilidade por uma tarefa grande (epic) no GitHub, registra o estado e sincroniza quem é o dono."
+ },
+ "ecc:epic-decompose": {
+  "categoria": "Agentes e fluxo",
+  "pt": "quebra uma tarefa grande (epic) em tarefas menores, sem criar ramos de código para cada uma."
+ },
+ "ecc:epic-publish": {
+  "categoria": "Agentes e fluxo",
+  "pt": "publica de volta na tarefa do GitHub e no cache local uma atualização já validada de uma tarefa grande (epic)."
+ },
+ "ecc:epic-review": {
+  "categoria": "Agentes e fluxo",
+  "pt": "marca uma tarefa grande (epic) como revisão pedida, aprovada ou com mudanças solicitadas."
+ },
+ "ecc:epic-sync": {
+  "categoria": "Agentes e fluxo",
+  "pt": "sincroniza com o GitHub o texto, as etiquetas e o estado local das tarefas grandes (epics)."
+ },
+ "ecc:epic-unblock": {
+  "categoria": "Agentes e fluxo",
+  "pt": "varre as tarefas grandes (epics) bloqueadas e reabre as que já tiveram as dependências concluídas."
+ },
+ "ecc:epic-validate": {
+  "categoria": "Agentes e fluxo",
+  "pt": "confere se uma tarefa grande (epic) está pronta, se as dependências fecham e se as regras de coordenação foram cumpridas."
+ },
+ "ecc:evolve": {
+  "categoria": "Agentes e fluxo",
+  "pt": "analisa os padrões aprendidos (instincts) e sugere ou gera estruturas mais evoluídas a partir deles."
+ },
+ "ecc:fastapi-review": {
+  "categoria": "Revisão e testes",
+  "pt": "revisa uma aplicação FastAPI (framework de APIs em Python) quanto a arquitetura, segurança, desempenho e facilidade de teste."
+ },
+ "ecc:feature-dev": {
+  "categoria": "Código",
+  "pt": "conduz o desenvolvimento de uma funcionalidade nova, passo a passo, entendendo antes o código existente e a arquitetura."
+ },
+ "ecc:flutter-build": {
+  "categoria": "Código",
+  "pt": "corrige erros do analisador Dart e falhas de compilação do Flutter (app de celular), com mudanças mínimas e precisas."
+ },
+ "ecc:flutter-review": {
+  "categoria": "Revisão e testes",
+  "pt": "revisa código Flutter e Dart quanto a boas práticas, desempenho, acessibilidade e segurança."
+ },
+ "ecc:flutter-test": {
+  "categoria": "Revisão e testes",
+  "pt": "roda os testes de Flutter e Dart, relata as falhas e corrige aos poucos os testes quebrados."
+ },
+ "ecc:gan-build": {
+  "categoria": "Agentes e fluxo",
+  "pt": "roda um ciclo em que um agente constrói e outro avalia, com limite de voltas e nota, para tarefas de implementação."
+ },
+ "ecc:gan-design": {
+  "categoria": "Agentes e fluxo",
+  "pt": "roda um ciclo em que um agente cria e outro avalia, com limite de voltas e nota, para telas e trabalho visual."
+ },
+ "ecc:go-build": {
+  "categoria": "Código",
+  "pt": "corrige erros de compilação, avisos do go vet e problemas de lint em projetos Go, com mudanças pequenas e precisas."
+ },
+ "ecc:go-review": {
+  "categoria": "Revisão e testes",
+  "pt": "revisa código Go quanto a estilo correto, concorrência, tratamento de erros e segurança."
+ },
+ "ecc:go-test": {
+  "categoria": "Revisão e testes",
+  "pt": "aplica desenvolvimento guiado por testes em Go, escrevendo o teste primeiro e exigindo cobertura de 80% ou mais."
+ },
+ "ecc:gradle-build": {
+  "categoria": "Código",
+  "pt": "corrige erros de compilação do Gradle (ferramenta de build) em projetos Android e KMP."
+ },
+ "ecc:harness-audit": {
+  "categoria": "Revisão e testes",
+  "pt": "audita o repositório de forma fixa e devolve uma nota com prioridades; para auditoria só de segurança há outro comando."
+ },
+ "ecc:hookify": {
+  "categoria": "Agentes e fluxo",
+  "pt": "cria regras (hooks) que impedem comportamentos indesejados, a partir da conversa ou de uma instrução explícita sua."
+ },
+ "ecc:hookify-configure": {
+  "categoria": "Agentes e fluxo",
+  "pt": "liga ou desliga, de forma interativa, as regras do hookify."
+ },
+ "ecc:hookify-help": {
+  "categoria": "Agentes e fluxo",
+  "pt": "mostra ajuda sobre o sistema hookify, que cria regras para evitar comportamentos indesejados."
+ },
+ "ecc:hookify-list": {
+  "categoria": "Agentes e fluxo",
+  "pt": "lista todas as regras do hookify que estão configuradas."
+ },
+ "ecc:instinct-export": {
+  "categoria": "Agentes e fluxo",
+  "pt": "exporta para um arquivo os padrões aprendidos (instincts) do projeto ou do escopo global."
+ },
+ "ecc:instinct-import": {
+  "categoria": "Agentes e fluxo",
+  "pt": "importa padrões aprendidos (instincts) de um arquivo ou endereço da internet para o projeto ou para o escopo global."
+ },
+ "ecc:instinct-status": {
+  "categoria": "Agentes e fluxo",
+  "pt": "mostra os padrões aprendidos (instincts) do projeto e globais, com o nível de confiança de cada um."
+ },
+ "ecc:jira": {
+  "categoria": "Agentes e fluxo",
+  "pt": "busca um chamado do Jira, analisa os requisitos, atualiza o status ou adiciona comentários."
+ },
+ "ecc:kotlin-build": {
+  "categoria": "Código",
+  "pt": "corrige erros de Kotlin e Gradle, avisos do compilador e problemas de dependências, aos poucos e com mudanças mínimas."
+ },
+ "ecc:kotlin-review": {
+  "categoria": "Revisão e testes",
+  "pt": "revisa código Kotlin (linguagem de apps Android) quanto a boas práticas, segurança contra valores nulos e falhas em tarefas simultâneas. Entra ao mexer em código Kotlin."
+ },
+ "ecc:kotlin-test": {
+  "categoria": "Revisão e testes",
+  "pt": "obriga a escrever os testes antes do código Kotlin e confere se pelo menos 80% do código está coberto por testes."
+ },
+ "ecc:learn": {
+  "categoria": "Agentes e fluxo",
+  "pt": "revisa a conversa atual, extrai padrões que se repetem e salva como habilidade candidata, quando você aprova. Entra sob demanda, no fim de uma sessão."
+ },
+ "ecc:learn-eval": {
+  "categoria": "Agentes e fluxo",
+  "pt": "extrai padrões da sessão, avalia a qualidade antes de salvar e decide se o aprendizado vale para todos os projetos ou só para este."
+ },
+ "ecc:loop-start": {
+  "categoria": "Agentes e fluxo",
+  "pt": "prepara um ciclo automático de trabalho com travas de segurança e condições claras de parada, e mostra os comandos para iniciar e acompanhar."
+ },
+ "ecc:loop-status": {
+  "categoria": "Agentes e fluxo",
+  "pt": "confere um ciclo automático em andamento, mostra o progresso, sinais de falha e recomenda quando intervir."
+ },
+ "ecc:model-route": {
+  "categoria": "Agentes e fluxo",
+  "pt": "recomenda qual nível de modelo de IA usar na tarefa, pesando complexidade, risco e orçamento. Entra para controlar custo."
+ },
+ "ecc:multi-backend": {
+  "categoria": "Código",
+  "pt": "roda um fluxo com vários modelos de IA para a parte de servidor: APIs (conexões entre sistemas), algoritmos, dados e regras de negócio."
+ },
+ "ecc:multi-execute": {
+  "categoria": "Código",
+  "pt": "executa um plano de implementação feito por vários modelos de IA, mantendo o Claude como único que grava arquivos."
+ },
+ "ecc:multi-frontend": {
+  "categoria": "Código",
+  "pt": "roda um fluxo com vários modelos de IA para a parte visual do app: componentes, layouts, animações e acabamento da interface."
+ },
+ "ecc:multi-plan": {
+  "categoria": "Agentes e fluxo",
+  "pt": "cria um plano feito por dois modelos (Codex e Antigravity) sem mexer no código. Exige um programa externo não incluído e só entra se você pedir."
+ },
+ "ecc:multi-workflow": {
+  "categoria": "Agentes e fluxo",
+  "pt": "roda o desenvolvimento completo com vários modelos de IA: pesquisa, plano, execução, otimização e revisão."
+ },
+ "ecc:orch-review": {
+  "categoria": "Revisão e testes",
+  "pt": "revisa mudanças locais ou um pull request (pedido de incorporação de código) em várias frentes, e confere a fundo cada falha grave. Separa o que bloqueia do que é sugestão."
+ },
+ "ecc:plan": {
+  "categoria": "Agentes e fluxo",
+  "pt": "reescreve o pedido, avalia riscos e monta um plano passo a passo, e espera sua confirmação antes de mexer em qualquer código."
+ },
+ "ecc:plan-prd": {
+  "categoria": "Escrita e docs",
+  "pt": "gera um documento enxuto de requisitos (PRD), começando pelo problema, e passa para o comando de plano de implementação."
+ },
+ "ecc:pm2": {
+  "categoria": "Infra e DevOps",
+  "pt": "analisa o projeto e gera os comandos do PM2 (programa que mantém serviços rodando) para as partes visual, servidor e banco de dados detectadas."
+ },
+ "ecc:pr": {
+  "categoria": "Código",
+  "pt": "cria um pull request (pedido de incorporação de código) no GitHub a partir da branch atual, achando o modelo, analisando as mudanças e enviando."
+ },
+ "ecc:project-init": {
+  "categoria": "Infra e DevOps",
+  "pt": "detecta as tecnologias do projeto e monta um plano de teste, sem alterar nada, para instalar o ECC nele. Entra ao começar a usar o ECC num projeto."
+ },
+ "ecc:projects": {
+  "categoria": "Agentes e fluxo",
+  "pt": "lista os projetos conhecidos e as estatísticas dos instintos (padrões aprendidos) de cada um."
+ },
+ "ecc:promote": {
+  "categoria": "Agentes e fluxo",
+  "pt": "promove instintos (padrões aprendidos) de um projeto para valerem em todos os projetos."
+ },
+ "ecc:prp-commit": {
+  "categoria": "Código",
+  "pt": "faz um commit (registro de mudanças no Git) rápido, escolhendo os arquivos por uma descrição em linguagem comum."
+ },
+ "ecc:prp-implement": {
+  "categoria": "Código",
+  "pt": "executa um plano de implementação com ciclos rigorosos de validação a cada etapa."
+ },
+ "ecc:prp-plan": {
+  "categoria": "Agentes e fluxo",
+  "pt": "cria um plano completo para uma nova funcionalidade, analisando o código existente e extraindo os padrões já usados."
+ },
+ "ecc:prp-pr": {
+  "categoria": "Código",
+  "pt": "apelido do comando de pull request (pedido de incorporação de código), para quem está no fluxo PRP. Fora dele, usa-se o comando normal."
+ },
+ "ecc:prp-prd": {
+  "categoria": "Escrita e docs",
+  "pt": "gera um documento de requisitos de produto conversando com você, começando pelo problema e testando hipóteses por perguntas e respostas."
+ },
+ "ecc:prune": {
+  "categoria": "Agentes e fluxo",
+  "pt": "apaga instintos pendentes (padrões aprendidos) com mais de 30 dias que nunca foram promovidos. Serve para limpar o que ficou parado."
+ },
+ "ecc:python-review": {
+  "categoria": "Revisão e testes",
+  "pt": "revisa código Python quanto a estilo (PEP 8), tipos, segurança e jeito idiomático de escrever. Entra ao mexer em scripts Python, como os da Lis."
+ },
+ "ecc:quality-gate": {
+  "categoria": "Revisão e testes",
+  "pt": "roda a checagem de formatação do ECC em um arquivo e diz o que corrigir."
+ },
+ "ecc:react-build": {
+  "categoria": "Código",
+  "pt": "corrige aos poucos falhas de build (montagem do app) em React, como erros de compilação e de telas, com ajustes mínimos."
+ },
+ "ecc:react-review": {
+  "categoria": "Revisão e testes",
+  "pt": "revisa código React (biblioteca de telas web) quanto a uso correto, desempenho, acessibilidade e segurança. Entra ao mexer em arquivos de tela."
+ },
+ "ecc:react-test": {
+  "categoria": "Revisão e testes",
+  "pt": "obriga a escrever os testes antes dos componentes React, focando no comportamento e na acessibilidade, e confere a cobertura de testes."
+ },
+ "ecc:refactor-clean": {
+  "categoria": "Código",
+  "pt": "identifica e remove com segurança código morto (sem uso), conferindo o funcionamento depois de cada mudança."
+ },
+ "ecc:resume-session": {
+  "categoria": "Agentes e fluxo",
+  "pt": "carrega a sessão salva mais recente e retoma o trabalho com todo o contexto de onde parou."
+ },
+ "ecc:review-pr": {
+  "categoria": "Revisão e testes",
+  "pt": "revisa um pull request (pedido de incorporação de código) com vários agentes especializados: comentários, testes, falhas silenciosas, tipos e simplificação. Entra para uma revisão ampla."
+ },
+ "ecc:rust-build": {
+  "categoria": "Código",
+  "pt": "corrige aos poucos erros de build em Rust (linguagem de sistemas), incluindo regras de memória e dependências, com ajustes mínimos."
+ },
+ "ecc:rust-review": {
+  "categoria": "Revisão e testes",
+  "pt": "revisa código Rust quanto a uso de memória, tratamento de erros, trechos inseguros e jeito idiomático. Entra ao mexer em Rust."
+ },
+ "ecc:rust-test": {
+  "categoria": "Revisão e testes",
+  "pt": "obriga a escrever os testes antes do código Rust e confere se pelo menos 80% está coberto por testes."
+ },
+ "ecc:santa-loop": {
+  "categoria": "Revisão e testes",
+  "pt": "ciclo em que dois revisores de modelos diferentes precisam aprovar o código antes de ele ser entregue. É a versão por linha de comando."
+ },
+ "ecc:save-session": {
+  "categoria": "Agentes e fluxo",
+  "pt": "salva o estado da sessão atual em um arquivo com data, para retomar depois com todo o contexto."
+ },
+ "ecc:sessions": {
+  "categoria": "Agentes e fluxo",
+  "pt": "gerencia o histórico de sessões do Claude Code, com apelidos e informações de cada sessão."
+ },
+ "ecc:setup-pm": {
+  "categoria": "Infra e DevOps",
+  "pt": "configura o gerenciador de pacotes preferido (npm, pnpm, yarn ou bun), que são programas que instalam as peças de um projeto."
+ },
+ "ecc:skill-create": {
+  "categoria": "Agentes e fluxo",
+  "pt": "analisa o histórico de commits (registro de mudanças) local, extrai padrões de código e gera arquivos de habilidade. Convém checar antes se a habilidade já existe."
+ },
+ "ecc:skill-health": {
+  "categoria": "Agentes e fluxo",
+  "pt": "mostra um painel com gráficos sobre a saúde das habilidades, com uso e taxa de sucesso. Para auditoria de qualidade, outra habilidade serve melhor."
+ },
+ "ecc:test-coverage": {
+  "categoria": "Revisão e testes",
+  "pt": "analisa quanto do código é coberto por testes, aponta lacunas e gera os testes que faltam até a meta."
+ },
+ "ecc:update-codemaps": {
+  "categoria": "Escrita e docs",
+  "pt": "varre a estrutura do projeto e gera mapas enxutos da arquitetura, que gastam pouco da memória da IA."
+ },
+ "ecc:update-docs": {
+  "categoria": "Escrita e docs",
+  "pt": "sincroniza a documentação com as fontes de verdade, como scripts, esquemas de dados, rotas e funções exportadas."
+ },
+ "ecc:vue-review": {
+  "categoria": "Revisão e testes",
+  "pt": "revisa código Vue.js (biblioteca de telas web) quanto a reatividade, modelos de tela, acessibilidade, segurança e desempenho. Entra ao mexer em arquivos .vue."
+ },
+ "conciliacao-comissoes-cbv": {
+  "categoria": "Negócio e marketing",
+  "pt": "confere as comissões da PMM AGRO e da C&M com o Calcário Bela Vista: tira relatórios do Minerion, acha comissão atrasada ou a menor e escreve o e-mail ao Sr. Altair."
+ },
+ "google-maps-leads": {
+  "categoria": "Negócio e marketing",
+  "pt": "gera lista de empresas do Google Maps (nome, telefone, e-mail, site, endereço, nota) para prospecção. Entra quando você pede lista de revendas, lojas ou produtores numa cidade."
+ },
+ "mapa-de-habilidades": {
+  "categoria": "Agentes e fluxo",
+  "pt": "mapa de todas as habilidades instaladas, que entra no começo de qualquer pedido para dizer em uma linha qual habilidade serve e por quê."
+ },
+ "sgl-financas-pessoais": {
+  "categoria": "Negócio e marketing",
+  "pt": "atualiza e consulta o SGL 2026, planilha de finanças pessoais do Pedro. Entra ao falar de conta paga, dívida, parcela, fatura, receita ou gasto da casa."
  }
 }
